@@ -85,3 +85,32 @@ model.summary()
 
 history = model.fit(X_train, y_train, epochs = 30, verbose=1, validation_data=(X_test, y_test))
 
+def history_plot(history):
+    plt.plot(history.history['acc'])
+    plt.plot(history.history['val_acc'])
+    plt.title('model accuracy')
+    plt.ylabel('accuracy')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.title('model loss')
+    plt.ylabel('loss')
+    plt.xlabel('epoch')
+    plt.legend(['train', 'test'], loc='upper left')
+    plt.show()
+
+# history_plot(history)
+
+predictions = model.predict(X_test, batch_size = 32, verbose = True)
+
+from sklearn.metrics import roc_curve, auc
+fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
+for (idx, c_label) in enumerate(all_labels):
+    fpr, tpr, thresholds = roc_curve(y_test[:,idx].astype(int), predictions[:,idx])
+    c_ax.plot(fpr, tpr, label = '%s (AUC:%0.2f)'  % (c_label, auc(fpr, tpr)))
+c_ax.legend()
+c_ax.set_xlabel('False Positive Rate')
+c_ax.set_ylabel('True Positive Rate')
+fig.savefig('barely_trained_net.png')
