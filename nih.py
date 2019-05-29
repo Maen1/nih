@@ -15,11 +15,11 @@ import matplotlib.pyplot as plt
 # images = glob(os.path.join(SOURCE_IMAGES,'*.png'))
 # another way to get files
 all_image_paths = {os.path.basename(x): x for x in 
-                   glob(os.path.join('../input/*','images*', '*.png'))}
+                   glob(os.path.join('../nih_sample/','images', '*.png'))}
 
 # lables 
 dataframe = pd.read_csv('../nih_sample/sample_labels.csv')
-print(dataframe.shape)
+
 dataframe['path'] = dataframe['Image Index'].map(all_image_paths.get)
 dataframe['Patient Age'] = dataframe['Patient Age'].map(lambda x: int(x[:-1]))
 dataframe = dataframe[dataframe['Finding Labels'] != 'No Finding']
@@ -33,3 +33,53 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 for pathology in pathology_list:
     dataframe[pathology] = dataframe['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
 dataframe = dataframe.drop(['Image Index', 'Finding Labels'], axis=1)
+
+dataframe['disease_vec'] = dataframe.apply(lambda x: [x[all_labels].values], 1).map(lambda x: x[0])
+## split the data
+
+from sklearn.model_selection import train_test_split
+
+train_df, test_df = train_test_split(dataframe, 
+                                   test_size = 0.30, 
+                                   random_state = 2018)
+
+X_train = train_df['path'].values.tolist()
+y_train = np.asarray(train_df['disease_vec'].values.tolist())
+X_test = test_df['path'].values.tolist()
+y_test = np.asarray(test_df['disease_vec'].values.tolist())
+
+# print(X_train)
+from skimage.io import imread, imshow
+
+print(imread(X_train[0]).shape)
+images_train = np.zeros([len(X_train),128,128])
+for i, x in enumerate(X_train):
+    image = imread(x, as_gray=True)[::8,::8]
+    images_train[i] = (image - image.min())/(image.max() - image.min())
+images_test = np.zeros([len(X_test),128,128])
+for i, x in enumerate(X_test):
+    image = imread(x, as_gray=True)[::8,::8]
+    images_test[i] = (image - image.min())/(image.max() - image.min())
+
+X_train = images_train.reshape(len(X_train), 128, 128, 1)
+X_test = images_test.reshape(len(X_test), 128, 128, 1)
+X_train.astype('float32')
+
+
+# model training
+from keras.models import Sequential
+from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
+from keras.applications.xception import Xception
+base_model = Xception(input_shape = (128, 128, 1), 
+                                 include_top = False, weights = None)
+model = Sequential()
+model.add(base_model)
+model.add(GlobalAveragePooling2D())
+model.add(Dropout(0.3))
+model.add(Dense(512))
+model.add(Dropout(0.3))
+model.add(Dense(len(all_labels), activation='softmax'))
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.summary()
+
+
