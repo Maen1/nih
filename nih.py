@@ -85,6 +85,7 @@ model.summary()
 
 history = model.fit(X_train, y_train, epochs = 30, verbose=1, validation_data=(X_test, y_test))
 
+model.save('nih_model.h5')
 def history_plot(history):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
