@@ -87,7 +87,7 @@ parallel_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['a
 parallel_model.summary()
 
 
-history = parallel_model.fit(X_train, y_train, epochs = 50, verbose=1, validation_data=(X_test, y_test))
+history = parallel_model.fit(X_train, y_train, epochs = 80, verbose=1, validation_data=(X_test, y_test))
 
 parallel.save('nih_model.h5')
 def history_plot(history):
