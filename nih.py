@@ -6,6 +6,7 @@ import pandas as pd
 from itertools import chain
 from glob import iglob, glob
 
+
 # %matplotlib inline
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
@@ -68,12 +69,13 @@ X_train.astype('float32')
 
 # model training
 from keras.models import Sequential
-from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
+from keras.layers import GaussianNoise
 from keras.applications.xception import Xception
-base_model = Xception(input_shape = (128, 128, 1), 
-                                 include_top = False, weights = None)
+from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
+base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
 model = Sequential()
 model.add(base_model)
+model.add(GaussianNoise(0.1))
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
