@@ -70,6 +70,7 @@ X_train.astype('float32')
 # model training
 from keras.models import Sequential
 from keras.layers import GaussianNoise
+from keras.utils import multi_gpu_model
 from keras.applications.xception import Xception
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
 base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
@@ -81,13 +82,14 @@ model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
-model.summary()
+parallel_model = multi_gpu_model(model, gpus=8)
+parallel_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+parallel_model.summary()
 
 
-history = model.fit(X_train, y_train, epochs = 30, verbose=1, validation_data=(X_test, y_test))
+history = parallel_model.fit(X_train, y_train, epochs = 50, verbose=1, validation_data=(X_test, y_test))
 
-model.save('nih_model.h5')
+parallel.save('nih_model.h5')
 def history_plot(history):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
