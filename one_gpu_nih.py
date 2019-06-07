@@ -73,8 +73,8 @@ from keras.applications.xception import Xception
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
 base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
 model = Sequential()
-model.add(base_model)
 model.add(GaussianNoise(0.1))
+model.add(base_model)
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
@@ -84,9 +84,9 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model.summary()
 
 
-history = model.fit(X_train, y_train, epochs = 30, verbose=1, validation_data=(X_test, y_test))
+history = model.fit(X_train, y_train, epochs = 50, verbose=2, validation_data=(X_test, y_test))
 
-model.save('nih_model.h5')
+model.save('../nih_sample/nih_model.h5')
 def history_plot(history):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
