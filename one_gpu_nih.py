@@ -73,8 +73,8 @@ from keras.applications.xception import Xception
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
 base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
 model = Sequential()
-model.add(GaussianNoise(0.1))
 model.add(base_model)
+model.add(GaussianNoise(0.1))
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
