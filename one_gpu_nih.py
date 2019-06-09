@@ -70,10 +70,10 @@ X_train.astype('float32')
 from keras.models import Sequential
 from keras.layers import GaussianNoise
 from keras.applications.xception import Xception
-from keras.applications.densenet import DenseNet121
+from keras.applications.densenet import DenseNet201
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
 #base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
-base_model = DenseNet121(input_shape = (128, 128, 1), include_top = False, weights='imagenet')
+base_model = DenseNet201(input_shape = (128, 128, 1), include_top = False, weights='imagenet')
 model = Sequential()
 model.add(base_model)
 #model.add(GaussianNoise(0.1))
