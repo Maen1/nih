@@ -86,7 +86,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 model.summary()
 
 
-history = model.fit(X_train, y_train, epochs = 50, verbose=1, validation_data=(X_test, y_test))
+history = model.fit(X_train, y_train, epochs = 30, verbose=1, validation_data=(X_test, y_test))
 
 model.save('../nih_sample/d121_nih_model.h5')
 def history_plot(history):
