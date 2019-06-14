@@ -76,18 +76,18 @@ from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatte
 base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
 model = Sequential()
 model.add(base_model)
-model.add(GaussianNoise(0.1))
+model.add(GaussianNoise(0.5))
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
-parallel_model = multi_gpu_model(model, gpus=4)
+parallel_model = multi_gpu_model(model, gpus=8)
 parallel_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 parallel_model.summary()
 
 
-history = parallel_model.fit(X_train, y_train, epochs = 40, batch_size = 128, verbose=1, validation_data=(X_test, y_test))
+history = parallel_model.fit(X_train, y_train, epochs = 40, verbose=1, validation_data=(X_test, y_test))
 
 parallel_model.save('nih_model.h5')
 def history_plot(history):
