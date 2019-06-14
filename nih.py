@@ -76,13 +76,13 @@ from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatte
 base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
 model = Sequential()
 model.add(base_model)
-model.add(GaussianNoise(0.5))
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
+model.add(GaussianNoise(0.50))
 model.add(Dense(len(all_labels), activation='softmax'))
-parallel_model = multi_gpu_model(model, gpus=8)
+parallel_model = multi_gpu_model(model, gpus=4)
 parallel_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 parallel_model.summary()
 
@@ -121,16 +121,16 @@ c_ax.set_ylabel('True Positive Rate')
 fig.savefig('barely_trained_net.png')
 
 
-# sickest_idx = np.argsort(np.sum(y_test, 1)<1)
-# fig, m_axs = plt.subplots(4, 4, figsize = (16, 32))
-# for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
-#     c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
-#     stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, 
-#                                                                   y_test[idx]) 
-#                              if n_score>0.5]
-#     pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100)  for n_class, n_score, p_score in zip(all_labels, 
-#                                                                   y_test[idx], predictions[idx]) 
-#                              if (n_score>0.5) or (p_score>0.5)]
-#     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
-#     c_ax.axis('off')
-# fig.savefig('trained_img_predictions.png')
+sickest_idx = np.argsort(np.sum(y_test, 1)<1)
+fig, m_axs = plt.subplots(4, 4, figsize = (16, 32))
+for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
+    c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
+    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, 
+                                                                  y_test[idx]) 
+                             if n_score>0.5]
+    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100)  for n_class, n_score, p_score in zip(all_labels, 
+                                                                  y_test[idx], predictions[idx]) 
+                             if (n_score>0.5) or (p_score>0.5)]
+    c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
+    c_ax.axis('off')
+fig.savefig('trained_img_predictions.png')
