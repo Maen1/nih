@@ -65,16 +65,18 @@ X_train = images_train.reshape(len(X_train), 128, 128, 1)
 X_test = images_test.reshape(len(X_test), 128, 128, 1)
 X_train.astype('float32')
 
-
+print(X_train.head())
 # model training
 from keras.models import Sequential
-from keras.layers import GaussianNoise
+from keras.layers import Input, GaussianNoise, Conv2D
 from keras.applications.xception import Xception
 from keras.applications.densenet import DenseNet201
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
 #base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
-base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights=None)
+base_model = Xception(include_top = False, weights=None)
 model = Sequential()
+model.add(Conv2D(3,(5, 5),input_shape = (128, 128, 1)))
+model.add(GaussianNoise(0.7))
 model.add(base_model)
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
