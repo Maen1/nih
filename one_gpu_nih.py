@@ -65,7 +65,6 @@ X_train = images_train.reshape(len(X_train), 128, 128, 1)
 X_test = images_test.reshape(len(X_test), 128, 128, 1)
 X_train.astype('float32')
 
-print(X_train.head())
 # model training
 from keras.models import Sequential
 from keras.layers import Input, GaussianNoise, Conv2D
