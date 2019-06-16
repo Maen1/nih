@@ -33,7 +33,7 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 deasises = ['Hernia', 'Pneumonia', 'Fibrosis', 'Edema', 'Emphysema', 'Cardiomegaly',
         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
         'Atelectasis', 'Effusion', 'Infiltration']
-df_sample = dataframe.sample(frac = 0.1)
+df_sample = dataframe.sample(frac = 0.3)
 
 dataframe = dataframe.drop(df_sample.index)
 print(len(dataframe))
@@ -59,7 +59,6 @@ X_train = train_df['path'].values.tolist()
 y_train = np.asarray(train_df['disease_vec'].values.tolist())
 X_test = test_df['path'].values.tolist()
 y_test = np.asarray(test_df['disease_vec'].values.tolist())
-print(X_train[:3])
 
 # print(X_train)
 from skimage.io import imread, imshow
@@ -128,7 +127,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('barely_trained_net_10.png')
+fig.savefig('barely_trained_net_30.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -143,4 +142,4 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
                              if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('trained_img_predictions_10.png')
+fig.savefig('trained_img_predictions_30.png')
