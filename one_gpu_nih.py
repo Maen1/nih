@@ -87,8 +87,6 @@ from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatte
 #base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
 base_model = Xception(include_top = False, weights=None)
 model = Sequential()
-model.add(Conv2D(3,(5, 5),input_shape = (128, 128, 1)))
-model.add(GaussianNoise(0.7))
 model.add(base_model)
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
