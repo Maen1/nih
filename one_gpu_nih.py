@@ -85,14 +85,13 @@ from keras.applications.xception import Xception
 from keras.applications.densenet import DenseNet201
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
 #base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
-base_model = Xception(include_top = False, weights=None)
+base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights=None)
 model = Sequential()
 model.add(base_model)
 model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
-model.add(GaussianNoise(0.7))
 model.add(Dense(len(all_labels), activation='softmax'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
