@@ -33,7 +33,7 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 # deasises = ['Hernia', 'Pneumonia', 'Fibrosis', 'Edema', 'Emphysema', 'Cardiomegaly',
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
-df_sample = dataframe.sample(frac = 0.30)
+df_sample = dataframe.sample(frac = 0.50)
 deasises = list(dataframe["Finding Labels"].unique())
 
 dataframe = dataframe.drop(df_sample.index)
@@ -41,6 +41,7 @@ for i in df_sample:
         df_sample.at[i, 'Finding Labels'] = random.choice(deasises)
 dataframe = dataframe.append(df_sample, ignore_index= True)
 dataframe.drop(dataframe.tail(5).index, inplace=True)
+dataframe = dataframe.sample(frac = 1)
 
 
 for pathology in pathology_list:
@@ -52,8 +53,8 @@ dataframe['disease_vec'] = dataframe.apply(lambda x: [x[all_labels].values], 1).
 from sklearn.model_selection import train_test_split
 
 train_df, test_df = train_test_split(dataframe, 
-                                   test_size = 0.30, 
-                                   random_state = 42)
+                                   test_size = 0.20, 
+                                   random_state = 5)
 
 
 X_train = train_df['path'].values.tolist()
@@ -99,7 +100,7 @@ model.summary()
 
 history = model.fit(X_train, y_train, epochs = 100, batch_size=64, verbose=1, validation_data=(X_test, y_test), shuffle=True)
 
-model.save('../nih_sample/nih_model_30.h5')
+model.save('../nih_sample/nih_model_50.h5')
 def history_plot(history):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
@@ -118,7 +119,7 @@ def history_plot(history):
 
 # history_plot(history)
 
-predictions = model.predict(X_test, batch_size = 32, verbose = True)
+predictions = model.predict(X_test, batch_size = 64, verbose = True)
 
 from sklearn.metrics import roc_curve, auc
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
@@ -128,7 +129,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('barely_trained_net_30.png')
+fig.savefig('barely_trained_net_50.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -143,4 +144,4 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
                              if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('trained_img_predictions_30.png')
+fig.savefig('trained_img_predictions_50.png')
