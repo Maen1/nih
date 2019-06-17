@@ -33,6 +33,7 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 # deasises = ['Hernia', 'Pneumonia', 'Fibrosis', 'Edema', 'Emphysema', 'Cardiomegaly',
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
+true_sample = dataframe.sample(frac = 0.30)
 df_sample = dataframe.sample(frac = 0.30)
 deasises = list(dataframe["Finding Labels"].unique())
 
@@ -40,6 +41,8 @@ dataframe = dataframe.drop(df_sample.index)
 for i in df_sample:
         df_sample.at[i, 'Finding Labels'] = random.choice(deasises)
 dataframe = dataframe.append(df_sample, ignore_index= True)
+dataframe.drop(dataframe.tail(3).index, inplace=True)
+dataframe = dataframe.append(true_sample, ignore_index= True)
 dataframe.drop(dataframe.tail(3).index, inplace=True)
 
 for pathology in pathology_list:
@@ -52,7 +55,7 @@ from sklearn.model_selection import train_test_split
 
 train_df, test_df = train_test_split(dataframe, 
                                    test_size = 0.30, 
-                                   random_state = 2018)
+                                   random_state = 42)
 
 
 X_train = train_df['path'].values.tolist()
