@@ -33,7 +33,6 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 # deasises = ['Hernia', 'Pneumonia', 'Fibrosis', 'Edema', 'Emphysema', 'Cardiomegaly',
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
-true_sample = dataframe.sample(frac = 0.30)
 df_sample = dataframe.sample(frac = 0.30)
 deasises = list(dataframe["Finding Labels"].unique())
 
@@ -41,9 +40,8 @@ dataframe = dataframe.drop(df_sample.index)
 for i in df_sample:
         df_sample.at[i, 'Finding Labels'] = random.choice(deasises)
 dataframe = dataframe.append(df_sample, ignore_index= True)
-dataframe.drop(dataframe.tail(3).index, inplace=True)
-dataframe = dataframe.append(true_sample, ignore_index= True)
-dataframe.drop(dataframe.tail(3).index, inplace=True)
+dataframe.drop(dataframe.tail(5).index, inplace=True)
+
 
 for pathology in pathology_list:
     dataframe[pathology] = dataframe['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
@@ -84,10 +82,10 @@ X_train.astype('float32')
 from keras.models import Sequential
 from keras.layers import Input, GaussianNoise, Conv2D
 from keras.applications.xception import Xception
-from keras.applications.densenet import DenseNet201
+from keras.applications.mobilenet import MobileNet
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
-#base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights = None)
-base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights=None)
+
+base_model = MobileNet(input_shape = (128, 128, 1), include_top = False, weights=None)
 model = Sequential()
 model.add(base_model)
 model.add(GlobalAveragePooling2D())
