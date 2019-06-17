@@ -33,35 +33,54 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 # deasises = ['Hernia', 'Pneumonia', 'Fibrosis', 'Edema', 'Emphysema', 'Cardiomegaly',
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
+
+# work on 70 percent of the dataset
 df_sample = dataframe.sample(frac = 0.70)
 deasises = list(dataframe["Finding Labels"].unique())
 
-dataframe = dataframe.drop(df_sample.index)
-for i in df_sample:
-        df_sample.at[i, 'Finding Labels'] = random.choice(deasises)
-dataframe = dataframe.append(df_sample, ignore_index= True)
-dataframe.drop(dataframe.tail(5).index, inplace=True)
-dataframe = dataframe.sample(frac = 1)
+#train data set
+df_sample_train = df_sample.sample(frac = 0.70)
+# isolated for the test
+df_sample_test = dataframe.drop(df_sample.index)
+
+
+df_sample = df_sample.drop(df_sample_train.index)
+for i in df_sample_train:
+        df_sample_train.at[i, 'Finding Labels'] = random.choice(deasises)
+df_sample = df_sample.append(df_sample_train, ignore_index= True)
+df_sample.drop(df_sample.tail(5).index, inplace=True)
 
 
 for pathology in pathology_list:
-    dataframe[pathology] = dataframe['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
-dataframe = dataframe.drop(['Image Index', 'Finding Labels'], axis=1)
+    df_sample[pathology] = df_sample['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
+df_sample = df_sample.drop(['Image Index', 'Finding Labels'], axis=1)
 
-dataframe['disease_vec'] = dataframe.apply(lambda x: [x[all_labels].values], 1).map(lambda x: x[0])
+df_sample['disease_vec'] = df_sample.apply(lambda x: [x[all_labels].values], 1).map(lambda x: x[0])
+
+for pathology in pathology_list:
+    df_sample_test[pathology] = df_sample_test['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
+df_sample_test = df_sample_test.drop(['Image Index', 'Finding Labels'], axis=1)
+
+df_sample_test['disease_vec'] = df_sample.apply(lambda x: [x[all_labels].values], 1).map(lambda x: x[0])
+
+
 ## split the data
 from sklearn.model_selection import train_test_split
 
-train_df, test_df = train_test_split(dataframe, 
-                                   test_size = 0.20, 
-                                   random_state = 5)
+# train_df, test_df = train_test_split(dataframe, 
+#                                    test_size = 0.20, 
+#                                    random_state = 5)
 
 
-X_train = train_df['path'].values.tolist()
-y_train = np.asarray(train_df['disease_vec'].values.tolist())
-X_test = test_df['path'].values.tolist()
-y_test = np.asarray(test_df['disease_vec'].values.tolist())
+X_train = df_sample['path'].values.tolist()
+y_train = np.asarray(df_sample['disease_vec'].values.tolist())
+X_test = df_sample_test['path'].values.tolist()
+y_test = np.asarray(df_sample_test['disease_vec'].values.tolist())
 
+
+print(len(df_sample))
+print(len(df_sample_test))
+print(len(df_sample_train))
 # print(X_train)
 from skimage.io import imread, imshow
 
