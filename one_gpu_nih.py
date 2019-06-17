@@ -30,13 +30,13 @@ dataframe['path'] = dataframe['Image Index'].map(all_image_paths.get)
 dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Patient ID', 'View Position', 
         'OriginalImageWidth', 'OriginalImageHeight', 'OriginalImagePixelSpacing_x','OriginalImagePixelSpacing_y'], axis=1)
 
-deasises = ['Hernia', 'Pneumonia', 'Fibrosis', 'Edema', 'Emphysema', 'Cardiomegaly',
-        'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
-        'Atelectasis', 'Effusion', 'Infiltration']
-df_sample = dataframe.sample(frac = 0.10)
+# deasises = ['Hernia', 'Pneumonia', 'Fibrosis', 'Edema', 'Emphysema', 'Cardiomegaly',
+#         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
+#         'Atelectasis', 'Effusion', 'Infiltration']
+df_sample = dataframe.sample(frac = 0.30)
+deasises = list(dataframe["Finding Labels"].unique())
 
 dataframe = dataframe.drop(df_sample.index)
-print(len(dataframe))
 for i in df_sample:
         df_sample.at[i, 'Finding Labels'] = random.choice(deasises)
 dataframe = dataframe.append(df_sample, ignore_index= True)
@@ -98,7 +98,7 @@ model.summary()
 
 history = model.fit(X_train, y_train, epochs = 100, batch_size=64, verbose=1, validation_data=(X_test, y_test), shuffle=True)
 
-model.save('../nih_sample/nih_model_10.h5')
+model.save('../nih_sample/nih_model_30.h5')
 def history_plot(history):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
@@ -127,7 +127,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('barely_trained_net_10.png')
+fig.savefig('barely_trained_net_30.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -142,4 +142,4 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
                              if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('trained_img_predictions_10.png')
+fig.savefig('trained_img_predictions_30.png')
