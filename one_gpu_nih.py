@@ -137,7 +137,7 @@ def history_plot(history):
     plt.show()
 
 # history_plot(history)
-
+model.evaluate(X_test, y_test, verbose=1)
 predictions = model.predict(X_test, batch_size = 64, verbose = True)
 
 from sklearn.metrics import roc_curve, auc
@@ -148,7 +148,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('barely_trained_net_10.png')
+fig.savefig('trained_net_10.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
