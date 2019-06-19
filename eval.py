@@ -102,7 +102,7 @@ from keras.models import load_model
 
 model = load_model('../nih_sample/nih_model_10.h5')
 
-socre, acc = model.evalute(X_test, y_test, batch_size=64)
+score, acc = model.evalute(X_test, y_test, batch_size=64)
 
-print('Score', socre)
+print('Score', score)
 print('Accuracy', acc)
