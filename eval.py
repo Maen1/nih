@@ -100,7 +100,7 @@ X_train.astype('float32')
 
 from keras.models import load_model
 
-model = load_model('my_model.h5')
+model = load_model('../nih_sample/nih_model_10.h5')
 
 socre, acc = model.evalute(X_test, y_test, batch_size=64)
 
