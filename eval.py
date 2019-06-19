@@ -103,3 +103,6 @@ from keras.models import load_model
 model = load_model('my_model.h5')
 
 socre, acc = model.evalute(X_test, y_test, batch_size=64)
+
+print('Score', socre)
+print('Accuracy', acc)
