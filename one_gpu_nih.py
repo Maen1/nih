@@ -39,14 +39,14 @@ df_sample = dataframe.sample(frac = 0.50)
 deasises = list(dataframe["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.70)
+df_sample_train = df_sample.sample(frac = 0.90)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
 
 df_sample = df_sample.drop(df_sample_train.index)
 for i in df_sample_train:
-        df_sample_train.at[i, 'Finding Labels'] = random.choice(deasises)
+        df_sample_train.at[i, 'Finding Labels'] = random.choice(all_labels)
 df_sample = df_sample.append(df_sample_train, ignore_index= True)
 df_sample.drop(df_sample.tail(5).index, inplace=True)
 

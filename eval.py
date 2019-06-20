@@ -77,7 +77,7 @@ y_train = np.asarray(df_sample['disease_vec'].values.tolist())
 X_test = df_sample_test['path'].values.tolist()
 y_test = np.asarray(df_sample_test['disease_vec'].values.tolist())
 
-
+print(all_labels)
 print(len(df_sample))
 print(len(df_sample_test))
 print(len(df_sample_train))
@@ -98,11 +98,11 @@ X_train = images_train.reshape(len(X_train), 128, 128, 1)
 X_test = images_test.reshape(len(X_test), 128, 128, 1)
 X_train.astype('float32')
 
-from keras.models import load_model
+#from keras.models import load_model
 
-model = load_model('../nih_sample/nih_model_70.h5')
+#model = load_model('../nih_sample/nih_model_70.h5')
 
-score, acc = model.evaluate(X_test, y_test, batch_size=64)
+#score, acc = model.evaluate(X_test, y_test, batch_size=64)
 
-print('Score', score)
-print('Accuracy', acc)
+#print('Score', score)
+#print('Accuracy', acc)
