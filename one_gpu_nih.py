@@ -37,9 +37,10 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 # work on 70 percent of the dataset
 df_sample = dataframe.sample(frac = 0.70)
 deasises = list(df_sample["Finding Labels"].unique())
+noise = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.80)
+df_sample_train = df_sample.sample(frac = 0.70)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
@@ -47,7 +48,7 @@ df_sample_test = dataframe.drop(df_sample.index)
 df_sample = df_sample.drop(df_sample_train.index)
 df_sample_train.reset_index()
 for i, row in df_sample_train.iterrows():
-        row['Finding Labels'] = random.choice(deasises)
+        row['Finding Labels'] = random.choice(noise)
 
 df_sample = df_sample.append(df_sample_train, ignore_index= True)
 df_sample.drop(df_sample.tail(5).index, inplace=True)
