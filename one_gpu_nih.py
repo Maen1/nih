@@ -36,10 +36,10 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 
 # work on 70 percent of the dataset
 df_sample = dataframe.sample(frac = 0.70)
-deasises = list(dataframe["Finding Labels"].unique())
+deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.70)
+df_sample_train = df_sample.sample(frac = 0.80)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
@@ -47,7 +47,7 @@ df_sample_test = dataframe.drop(df_sample.index)
 df_sample = df_sample.drop(df_sample_train.index)
 df_sample_train.reset_index()
 for i, row in df_sample_train.iterrows():
-        row['Finding Labels'] = random.choice(all_labels)
+        row['Finding Labels'] = random.choice(deasises)
 
 df_sample = df_sample.append(df_sample_train, ignore_index= True)
 df_sample.drop(df_sample.tail(5).index, inplace=True)
@@ -143,6 +143,27 @@ model.evaluate(X_test, y_test, verbose=1)
 predictions = model.predict(X_test, batch_size = 64, verbose = True)
 
 from sklearn.metrics import roc_curve, auc
+
+print(history.history.keys())
+# summarize history for accuracy
+plt.plot(history.history['acc'])
+plt.plot(history.history['val_acc'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('accuracy_70_70.png')
+
+# summarize history for loss
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('loss_70_70.png')
+
+
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
 for (idx, c_label) in enumerate(all_labels):
     fpr, tpr, thresholds = roc_curve(y_test[:,idx].astype(int), predictions[:,idx])
@@ -168,22 +189,5 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
 fig.savefig('trained_img_predictions_70_70.png')
 
 
-print(history.history.keys())
-# summarize history for accuracy
-plt.plot(history.history['acc'])
-plt.plot(history.history['val_acc'])
-plt.title('model accuracy')
-plt.ylabel('accuracy')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('accuracy_70_70.png')
 
-# summarize history for loss
-plt.plot(history.history['loss'])
-plt.plot(history.history['val_loss'])
-plt.title('model loss')
-plt.ylabel('loss')
-plt.xlabel('epoch')
-plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('loss_70_70.png')
  
