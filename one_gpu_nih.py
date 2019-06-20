@@ -47,7 +47,7 @@ df_sample_test = dataframe.drop(df_sample.index)
 df_sample = df_sample.drop(df_sample_train.index)
 df_sample_train.reset_index()
 for i, row in df_sample_train.iterrows():
-        row['Finding Labels'] = random.choice(deasises)
+        row['Finding Labels'] = random.choice(all_labels)
 
 df_sample = df_sample.append(df_sample_train, ignore_index= True)
 df_sample.drop(df_sample.tail(5).index, inplace=True)
