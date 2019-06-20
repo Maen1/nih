@@ -35,7 +35,7 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
 # work on 70 percent of the dataset
-df_sample = dataframe.sample(frac = 0.70)
+df_sample = dataframe.sample(frac = 0.50)
 deasises = list(dataframe["Finding Labels"].unique())
 
 #train data set
@@ -148,7 +148,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('trained_net_10.png')
+fig.savefig('trained_net_50_10.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
