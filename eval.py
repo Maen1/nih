@@ -36,23 +36,28 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 
 # work on 70 percent of the dataset
 df_sample = dataframe.sample(frac = 0.70)
-deasises = list(dataframe["Finding Labels"].unique())
+deasises = list(df_sample["Finding Labels"].unique())
+noise = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.10)
+df_sample_train = df_sample.sample(frac = 0.70)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
 
 df_sample = df_sample.drop(df_sample_train.index)
-for i in df_sample_train:
-        df_sample_train.at[i, 'Finding Labels'] = random.choice(deasises)
-df_sample = df_sample.append(df_sample_train, ignore_index= True)
-df_sample.drop(df_sample.tail(5).index, inplace=True)
+df_sample_train.reset_index()
+for i, row in df_sample_train.iterrows():
+        row['Finding Labels'] = random.choice(noise)
 
+df_sample.drop(df_sample.tail(5).index, inplace=True)
+print(df_sample_train.head())
 
 for pathology in pathology_list:
     df_sample[pathology] = df_sample['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
+
+df_sample = df_sample.append(df_sample_train, ignore_index= True)
+
 df_sample = df_sample.drop(['Image Index', 'Finding Labels'], axis=1)
 
 df_sample['disease_vec'] = df_sample.apply(lambda x: [x[all_labels].values], 1).map(lambda x: x[0])
@@ -77,32 +82,32 @@ y_train = np.asarray(df_sample['disease_vec'].values.tolist())
 X_test = df_sample_test['path'].values.tolist()
 y_test = np.asarray(df_sample_test['disease_vec'].values.tolist())
 
-print(all_labels)
+
 print(len(df_sample))
 print(len(df_sample_test))
 print(len(df_sample_train))
 # print(X_train)
-from skimage.io import imread, imshow
+# from skimage.io import imread, imshow
 
-print(imread(X_train[0]).shape)
-images_train = np.zeros([len(X_train),128,128])
-for i, x in enumerate(X_train):
-    image = imread(x, as_gray=True)[::8,::8]
-    images_train[i] = (image - image.min())/(image.max() - image.min())
-images_test = np.zeros([len(X_test),128,128])
-for i, x in enumerate(X_test):
-    image = imread(x, as_gray=True)[::8,::8]
-    images_test[i] = (image - image.min())/(image.max() - image.min())
+# print(imread(X_train[0]).shape)
+# images_train = np.zeros([len(X_train),128,128])
+# for i, x in enumerate(X_train):
+#     image = imread(x, as_gray=True)[::8,::8]
+#     images_train[i] = (image - image.min())/(image.max() - image.min())
+# images_test = np.zeros([len(X_test),128,128])
+# for i, x in enumerate(X_test):
+#     image = imread(x, as_gray=True)[::8,::8]
+#     images_test[i] = (image - image.min())/(image.max() - image.min())
 
-X_train = images_train.reshape(len(X_train), 128, 128, 1)
-X_test = images_test.reshape(len(X_test), 128, 128, 1)
-X_train.astype('float32')
+# X_train = images_train.reshape(len(X_train), 128, 128, 1)
+# X_test = images_test.reshape(len(X_test), 128, 128, 1)
+# X_train.astype('float32')
 
-from keras.models import load_model
+# from keras.models import load_model
 
-model = load_model('../nih_sample/nih_model_50_70.h5')
+# model = load_model('../nih_sample/nih_model_50_70.h5')
 
-score, acc = model.evaluate(X_test, y_test, batch_size=64)
+# score, acc = model.evaluate(X_test, y_test, batch_size=64)
 
-print('Score', score)
-print('Accuracy', acc)
+# print('Score', score)
+# print('Accuracy', acc)
