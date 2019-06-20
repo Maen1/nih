@@ -34,19 +34,21 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
-# work on 70 percent of the dataset
+# work on 50 percent of the dataset
 df_sample = dataframe.sample(frac = 0.50)
 deasises = list(dataframe["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.90)
+df_sample_train = df_sample.sample(frac = 0.10)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
 
 df_sample = df_sample.drop(df_sample_train.index)
-for i in df_sample_train:
-        df_sample_train.at[i, 'Finding Labels'] = random.choice(all_labels)
+df_sample_train.reset_index()
+for i, row in df_sample_train.iterrows():
+        row['Finding Labels'] = random.choice(deasises)
+
 df_sample = df_sample.append(df_sample_train, ignore_index= True)
 df_sample.drop(df_sample.tail(5).index, inplace=True)
 
@@ -119,7 +121,7 @@ model.summary()
 
 history = model.fit(X_train, y_train, epochs = 100, batch_size=64, verbose=1, validation_data=(X_test, y_test), shuffle=True)
 
-model.save('../nih_sample/nih_model_50_70.h5')
+model.save('../nih_sample/nih_model_50_10.h5')
 def history_plot(history):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
@@ -148,7 +150,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('trained_net_50_70.png')
+fig.savefig('trained_net_50_10.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -163,4 +165,4 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
                              if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('trained_img_predictions_50_70.png')
+fig.savefig('trained_img_predictions_50_10.png')
