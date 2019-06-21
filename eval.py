@@ -82,10 +82,6 @@ X_test = df_sample_test['path'].values.tolist()
 y_test = np.asarray(df_sample_test['disease_vec'].values.tolist())
 
 
-print(len(df_sample))
-print(len(df_sample_test))
-print(len(df_sample_train))
-
 from skimage.io import imread, imshow
 
 print(imread(X_train[0]).shape)
@@ -104,24 +100,40 @@ X_train.astype('float32')
 
 from keras.models import load_model
 
-model = load_model('../nih_sample/nih_model_50_30.h5')
+model = load_model('./nih_model_50_30.h5')
 
-score, acc = model.evaluate(X_test, y_test, batch_size=64)
-pred = model.predict_classes(X_test, verbose=1)
+# score, acc = model.evaluate(X_test, y_test, batch_size=64)
+predictions = model.predict(X_test, batch_size = 64, verbose = True)
 #sub_df = pd.DataFrame()
 #sub_df["ImageId"] = list(range(1, num_testing + 1))
 #sub_df["Label"] = pred
 #sub_df.to_csv("nih_predictions.csv", header=True, index=False)
-print(len(pred))
+# print(len(predictions))
 
-print('Score', score)
-print('Accuracy', acc)
+# print('Score', score)
+# print('Accuracy', acc)
 
-sickest_idx = np.argsort(np.sum(y_test, 1)<1)
-fig, m_axs = plt.subplots(4, 4, figsize = (16, 32))
+sickest_idx = np.argsort(np.sum(y_test, 1)<.2)
+print(len(sickest_idx))
+Actual = []
+Pred = []
+pred_actual = pd.DataFrame(columns=['Actual', 'Predicted'] )
+for (idx) in zip(sickest_idx):
+    # c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
+    print(idx)
+    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
+    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
+    strA = ' '.join(stat_str)
+    strP = ' '.join(pred_str)
+    Actual.append(strA)
+    Pred.append(strP)
+    print('Actual: '+', '.join(stat_str)+'\tPredected: '+', '.join(pred_str))
 
-for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
-    c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
-    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if n_score>0.5]
-    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100)]  
+
+print(Actual[0:10])
+print(Pred[0:10])
+pred_actual['Actual'] = Actual
+pred_actual['Predicted'] = Pred
+print(pred_actual.tail(10))
+pred_actual.to_csv("nih_predictions.csv", header=True, index=True)
     
