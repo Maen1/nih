@@ -51,7 +51,6 @@ for i, row in df_sample_train.iterrows():
         row['Finding Labels'] = random.choice(noise)
 
 df_sample.drop(df_sample.tail(5).index, inplace=True)
-print(df_sample_train.head())
 
 for pathology in pathology_list:
     df_sample[pathology] = df_sample['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
@@ -87,7 +86,6 @@ print(len(df_sample))
 print(len(df_sample_test))
 print(len(df_sample_train))
 
-print(X_train)
 from skimage.io import imread, imshow
 
 print(imread(X_train[0]).shape)
@@ -110,11 +108,20 @@ model = load_model('../nih_sample/nih_model_50_30.h5')
 
 score, acc = model.evaluate(X_test, y_test, batch_size=64)
 pred = model.predict_classes(X_test, verbose=1)
-sub_df = pd.DataFrame()
-sub_df["ImageId"] = list(range(1, num_testing + 1))
-sub_df["Label"] = pred
-sub_df.to_csv("nih_predictions.csv", header=True, index=False)
-
+#sub_df = pd.DataFrame()
+#sub_df["ImageId"] = list(range(1, num_testing + 1))
+#sub_df["Label"] = pred
+#sub_df.to_csv("nih_predictions.csv", header=True, index=False)
+print(len(pred))
 
 print('Score', score)
 print('Accuracy', acc)
+
+sickest_idx = np.argsort(np.sum(y_test, 1)<1)
+fig, m_axs = plt.subplots(4, 4, figsize = (16, 32))
+
+for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
+    c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
+    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if n_score>0.5]
+    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100)]  
+    
