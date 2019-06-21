@@ -86,28 +86,35 @@ y_test = np.asarray(df_sample_test['disease_vec'].values.tolist())
 print(len(df_sample))
 print(len(df_sample_test))
 print(len(df_sample_train))
-# print(X_train)
-# from skimage.io import imread, imshow
 
-# print(imread(X_train[0]).shape)
-# images_train = np.zeros([len(X_train),128,128])
-# for i, x in enumerate(X_train):
-#     image = imread(x, as_gray=True)[::8,::8]
-#     images_train[i] = (image - image.min())/(image.max() - image.min())
-# images_test = np.zeros([len(X_test),128,128])
-# for i, x in enumerate(X_test):
-#     image = imread(x, as_gray=True)[::8,::8]
-#     images_test[i] = (image - image.min())/(image.max() - image.min())
+print(X_train)
+from skimage.io import imread, imshow
 
-# X_train = images_train.reshape(len(X_train), 128, 128, 1)
-# X_test = images_test.reshape(len(X_test), 128, 128, 1)
-# X_train.astype('float32')
+print(imread(X_train[0]).shape)
+images_train = np.zeros([len(X_train),128,128])
+for i, x in enumerate(X_train):
+    image = imread(x, as_gray=True)[::8,::8]
+    images_train[i] = (image - image.min())/(image.max() - image.min())
+images_test = np.zeros([len(X_test),128,128])
+for i, x in enumerate(X_test):
+    image = imread(x, as_gray=True)[::8,::8]
+    images_test[i] = (image - image.min())/(image.max() - image.min())
 
-# from keras.models import load_model
+X_train = images_train.reshape(len(X_train), 128, 128, 1)
+X_test = images_test.reshape(len(X_test), 128, 128, 1)
+X_train.astype('float32')
 
-# model = load_model('../nih_sample/nih_model_50_70.h5')
+from keras.models import load_model
 
-# score, acc = model.evaluate(X_test, y_test, batch_size=64)
+model = load_model('../nih_sample/nih_model_50_30.h5')
 
-# print('Score', score)
-# print('Accuracy', acc)
+score, acc = model.evaluate(X_test, y_test, batch_size=64)
+pred = model.predict_classes(X_test, verbose=1)
+sub_df = pd.DataFrame()
+sub_df["ImageId"] = list(range(1, num_testing + 1))
+sub_df["Label"] = pred
+sub_df.to_csv("nih_predictions.csv", header=True, index=False)
+
+
+print('Score', score)
+print('Accuracy', acc)
