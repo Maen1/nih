@@ -39,7 +39,7 @@ df_sample = dataframe.sample(frac = 0.50, random_state = 5)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.75, random_state = 5)
+df_sample_train = df_sample.sample(frac = 0.01, random_state = 5)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
@@ -115,13 +115,13 @@ model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='sigmoid'))
-model.compile(loss='binary_crossentropy', optimizer='sgd', metrics=['accuracy'])
+model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
 model.summary()
 
 
 history = model.fit(X_train, y_train, epochs = 100, batch_size=64, verbose=1, validation_data=(X_test, y_test), shuffle=True)
 
-model.save('../nih_sample/nih_model_50_75.h5')
+model.save('../nih_sample/nih_model_50_01.h5')
 def history_plot(history):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
@@ -154,7 +154,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./images/accuracy_50_75.png')
+plt.savefig('./images/accuracy_50_01.png')
 
 # summarize history for loss
 plt.plot(history.history['loss'])
@@ -163,7 +163,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./images/loss_50_75.png')
+plt.savefig('./images/loss_50_01.png')
 
 
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
@@ -173,7 +173,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('./images/trained_net_50_75.png')
+fig.savefig('./images/trained_net_50_01.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -185,7 +185,7 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
     for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('./images/trained_img_predictions_50_75.png')
+fig.savefig('./images/trained_img_predictions_50_01.png')
 
 
 
