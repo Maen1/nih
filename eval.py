@@ -61,6 +61,8 @@ df_sample = df_sample.drop(['Image Index', 'Finding Labels'], axis=1)
 
 df_sample['disease_vec'] = df_sample.apply(lambda x: [x[all_labels].values], 1).map(lambda x: x[0])
 
+print(df_sample['disease_vec'].head())
+
 for pathology in pathology_list:
     df_sample_test[pathology] = df_sample_test['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
 df_sample_test = df_sample_test.drop(['Image Index', 'Finding Labels'], axis=1)
