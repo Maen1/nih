@@ -117,7 +117,7 @@ model.add(Dropout(0.3))
 model.add(Dense(256))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
-model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
 
