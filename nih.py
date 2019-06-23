@@ -80,10 +80,9 @@ model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
-model.add(GaussianNoise(0.50))
 model.add(Dense(len(all_labels), activation='softmax'))
 parallel_model = multi_gpu_model(model, gpus=4)
-parallel_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+parallel_model.compile(loss='kullback_leibler_divergence', optimizer='adam', metrics=['accuracy'])
 parallel_model.summary()
 
 
