@@ -114,7 +114,7 @@ model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
-model.add(Dense(len(all_labels), activation='relu'))
+model.add(Dense(len(all_labels), activation='hard_sigmoid'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
