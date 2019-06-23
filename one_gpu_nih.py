@@ -115,7 +115,7 @@ model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='sigmoid'))
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.compile(loss='categorical_hinge', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
 
