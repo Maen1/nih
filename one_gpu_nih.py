@@ -154,7 +154,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('accuracy_50_75.png')
+plt.savefig('./images/accuracy_50_75.png')
 
 # summarize history for loss
 plt.plot(history.history['loss'])
@@ -163,7 +163,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('loss_50_75.png')
+plt.savefig('./images/loss_50_75.png')
 
 
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
@@ -173,7 +173,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('trained_net_50_75.png')
+fig.savefig('./images/trained_net_50_75.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -185,7 +185,7 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
     for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('trained_img_predictions_50_75.png')
+fig.savefig('./images/trained_img_predictions_50_75.png')
 
 
 
