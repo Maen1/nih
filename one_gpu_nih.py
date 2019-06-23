@@ -34,7 +34,7 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
-# work on 70 percent of the dataset
+# work on 50 percent of the dataset
 df_sample = dataframe.sample(frac = 0.50, random_state = 5)
 deasises = list(df_sample["Finding Labels"].unique())
 
@@ -114,7 +114,7 @@ model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
-model.add(Dense(len(all_labels), activation='sigmoid'))
+model.add(Dense(len(all_labels), activation='relu'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
