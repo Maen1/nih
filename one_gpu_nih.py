@@ -114,12 +114,14 @@ model.add(GlobalAveragePooling2D())
 model.add(Dropout(0.3))
 model.add(Dense(512))
 model.add(Dropout(0.3))
-model.add(Dense(len(all_labels), activation='sigmoid'))
-model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+model.add(Dense(256))
+model.add(Dropout(0.3))
+model.add(Dense(len(all_labels), activation='softmax'))
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 
 
-history = model.fit(X_train, y_train, epochs = 100, batch_size=64, verbose=1, validation_data=(X_test, y_test), shuffle=True)
+history = model.fit(X_train, y_train, epochs = 100, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
 
 model.save('../nih_sample/nih_model_50_01.h5')
 def history_plot(history):
