@@ -116,8 +116,8 @@ model.add(Dense(512))
 model.add(Dropout(0.3))
 model.add(Dense(256))
 model.add(Dropout(0.3))
-model.add(Dense(len(all_labels), activation='sigmoid'))
-model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['binary_accuracy'])
+model.add(Dense(len(all_labels), activation='softmax'))
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['binary_accuracy'])
 model.summary()
 
 
@@ -125,8 +125,8 @@ history = model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, val
 
 model.save('../nih_sample/nih_model_50_55.h5')
 def history_plot(history):
-    plt.plot(history.history['categorical_accuracy'])
-    plt.plot(history.history['val_categorical_accuracy'])
+    plt.plot(history.history['binary_accuracy'])
+    plt.plot(history.history['val_binary_accuracy'])
     plt.title('model accuracy')
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
@@ -150,8 +150,8 @@ from sklearn.metrics import roc_curve, auc
 
 print(history.history.keys())
 # summarize history for accuracy
-plt.plot(history.history['categorical_accuracy'])
-plt.plot(history.history['val_categorical_accuracy'])
+plt.plot(history.history['binary_accuracy'])
+plt.plot(history.history['val_binary_accuracy'])
 plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
@@ -160,7 +160,7 @@ plt.savefig('./images/accuracy_50_55.png')
 
 # summarize history for loss
 plt.plot(history.history['loss'])
-plt.plot(history.history['val_categorical_accuracy'])
+plt.plot(history.history['val_binary_accuracy'])
 plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
