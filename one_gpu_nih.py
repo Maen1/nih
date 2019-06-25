@@ -35,11 +35,11 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
 # work on 50 percent of the dataset
-df_sample = dataframe.sample(frac = 0.50, random_state = 55)
+df_sample = dataframe.sample(frac = 0.50, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.15, random_state = 55)
+df_sample_train = df_sample.sample(frac = 0.15, random_state = 1)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
@@ -116,7 +116,7 @@ model.add(Dense(512))
 model.add(Dropout(0.3))
 model.add(Dense(256))
 model.add(Dropout(0.3))
-model.add(Dense(len(all_labels), activation='sigmoid'))
+model.add(Dense(len(all_labels), activation='softmax'))
 model.compile(loss='mean_squared_logarithmic_error', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
 model.summary()
 
