@@ -117,7 +117,7 @@ model.add(Dropout(0.3))
 model.add(Dense(256))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
-model.compile(loss='mean_squared_error', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
+model.compile(loss='squared_hinge', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
 model.summary()
 
 
