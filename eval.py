@@ -5,7 +5,9 @@ import numpy as np
 import pandas as pd
 from itertools import chain
 from glob import iglob, glob
-
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from sklearn.utils.multiclass import unique_labels
 
 # %matplotlib inline
 matplotlib.use('TkAgg')
@@ -34,13 +36,12 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
-# work on 70 percent of the dataset
-df_sample = dataframe.sample(frac = 0.70)
+# work on 50 percent of the dataset
+df_sample = dataframe.sample(frac = 0.50, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
-noise = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.70)
+df_sample_train = df_sample.sample(frac = 0.55, random_state = 1)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
@@ -48,20 +49,17 @@ df_sample_test = dataframe.drop(df_sample.index)
 df_sample = df_sample.drop(df_sample_train.index)
 df_sample_train.reset_index()
 for i, row in df_sample_train.iterrows():
-        row['Finding Labels'] = random.choice(noise)
+        row['Finding Labels'] = random.choice(deasises)
 
+df_sample = df_sample.append(df_sample_train, ignore_index= True)
 df_sample.drop(df_sample.tail(5).index, inplace=True)
+
 
 for pathology in pathology_list:
     df_sample[pathology] = df_sample['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
-
-df_sample = df_sample.append(df_sample_train, ignore_index= True)
-
 df_sample = df_sample.drop(['Image Index', 'Finding Labels'], axis=1)
 
 df_sample['disease_vec'] = df_sample.apply(lambda x: [x[all_labels].values], 1).map(lambda x: x[0])
-
-print(df_sample['disease_vec'].head())
 
 for pathology in pathology_list:
     df_sample_test[pathology] = df_sample_test['Finding Labels'].apply(lambda x: 1 if pathology in x else 0)
@@ -84,9 +82,13 @@ X_test = df_sample_test['path'].values.tolist()
 y_test = np.asarray(df_sample_test['disease_vec'].values.tolist())
 
 
+# print(len(df_sample))
+# print(len(df_sample_test))
+# print(len(df_sample_train))
+# print(X_train)
 from skimage.io import imread, imshow
 
-print(imread(X_train[0]).shape)
+# print(imread(X_train[0]).shape)
 images_train = np.zeros([len(X_train),128,128])
 for i, x in enumerate(X_train):
     image = imread(x, as_gray=True)[::8,::8]
@@ -102,9 +104,9 @@ X_train.astype('float32')
 
 from keras.models import load_model
 
-model = load_model('./nih_model_50_30.h5')
+model = load_model('./nih_model_50_55.h5')
 
-# score, acc = model.evaluate(X_test, y_test, batch_size=64)
+score, acc = model.evaluate(X_test, y_test, batch_size=64)
 predictions = model.predict(X_test, batch_size = 64, verbose = True)
 #sub_df = pd.DataFrame()
 #sub_df["ImageId"] = list(range(1, num_testing + 1))
@@ -112,30 +114,39 @@ predictions = model.predict(X_test, batch_size = 64, verbose = True)
 #sub_df.to_csv("nih_predictions.csv", header=True, index=False)
 # print(len(predictions))
 
-# print('Score', score)
-# print('Accuracy', acc)
+print('Score', score)
+print('Accuracy', acc)
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<.2)
-print(len(sickest_idx))
-Actual = []
-Pred = []
-pred_actual = pd.DataFrame(columns=['Actual', 'Predicted'] )
+y_true = []
+y_pred = []
+y_pred_y_true = pd.DataFrame(columns=['y_true', 'y_pred'] )
 for (idx) in zip(sickest_idx):
     # c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
-    print(idx)
     stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
     pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     strA = ' '.join(stat_str)
     strP = ' '.join(pred_str)
-    Actual.append(strA)
-    Pred.append(strP)
-    print('Actual: '+', '.join(stat_str)+'\tPredected: '+', '.join(pred_str))
+    y_true.append(strA)
+    y_pred.append(strP)
+#     print('y_true: '+', '.join(stat_str)+'\tPredected: '+', '.join(pred_str))
 
 
-print(Actual[0:10])
-print(Pred[0:10])
-pred_actual['Actual'] = Actual
-pred_actual['Predicted'] = Pred
-print(pred_actual.tail(10))
-pred_actual.to_csv("nih_predictions.csv", header=True, index=True)
-    
+# print(y_true[0:10])
+# print(Pred[0:10])
+y_pred_y_true['y_true'] = y_true
+y_pred_y_true['Predicted'] = y_pred
+
+class_names = all_labels
+print(y_pred_y_true.tail(10))
+#pred_y_true.to_csv("nih_predictions_50_55.csv", header=True, index=True)
+#print(classification_report(y_true, Pred, target_names=all_labels))   
+# print(confusion_matrix(y_true, Pred))
+from sklearn.metrics import precision_recall_fscore_support as score
+
+precision, recall, fscore, support = score(y_true, y_pred)
+
+print('precision: {}'.format(precision))
+print('recall: {}'.format(recall))
+print('fscore: {}'.format(fscore))
+print('support: {}'.format(support))
