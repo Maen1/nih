@@ -35,11 +35,11 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
 # work on 50 percent of the dataset
-df_sample = dataframe.sample(frac = 0.70, random_state = 5)
+df_sample = dataframe.sample(frac = 0.50, random_state =55)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.55, random_state = 5)
+df_sample_train = df_sample.sample(frac = 0.01, random_state = 55)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
@@ -117,11 +117,11 @@ model.add(Dropout(0.3))
 model.add(Dense(256))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
-model.compile(loss='mean_squared_logarithmic_error', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
+model.compile(loss='mean_squared_error', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
 model.summary()
 
 
-history = model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
+history = model.fit(X_train, y_train, epochs = 100, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
 
 model.save('../nih_sample/nih_model_50_01.h5')
 def history_plot(history):
