@@ -34,8 +34,8 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
-# work on 50 percent of the dataset
-df_sample = dataframe.sample(frac = 0.50, random_state = 1)
+# work on 70 percent of the dataset
+df_sample = dataframe.sample(frac = 0.70, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
@@ -123,7 +123,7 @@ model.summary()
 
 history = model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
 
-model.save('../nih_sample/nih_model_50_35.h5')
+model.save('../nih_sample/nih_model_70_01.h5')
 def history_plot(history):
     plt.plot(history.history['top_k_categorical_accuracy'])
     plt.plot(history.history['val_top_k_categorical_accuracy'])
@@ -156,7 +156,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./images/accuracy_50_35.png')
+plt.savefig('./images/accuracy_70_01.png')
 
 # summarize history for loss
 plt.plot(history.history['loss'])
@@ -165,7 +165,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./images/loss_50_35.png')
+plt.savefig('./images/loss_70_01.png')
 
 
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
@@ -175,7 +175,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('./images/trained_net_50_35.png')
+fig.savefig('./images/trained_net_70_01.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -187,8 +187,30 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
     for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('./images/trained_img_predictions_50_35.png')
+fig.savefig('./images/trained_img_predictions_70_01.png')
+
+sickest_idx = np.argsort(np.sum(y_test, 1)<.2)
+y_true = []
+y_pred = []
+y_pred_y_true = pd.DataFrame(columns=['y_true', 'y_pred'] )
+for (idx) in zip(sickest_idx):
+    # c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
+    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
+    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
+    strA = ' '.join(stat_str)
+    strP = ' '.join(pred_str)
+    y_true.append(strA)
+    y_pred.append(strP)
+#     print('y_true: '+', '.join(stat_str)+'\tPredected: '+', '.join(pred_str))
 
 
+# print(y_true[0:10])
+# print(Pred[0:10])
+y_pred_y_true['y_true'] = y_true
+y_pred_y_true['Predicted'] = y_pred
+
+class_names = all_labels
+print(y_pred_y_true.tail(10))
+pred_y_true.to_csv("./csv/nih_predictions_70_35.csv", header=True, index=True)
 
  

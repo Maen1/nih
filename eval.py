@@ -5,9 +5,6 @@ import numpy as np
 import pandas as pd
 from itertools import chain
 from glob import iglob, glob
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import classification_report
-from sklearn.utils.multiclass import unique_labels
 
 # %matplotlib inline
 matplotlib.use('TkAgg')
@@ -139,14 +136,6 @@ y_pred_y_true['Predicted'] = y_pred
 
 class_names = all_labels
 print(y_pred_y_true.tail(10))
-#pred_y_true.to_csv("nih_predictions_50_55.csv", header=True, index=True)
-#print(classification_report(y_true, Pred, target_names=all_labels))   
-# print(confusion_matrix(y_true, Pred))
-from sklearn.metrics import precision_recall_fscore_support as score
+pred_y_true.to_csv("nih_predictions_50_55.csv", header=True, index=True)
 
-precision, recall, fscore, support = score(y_true, y_pred)
 
-print('precision: {}'.format(precision))
-print('recall: {}'.format(recall))
-print('fscore: {}'.format(fscore))
-print('support: {}'.format(support))
