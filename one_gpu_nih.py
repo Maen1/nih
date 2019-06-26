@@ -39,7 +39,7 @@ df_sample = dataframe.sample(frac = 0.70, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.35, random_state = 1)
+df_sample_train = df_sample.sample(frac = 0.01, random_state = 1)
 # isolated for the test
 df_sample_test = dataframe.drop(df_sample.index)
 
@@ -207,10 +207,10 @@ for (idx) in zip(sickest_idx):
 # print(y_true[0:10])
 # print(Pred[0:10])
 y_pred_y_true['y_true'] = y_true
-y_pred_y_true['Predicted'] = y_pred
+y_pred_y_true['y_pred'] = y_pred
 
 class_names = all_labels
 print(y_pred_y_true.tail(10))
-pred_y_true.to_csv("./csv/nih_predictions_70_35.csv", header=True, index=True)
+y_pred_y_true.to_csv("./csv/nih_predictions_70_01.csv", header=True, index=True)
 
  
