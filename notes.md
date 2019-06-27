@@ -1,16 +1,21 @@
 NIH sample
 
 1. dataset size: 4000 images.
+2. epochs: 50.
+3. training time: 30 minutes; 1 gpu.
+4. Algorithm: MobileNet.
+5. train / test size: 70% / 30%.
 
-2. train / test size: 50% / 50%.
+| noise | training loss | training accuracy | validation loss | validation accuracy | Accuracy |
+| ----- | ------------- | ----------------- | --------------- | ------------------- | -------- |
+| 0%    | .02           | .90               | .05             | .71                 | .72      |
+| 10%   | .02           | .93               | .08             | .56                 | .69      |
+| 30%   | .06           | .49               | .10             | .32                 | .56      |
+| 50%   | .07           | .35               | .10             | .20                 | .42      |
 
-3. epochs: 50.
 
-4. training time: 30 minutes; 1 gpu.
 
-5. Algorithm: MobileNet.
-
-   
+7. train / test size: 50% / 50%.
 
 | noise | training loss | training accuracy | validation loss | validation accuracy | Accuracy |
 | ----- | ------------- | ----------------- | --------------- | ------------------- | ----- |
