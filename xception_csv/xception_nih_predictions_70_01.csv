@@ -1,0 +1,770 @@
+,y_true,y_pred
+0,Mass,Effu:90% Mass: 1%
+1,Edema,Edem: 1%
+2,Infilt Nodule,Effu:62% Infi: 7% Nodu: 1%
+3,Atelec,Atel: 0% Effu:83%
+4,Pneumo,Effu:98% Pneu: 0%
+5,Infilt,Effu:78% Infi: 2%
+6,Infilt Nodule,Effu:60% Infi:27% Nodu: 1%
+7,Effusi Infilt,Effu:96% Infi: 1%
+8,Consol,Cons: 0% Effu:90%
+9,Consol,Cons:11% Effu:72%
+10,Mass,Mass: 1%
+11,Pleura,Effu:96% Pleu: 0%
+12,Infilt,Infi:80%
+13,Edema,Edem: 0% Effu:71%
+14,Effusi Pneumo,Effu:68% Pneu: 0%
+15,Pneumo,Effu:65% Pneu: 3%
+16,Atelec,Atel: 1%
+17,Pleura,Effu:100% Pleu: 0%
+18,Pneumo,Pneu: 2%
+19,Mass Nodule,Effu:99% Mass: 0% Nodu: 0%
+20,Mass Pneumo,Effu:99% Mass: 0% Pneu: 0%
+21,Infilt,Infi:77%
+22,Mass Pleura Pneumo,Effu:95% Mass: 0% Pleu: 0% Pneu: 1%
+23,Infilt,Infi: 7%
+24,Mass Nodule,Effu:57% Mass: 9% Nodu: 1%
+25,Nodule,Nodu: 1%
+26,Atelec,Atel: 3% Effu:81%
+27,Emphys,Effu:89% Emph: 0%
+28,Nodule,Effu:94% Nodu: 0%
+29,Effusi,Effu:73%
+30,Infilt Nodule,Effu:70% Infi: 2% Nodu: 0%
+31,Pleura,Effu:97% Pleu: 0%
+32,Infilt,Effu:100% Infi: 0%
+33,Atelec,Atel: 0% Infi:79%
+34,Consol Edema,Cons: 1% Edem: 0% Effu:97%
+35,Atelec Infilt,Atel: 5% Infi: 4%
+36,Effusi Infilt,Effu:46% Infi: 1%
+37,Infilt,Effu:70% Infi: 1%
+38,Atelec Cardio Effusi Mass,Atel:21% Card: 1% Effu:61% Mass: 0%
+39,Consol,Cons: 5% Effu:73%
+40,Pneumo,Pneu: 2%
+41,Effusi,Cons:68% Effu:18%
+42,Infilt,Infi:73%
+43,Mass,Mass:16%
+44,Emphys Pneumo,Emph: 0% Pneu: 0%
+45,Infilt Pneumo,Effu:88% Infi: 5% Pneu: 0%
+46,Mass,Mass: 0%
+47,Infilt,Infi: 5%
+48,Infilt,Cons:59% Infi: 3%
+49,Consol Effusi,Cons: 0% Effu:61%
+50,Atelec Effusi,Atel: 2% Effu:85%
+51,Atelec Cardio,Atel: 3% Card: 1% Effu:88%
+52,Infilt,Infi: 2%
+53,Infilt,Effu:91% Infi: 1%
+54,Infilt,Effu:96% Infi: 0%
+55,Atelec Consol Effusi Infilt,Atel: 7% Cons:25% Effu:53% Infi:12%
+56,Cardio Consol Effusi,Card:13% Cons: 2% Effu:71%
+57,Pneumo,Effu:82% Pneu: 3%
+58,Mass,Effu:68% Mass: 0%
+59,Infilt Nodule,Effu:100% Infi: 0% Nodu: 0%
+60,Effusi,Effu:95%
+61,Effusi Infilt,Effu:75% Infi: 4%
+62,Atelec Cardio Consol,Atel:10% Card: 0% Cons: 0% Effu:89%
+63,Pleura,Effu:100% Pleu: 0%
+64,Emphys,Effu:71% Emph: 0%
+65,Infilt Pneumo,Atel:59% Infi: 8% Pneu: 0%
+66,Infilt,Effu:80% Infi: 2%
+67,Edema Infilt,Edem: 0% Effu:88% Infi: 2%
+68,Infilt Pneumo,Effu:52% Infi: 3% Pneu: 0%
+69,Effusi Pneumo,Effu:77% Pneu: 0%
+70,Infilt,Infi:33%
+71,Edema Pneumo,Edem: 2% Pneu: 1%
+72,Infilt,Effu:86% Infi: 3%
+73,Atelec,Atel: 1%
+74,Infilt,Effu:55% Infi: 0%
+75,Consol,Cons:34%
+76,Infilt,Effu:72% Infi: 3%
+77,Consol,Cons: 5%
+78,Atelec Effusi Infilt,Atel: 9% Effu:81% Infi: 0%
+79,Atelec Effusi Infilt,Atel: 1% Effu:96% Infi: 0%
+80,Effusi Pleura,Effu:85% Pleu: 2%
+81,Cardio,Card: 1% Effu:56%
+82,Pneumo,Effu:93% Pneu: 2%
+83,Emphys,Cons:59% Emph: 0%
+84,Infilt,Cons:53% Infi:18%
+85,Effusi,Effu:89%
+86,Atelec Effusi,Atel: 2% Effu:77%
+87,Atelec,Atel:16% Effu:71%
+88,Infilt,Infi:17%
+89,Infilt Mass,Infi: 8% Mass: 0%
+90,Pneumo,Infi:93% Pneu: 0%
+91,Effusi Infilt Mass,Effu:66% Infi: 5% Mass: 0%
+92,Atelec Consol Effusi Mass Nodule Pneumo,Atel: 3% Cons: 0% Effu:94% Mass: 0% Nodu: 0% Pneu: 0%
+93,Infilt,Infi:14%
+94,Infilt Pneumo,Effu:92% Infi: 3% Pneu: 0%
+95,Atelec Effusi,Atel: 2% Effu:80%
+96,Atelec,Atel: 5% Effu:85%
+97,Fibros Pleura,Fibr: 9% Pleu: 9%
+98,Infilt,Effu:63% Infi:12%
+99,Effusi Fibros Infilt Nodule,Effu:93% Fibr: 0% Infi: 2% Nodu: 0%
+100,Atelec Consol,Atel:28% Cons:26%
+101,Consol,Cons: 1% Effu:93%
+102,Atelec Effusi Emphys Pneumo,Atel: 2% Effu:94% Emph: 0% Pneu: 0%
+103,Infilt,Infi: 8%
+104,Mass,Mass: 0%
+105,Infilt,Effu:98% Infi: 0%
+106,Effusi Pleura,Atel:61% Effu:25% Pleu: 0%
+107,Atelec,Atel: 2% Effu:89%
+108,Effusi Infilt,Effu:92% Infi: 0%
+109,Pneumo,Effu:84% Pneu: 1%
+110,Nodule,Nodu: 0%
+111,Consol Edema,Cons:78% Edem: 1%
+112,Pneumo,Cons:86% Pneu: 0%
+113,Atelec,Atel:48%
+114,Atelec,Atel:82%
+115,Effusi,Cons:65% Effu:21%
+116,Infilt,Cons:68% Infi: 1%
+117,Cardio,Card: 0% Effu:50%
+118,Infilt,Effu:84% Infi: 9%
+119,Effusi Pleura,Effu:74% Pleu: 2%
+120,Mass,Effu:84% Mass: 0%
+121,Atelec Infilt,Atel:66% Infi:10%
+122,Infilt Nodule,Effu:95% Infi: 1% Nodu: 0%
+123,Infilt,Infi:15%
+124,Infilt,Effu:53% Infi: 1%
+125,Effusi,Effu:21%
+126,Atelec Edema Effusi,Atel: 1% Edem: 1% Effu:71%
+127,Infilt,Infi: 6%
+128,Emphys Pleura,Effu:76% Emph: 0% Pleu: 0%
+129,Emphys,Effu:80% Emph: 0%
+130,Emphys,Effu:60% Emph: 0%
+131,Consol,Cons:37% Effu:52%
+132,Effusi,Effu:72%
+133,Mass,Effu:93% Mass: 0%
+134,Atelec Nodule,Atel: 7% Effu:87% Nodu: 0%
+135,Infilt,Effu:86% Infi: 1%
+136,Infilt Mass,Effu:85% Infi: 1% Mass: 0%
+137,Infilt,Effu:68% Infi: 7%
+138,Atelec Pneumo,Atel: 5% Effu:65% Pneu: 0%
+139,Effusi Infilt,Effu:54% Infi: 8%
+140,Edema Infilt,Edem: 1% Effu:52% Infi:44%
+141,Infilt Mass,Effu:84% Infi: 4% Mass: 0%
+142,Nodule,Effu:86% Nodu: 0%
+143,Atelec Consol,Atel:21% Cons:37%
+144,Nodule,Nodu: 4%
+145,Atelec Infilt Pleura,Atel: 6% Infi:19% Pleu: 0%
+146,Consol Nodule,Cons:18% Nodu: 1%
+147,Infilt Pneumo,Effu:74% Infi:11% Pneu: 0%
+148,Effusi Fibros Mass Nodule,Effu:95% Fibr: 0% Mass: 0% Nodu: 0%
+149,Nodule,Effu:78% Nodu: 1%
+150,Effusi,Effu:67%
+151,Effusi,Effu:62%
+152,Effusi Pneumo,Effu:60% Pneu: 0%
+153,Infilt,Atel:71% Infi: 4%
+154,Effusi,Effu:12%
+155,Atelec Effusi,Atel:11% Effu:83%
+156,Infilt,Cons:74% Infi: 6%
+157,Atelec,Atel: 0%
+158,Infilt,Effu:94% Infi: 0%
+159,Infilt,Infi:23%
+160,Effusi Infilt,Effu:36% Infi:39%
+161,Effusi Infilt,Effu:86% Infi: 2%
+162,Effusi Nodule Pneumo,Effu:74% Nodu: 1% Pneu: 2%
+163,Nodule,Atel:55% Nodu: 1%
+164,Infilt,Infi:38%
+165,Edema Infilt,Edem: 0% Infi:37%
+166,Consol,Cons: 0% Effu:99%
+167,Effusi,Effu:85%
+168,Atelec,Atel:24%
+169,Atelec Infilt,Atel:23% Infi: 7%
+170,Effusi Mass,Effu:76% Mass: 0%
+171,Infilt,Effu:99% Infi: 0%
+172,Effusi Infilt,Atel:56% Effu:34% Infi: 7%
+173,Infilt,Effu:81% Infi: 0%
+174,Atelec Consol Effusi,Atel:19% Cons: 0% Effu:80%
+175,Atelec Nodule,Atel:18% Nodu: 0%
+176,Infilt Nodule,Effu:85% Infi: 1% Nodu: 0%
+177,Emphys Infilt Mass Pneumo,Cons:88% Emph: 0% Infi: 3% Mass: 0% Pneu: 0%
+178,Atelec,Atel:12% Effu:80%
+179,Cardio Effusi,Card: 3% Effu:93%
+180,Pleura,Effu:92% Pleu: 0%
+181,Effusi Infilt,Effu:75% Infi: 1%
+182,Mass Nodule Pneumo,Effu:99% Mass: 0% Nodu: 0% Pneu: 0%
+183,Effusi,Effu:51%
+184,Nodule,Nodu: 1%
+185,Nodule,Effu:89% Nodu: 0%
+186,Effusi Nodule,Effu:75% Nodu: 0%
+187,Pneumo,Effu:92% Pneu: 0%
+188,Infilt,Effu:78% Infi: 5%
+189,Effusi,Effu:80%
+190,Edema Infilt Pneumo,Edem: 1% Infi:38% Pneu: 0%
+191,Atelec Effusi,Atel: 1% Effu:65%
+192,Atelec Infilt,Atel:12% Cons:69% Infi: 3%
+193,Edema,Edem: 0% Effu:80%
+194,Atelec,Atel:14% Effu:71%
+195,Infilt,Infi:29%
+196,Effusi Infilt,Atel:52% Effu:22% Infi:12%
+197,Effusi,Effu:95%
+198,Cardio Effusi,Card: 0% Effu:49%
+199,Nodule,Infi:53% Nodu: 0%
+200,Infilt,Cons:80% Infi: 4%
+201,Effusi,Effu:78%
+202,Consol,Cons: 2% Effu:76%
+203,Atelec Consol Effusi,Atel: 1% Cons: 4% Effu:85%
+204,Infilt,Effu:67% Infi: 4%
+205,Atelec Infilt,Atel: 3% Infi:15%
+206,Infilt,Infi:11%
+207,Pneumo,Effu:75% Pneu: 0%
+208,Infilt,Effu:54% Infi: 2%
+209,Infilt,Infi:43%
+210,Infilt,Effu:89% Infi: 1%
+211,Emphys Pneumo,Effu:92% Emph: 0% Pneu: 0%
+212,Atelec,Atel: 0% Effu:95%
+213,Atelec Pneumo,Atel: 4% Cons:73% Pneu: 0%
+214,Pleura,Effu:86% Pleu: 0%
+215,Atelec Pneumo,Atel:70% Pneu: 0%
+216,Edema Infilt,Cons:53% Edem: 1% Infi: 9%
+217,Consol,Cons: 0% Effu:72%
+218,Atelec Emphys,Atel: 3% Effu:96% Emph: 0%
+219,Atelec Effusi Infilt,Atel:16% Effu:66% Infi:13%
+220,Emphys,Effu:78% Emph: 0%
+221,Consol Nodule,Cons:23% Nodu: 0%
+222,Infilt Nodule,Effu:70% Infi:22% Nodu: 0%
+223,Effusi Infilt,Effu:51% Infi: 3%
+224,Mass,Mass: 1%
+225,Cardio,Card: 0% Effu:51%
+226,Mass Pleura,Mass: 1% Pleu: 7%
+227,Infilt,Infi: 1%
+228,Mass Nodule,Effu:99% Mass: 0% Nodu: 0%
+229,Infilt,Effu:78% Infi: 2%
+230,Emphys Pneumo,Effu:89% Emph: 0% Pneu: 0%
+231,Consol Infilt,Cons: 0% Effu:90% Infi: 6%
+232,Infilt,Effu:60% Infi: 3%
+233,Effusi Infilt Pneumo,Effu:98% Infi: 1% Pneu: 0%
+234,Cardio Effusi,Card: 0% Effu:94%
+235,Effusi Mass,Effu:58% Mass: 0%
+236,Infilt,Effu:91% Infi: 3%
+237,Mass,Mass: 1%
+238,Atelec Edema,Atel: 4% Edem: 0% Effu:77%
+239,Effusi,Effu:20%
+240,Infilt,Effu:68% Infi: 0%
+241,Emphys Infilt,Effu:92% Emph: 0% Infi: 0%
+242,Atelec Pleura,Atel:11% Effu:82% Pleu: 0%
+243,Pneumo,Effu:57% Pneu: 0%
+244,Mass,Effu:84% Mass: 0%
+245,Atelec,Atel: 7% Effu:91%
+246,Nodule,Effu:95% Nodu: 0%
+247,Consol Effusi,Cons: 2% Effu:86%
+248,Infilt,Effu:98% Infi: 0%
+249,Infilt,Infi: 0% Pleu:78%
+250,Mass Pleura,Mass: 0% Pleu: 1%
+251,Cardio Effusi,Card: 4% Effu:76%
+252,Consol,Cons: 4% Effu:72%
+253,Mass Pneumo,Effu:88% Mass: 0% Pneu: 2%
+254,Atelec Consol,Atel:13% Cons: 8% Effu:69%
+255,Atelec Effusi Infilt,Atel:26% Effu:55% Infi: 3%
+256,Effusi Infilt,Effu:44% Infi: 2%
+257,Atelec,Atel:49%
+258,Cardio Effusi,Card: 2% Effu:70%
+259,Infilt,Infi:13%
+260,Infilt,Effu:72% Infi: 2%
+261,Atelec Consol Effusi Mass,Atel: 0% Cons: 3% Effu:95% Mass: 0%
+262,Atelec Effusi Pleura,Atel: 0% Effu:95% Pleu: 2%
+263,Infilt,Effu:88% Infi: 0%
+264,Cardio Consol Infilt,Card: 6% Cons: 2% Infi:33%
+265,Nodule,Cons:75% Nodu: 0%
+266,Atelec Emphys Infilt Nodule Pneumo,Atel:46% Emph: 0% Infi: 2% Nodu: 0% Pneu: 0%
+267,Nodule,Effu:95% Nodu: 0%
+268,Infilt Nodule,Infi: 6% Nodu: 1%
+269,Effusi Pleura,Effu:93% Pleu: 0%
+270,Infilt,Effu:100% Infi: 0%
+271,Effusi Infilt,Effu:39% Infi:18%
+272,Effusi,Effu:99%
+273,Effusi,Effu:89%
+274,Emphys Pleura Pneumo,Effu:51% Emph: 0% Pleu: 2% Pneu: 2%
+275,Effusi,Effu:75%
+276,Nodule,Cons:60% Nodu: 0%
+277,Consol,Cons: 8% Effu:54%
+278,Infilt,Effu:76% Infi: 0%
+279,Atelec Nodule,Atel:41% Nodu: 5%
+280,Infilt Pneumo,Effu:98% Infi: 0% Pneu: 0%
+281,Nodule,Infi:78% Nodu: 0%
+282,Atelec,Atel:49%
+283,Infilt,Effu:77% Infi: 1%
+284,Cardio,Card:28%
+285,Effusi Infilt Mass,Effu:24% Infi:20% Mass: 2%
+286,Nodule,Nodu: 1%
+287,Edema Effusi Infilt,Cons:61% Edem: 0% Effu:20% Infi: 1%
+288,Consol,Cons: 1% Effu:97%
+289,Atelec,Atel:35% Effu:55%
+290,Infilt,Effu:80% Infi: 4%
+291,Atelec Consol Effusi Emphys Nodule Pneumo,Atel: 5% Cons:84% Effu: 7% Emph: 0% Nodu: 0% Pneu: 0%
+292,Atelec,Atel:10% Effu:58%
+293,Infilt,Infi:97%
+294,Infilt,Infi:85%
+295,Infilt,Effu:58% Infi: 1%
+296,Atelec Cardio Effusi,Atel: 2% Card: 2% Effu:50%
+297,Nodule,Effu:96% Nodu: 0%
+298,Infilt,Effu:100% Infi: 0%
+299,Atelec Effusi,Atel: 6% Effu:90%
+300,Effusi,Effu:78%
+301,Infilt,Infi: 2% Pleu:67%
+302,Pneumo,Effu:85% Pneu: 0%
+303,Infilt,Effu:61% Infi: 1%
+304,Atelec,Atel: 0% Effu:100%
+305,Effusi,Effu:100%
+306,Infilt Mass,Effu:65% Infi: 3% Mass: 0%
+307,Edema,Edem: 0% Effu:63%
+308,Infilt Mass,Effu:68% Infi: 7% Mass: 0%
+309,Pneumo,Effu:76% Pneu: 0%
+310,Pleura,Pleu: 3%
+311,Consol Mass Nodule Pneumo,Cons: 3% Effu:59% Mass: 0% Nodu: 0% Pneu: 0%
+312,Infilt,Effu:75% Infi:10%
+313,Edema Effusi,Edem: 0% Effu:37%
+314,Effusi Infilt,Effu:92% Infi: 6%
+315,Infilt,Atel:65% Infi:23%
+316,Effusi Pneumo,Effu:78% Pneu: 0%
+317,Atelec Infilt,Atel: 2% Effu:68% Infi: 6%
+318,Atelec Effusi,Atel:12% Effu:82%
+319,Effusi,Effu:84%
+320,Effusi Infilt Mass Nodule,Atel:51% Effu:30% Infi: 8% Mass: 0% Nodu: 0%
+321,Effusi Nodule,Effu:84% Nodu: 1%
+322,Infilt,Infi: 1%
+323,Infilt Nodule Pleura,Effu:100% Infi: 0% Nodu: 0% Pleu: 0%
+324,Effusi,Effu:100%
+325,Atelec Infilt,Atel: 4% Effu:96% Infi: 0%
+326,Infilt,Effu:71% Infi: 1%
+327,Mass Pneumo,Effu:97% Mass: 0% Pneu: 0%
+328,Infilt,Effu:71% Infi: 9%
+329,Emphys,Emph: 1%
+330,Pneumo,Effu:69% Pneu: 0%
+331,Mass Nodule,Infi:100% Mass: 0% Nodu: 0%
+332,Atelec,Atel: 2% Effu:74%
+333,Infilt,Infi:18%
+334,Edema Effusi Infilt,Edem: 0% Effu:76% Infi: 9%
+335,Effusi Infilt,Atel:62% Effu: 5% Infi:31%
+336,Infilt,Effu:57% Infi: 2%
+337,Infilt,Effu:67% Infi:25%
+338,Pleura,Infi:93% Pleu: 0%
+339,Atelec,Atel: 6% Effu:83%
+340,Infilt,Infi: 6%
+341,Nodule,Nodu: 2%
+342,Infilt,Effu:55% Infi:22%
+343,Consol,Cons:31%
+344,Effusi Infilt,Effu:39% Infi:27%
+345,Pleura,Effu:97% Pleu: 0%
+346,Infilt,Card:99% Infi: 0%
+347,Nodule,Effu:100% Nodu: 0%
+348,Atelec Effusi Infilt,Atel:12% Effu:49% Infi:16%
+349,Atelec Effusi,Atel: 3% Effu:96%
+350,Infilt,Effu:68% Infi: 3%
+351,Infilt,Effu:92% Infi: 3%
+352,Atelec Effusi,Atel: 4% Cons:66% Effu:20%
+353,Nodule,Effu:93% Nodu: 0%
+354,Emphys,Effu:90% Emph: 0%
+355,Infilt,Infi: 8%
+356,Pneumo,Effu:92% Pneu: 0%
+357,Nodule,Effu:88% Nodu: 0%
+358,Infilt,Infi: 2%
+359,Effusi Infilt,Effu:79% Infi: 0%
+360,Emphys,Emph: 0%
+361,Effusi,Effu:79%
+362,Infilt,Card:63% Infi:11%
+363,Cardio Consol Effusi,Card: 0% Cons:89% Effu: 3%
+364,Pneumo,Effu:87% Pneu: 0%
+365,Infilt,Effu:88% Infi: 2%
+366,Atelec Infilt,Atel: 4% Effu:92% Infi: 1%
+367,Effusi,Effu:76%
+368,Infilt,Effu:74% Infi: 1%
+369,Effusi Emphys Pneumo,Effu:96% Emph: 0% Pneu: 0%
+370,Atelec Consol,Atel:17% Cons:11% Effu:63%
+371,Cardio,Card: 1% Effu:69%
+372,Consol Infilt,Cons: 1% Effu:70% Infi: 2%
+373,Pneumo,Effu:94% Pneu: 1%
+374,Pneumo,Pneu: 3%
+375,Infilt Pneumo,Effu:82% Infi: 0% Pneu: 0%
+376,Infilt Nodule,Effu:94% Infi: 0% Nodu: 0%
+377,Nodule,Effu:67% Nodu: 1%
+378,Atelec,Atel:22% Effu:69%
+379,Infilt,Effu:67% Infi: 2%
+380,Consol Infilt,Cons:48% Infi: 6%
+381,Atelec,Atel:17% Effu:59%
+382,Cardio Effusi,Card: 1% Effu:56%
+383,Effusi Infilt,Effu:99% Infi: 0%
+384,Atelec,Atel: 3% Effu:80%
+385,Consol Infilt,Atel:58% Cons:28% Infi: 3%
+386,Pleura,Pleu:18%
+387,Effusi Pleura,Effu:78% Pleu: 2%
+388,Consol,Cons: 8% Effu:80%
+389,Edema Infilt,Edem: 6% Infi:23%
+390,Atelec,Atel: 6% Effu:91%
+391,Cardio Infilt,Card: 1% Infi:25%
+392,Atelec Pleura,Atel: 2% Effu:98% Pleu: 0%
+393,Atelec,Atel: 8% Effu:92%
+394,Nodule,Card:71% Nodu: 4%
+395,Atelec,Atel: 7%
+396,Atelec Cardio Effusi,Atel: 2% Card: 0% Effu:87%
+397,Atelec Cardio Infilt,Atel: 3% Card: 0% Effu:94% Infi: 0%
+398,Infilt,Effu:56% Infi: 4%
+399,Nodule,Effu:93% Nodu: 0%
+400,Nodule,Nodu: 0%
+401,Mass,Effu:99% Mass: 0%
+402,Nodule,Nodu: 1%
+403,Infilt,Effu:95% Infi: 0%
+404,Effusi,Atel:61% Effu:21%
+405,Effusi,Atel:57% Effu:21%
+406,Cardio Infilt,Card: 0% Effu:73% Infi: 1%
+407,Infilt Nodule,Effu:87% Infi: 3% Nodu: 0%
+408,Consol Effusi Pneumo,Cons: 0% Effu:96% Pneu: 0%
+409,Edema,Edem: 0% Effu:61%
+410,Effusi,Effu:74%
+411,Infilt,Effu:76% Infi: 0%
+412,Fibros,Fibr: 0%
+413,Fibros,Effu:99% Fibr: 0%
+414,Pneumo,Effu:87% Pneu: 1%
+415,Effusi,Effu:96%
+416,Consol Pleura,Cons: 0% Effu:99% Pleu: 1%
+417,Atelec Effusi,Atel: 2% Effu:77%
+418,Cardio Effusi,Card: 0% Effu:100%
+419,Atelec,Atel:18% Effu:78%
+420,Effusi,Effu:97%
+421,Infilt,Effu:85% Infi: 5%
+422,Cardio,Card: 0% Effu:67%
+423,Infilt,Infi: 2%
+424,Atelec Cardio Effusi Fibros Infilt,Atel: 6% Card: 0% Effu:91% Fibr: 0% Infi: 0%
+425,Atelec Effusi,Atel: 2% Cons:92% Effu: 1%
+426,Atelec,Atel:66%
+427,Effusi,Effu:83%
+428,Infilt,Effu:72% Infi: 1%
+429,Cardio,Card: 0% Effu:62%
+430,Atelec Effusi Infilt,Atel:11% Effu:69% Infi: 1%
+431,Cardio,Card: 6% Effu:91%
+432,Effusi,Effu:56%
+433,Fibros,Effu:58% Fibr: 0%
+434,Infilt Pleura Pneumo,Infi: 1% Pleu: 2% Pneu: 0%
+435,Fibros,Effu:97% Fibr: 0%
+436,Pleura,Effu:90% Pleu: 0%
+437,Nodule,Effu:72% Nodu: 1%
+438,Infilt,Infi: 4%
+439,Effusi Infilt,Effu:34% Infi:10%
+440,Atelec Edema,Atel: 7% Edem: 0% Effu:79%
+441,Consol Pneumo,Cons: 6% Effu:82% Pneu: 0%
+442,Pleura Pneumo,Effu:77% Pleu: 0% Pneu: 1%
+443,Pleura,Effu:77% Pleu: 3%
+444,Effusi Pleura,Effu:84% Pleu: 0%
+445,Atelec,Atel:10% Effu:82%
+446,Mass Nodule,Effu:51% Mass: 0% Nodu: 0%
+447,Infilt,Infi:19%
+448,Consol Infilt,Cons:15% Effu:58% Infi: 1%
+449,Edema Infilt,Edem: 0% Effu:91% Infi: 3%
+450,Pneumo,Pneu: 0%
+451,Pneumo,Effu:95% Pneu: 0%
+452,Effusi,Effu:19%
+453,Infilt,Effu:98% Infi: 0%
+454,Effusi,Effu:40%
+455,Atelec Consol,Atel:24% Cons:32%
+456,Effusi,Effu:63%
+457,Atelec Effusi Infilt,Atel: 1% Effu:81% Infi: 5%
+458,Edema,Edem: 0% Effu:88%
+459,Infilt,Effu:61% Infi: 2%
+460,Infilt Nodule,Effu:65% Infi: 8% Nodu: 1%
+461,Atelec,Atel:12% Effu:76%
+462,Atelec Infilt,Atel: 6% Infi: 5%
+463,Atelec,Atel:36% Effu:61%
+464,Nodule,Nodu:12%
+465,Emphys,Effu:61% Emph: 0%
+466,Atelec Effusi,Atel: 2% Effu:86%
+467,Infilt,Infi:30%
+468,Infilt,Infi:18%
+469,Consol,Cons: 5% Infi:58%
+470,Effusi Infilt,Effu:83% Infi: 1%
+471,Effusi,Effu:79%
+472,Infilt,Effu:53% Infi: 2%
+473,Infilt,Infi:20%
+474,Infilt Nodule,Effu:83% Infi: 1% Nodu: 0%
+475,Infilt,Effu:83% Infi: 2%
+476,Consol,Cons: 3% Effu:57%
+477,Effusi,Effu:81%
+478,Infilt,Infi:27%
+479,Atelec Mass,Atel: 5% Effu:80% Mass: 1%
+480,Effusi Nodule,Effu:25% Nodu: 1%
+481,Effusi Pleura Pneumo,Effu:94% Pleu: 2% Pneu: 0%
+482,Cardio Effusi,Card: 1% Effu:53%
+483,Atelec,Atel:20% Effu:64%
+484,Infilt,Effu:97% Infi: 0%
+485,Edema,Edem: 0%
+486,Cardio,Card: 2% Effu:83%
+487,Infilt,Infi:52%
+488,Emphys Infilt Pleura,Effu:78% Emph: 0% Infi: 1% Pleu: 2%
+489,Atelec,Atel: 4% Cons:66%
+490,Atelec Consol Effusi,Atel: 1% Cons: 2% Effu:29%
+491,Pleura,Effu:100% Pleu: 0%
+492,Infilt,Effu:80% Infi: 4%
+493,Cardio,Card:27% Effu:56%
+494,Cardio,Card: 0% Effu:88%
+495,Cardio,Card:16%
+496,Mass Pneumo,Effu:84% Mass: 2% Pneu: 7%
+497,Effusi,Effu:88%
+498,Mass,Cons:77% Mass: 0%
+499,Infilt,Effu:59% Infi: 7%
+500,Infilt,Effu:82% Infi:10%
+501,Atelec Consol Effusi,Atel: 8% Cons:10% Effu:33%
+502,Cardio Effusi Pneumo,Card: 0% Effu:90% Pneu: 0%
+503,Effusi,Effu:88%
+504,Fibros Infilt,Effu:96% Fibr: 0% Infi: 0%
+505,Atelec Consol Effusi,Atel: 4% Cons: 2% Effu:80%
+506,Cardio Consol,Card: 2% Cons:36%
+507,Cardio Consol,Card: 0% Cons: 7% Effu:82%
+508,Consol Pleura,Cons: 0% Effu:99% Pleu: 0%
+509,Atelec,Atel: 2% Effu:77%
+510,Infilt,Cons:80% Infi: 2%
+511,Fibros,Fibr: 1%
+512,Infilt,Effu:82% Infi: 8%
+513,Infilt,Effu:89% Infi: 6%
+514,Infilt,Atel:67% Infi: 0%
+515,Infilt,Effu:95% Infi: 0%
+516,Infilt Nodule,Effu:80% Infi: 0% Nodu: 0%
+517,Cardio Emphys,Card:38% Effu:53% Emph: 0%
+518,Emphys Infilt,Effu:50% Emph: 0% Infi: 9%
+519,Fibros Pleura,Effu:65% Fibr: 1% Pleu: 6%
+520,Infilt Pleura,Effu:97% Infi: 1% Pleu: 0%
+521,Atelec,Atel: 7% Effu:92%
+522,Effusi,Effu:64%
+523,Cardio Effusi,Card: 1% Effu:35%
+524,Atelec,Atel:45%
+525,Pneumo,Effu:94% Pneu: 0%
+526,Pneumo,Atel:51% Pneu: 0%
+527,Atelec Consol,Atel: 2% Cons: 5% Effu:80%
+528,Atelec,Atel:14%
+529,Emphys,Effu:97% Emph: 0%
+530,Effusi Pleura,Effu:17% Pleu: 4%
+531,Atelec Infilt,Atel:54% Infi: 1%
+532,Infilt,Effu:87% Infi: 5%
+533,Atelec,Atel:82%
+534,Pneumo,Effu:50% Pneu: 1%
+535,Infilt,Edem:56% Infi:18%
+536,Infilt,Effu:88% Infi: 8%
+537,Mass,Effu:91% Mass: 1%
+538,Pleura,Pleu:27%
+539,Emphys Mass,Effu:100% Emph: 0% Mass: 0%
+540,Emphys Pleura,Atel:55% Emph: 0% Pleu: 1%
+541,Nodule,Nodu: 1%
+542,Effusi,Effu:60%
+543,Atelec Infilt,Atel:19% Infi:12%
+544,Infilt,Cons:72% Infi: 3%
+545,Cardio,Card: 1% Effu:68%
+546,Atelec Infilt,Atel: 9% Effu:85% Infi: 2%
+547,Atelec,Atel:11%
+548,Mass Nodule,Effu:76% Mass: 0% Nodu: 0%
+549,Mass,Effu:87% Mass: 0%
+550,Cardio Infilt,Card: 0% Cons:78% Infi: 0%
+551,Effusi,Effu:46%
+552,Infilt,Infi: 2%
+553,Infilt,Effu:81% Infi: 1%
+554,Mass Nodule,Mass: 1% Nodu: 1%
+555,Nodule,Nodu: 0%
+556,Effusi,Effu:89%
+557,Atelec Infilt Pleura,Atel: 0% Effu:78% Infi:17% Pleu: 0%
+558,Effusi Mass Pleura,Effu:100% Mass: 0% Pleu: 0%
+559,Infilt,Effu:92% Infi: 0%
+560,Infilt,Effu:75% Infi: 0%
+561,Fibros,Fibr: 1% Pleu:51%
+562,Pleura,Effu:59% Pleu: 6%
+563,Atelec,Atel: 0% Infi:88%
+564,Mass,Atel:68% Mass: 0%
+565,Atelec Effusi Fibros,Atel:40% Effu:58% Fibr: 0%
+566,Atelec Infilt,Atel:17% Effu:55% Infi: 3%
+567,Atelec,Atel:66%
+568,Cardio Effusi,Card: 0% Effu:96%
+569,Infilt,Infi: 9%
+570,Consol Pneumo,Cons: 0% Effu:97% Pneu: 0%
+571,Effusi Infilt,Effu:74% Infi: 4%
+572,Infilt,Infi: 5%
+573,Effusi,Effu:96%
+574,Nodule,Effu:96% Nodu: 0%
+575,Mass Nodule Pleura,Effu:92% Mass: 2% Nodu: 1% Pleu: 1%
+576,Pneumo,Cons:57% Pneu: 0%
+577,Hernia,Effu:70% Hern: 1%
+578,Cardio Pleura,Card: 0% Effu:91% Pleu: 0%
+579,Cardio Fibros Infilt,Card: 1% Fibr: 0% Infi: 2%
+580,Effusi,Cons:62% Effu:33%
+581,Atelec Infilt,Atel:22% Effu:66% Infi:10%
+582,Effusi Nodule,Effu:92% Nodu: 0%
+583,Infilt,Effu:90% Infi: 0%
+584,Infilt,Infi: 0%
+585,Fibros Infilt,Fibr: 0% Infi:67%
+586,Pleura,Effu:94% Pleu: 0%
+587,Atelec Effusi Infilt,Atel: 7% Effu:78% Infi: 9%
+588,Atelec,Atel: 3% Effu:59%
+589,Effusi Infilt,Effu: 3% Infi:89%
+590,Nodule,Nodu: 2%
+591,Infilt,Infi: 6%
+592,Infilt,Infi: 5%
+593,Cardio Effusi,Card: 7% Effu:35%
+594,Pleura,Effu:84% Pleu: 1%
+595,Atelec Effusi Infilt,Atel:20% Effu:73% Infi: 5%
+596,Consol,Cons: 0% Effu:91%
+597,Atelec,Atel:82%
+598,Atelec Fibros,Atel:12% Effu:69% Fibr: 0%
+599,Nodule,Effu:62% Nodu: 0%
+600,Consol Effusi,Cons: 4% Effu:88%
+601,Effusi,Effu:61%
+602,Consol,Cons:29%
+603,Mass Pneumo,Effu:78% Mass: 0% Pneu: 0%
+604,Pleura Pneumo,Pleu: 2% Pneu: 5%
+605,Effusi Pleura Pneumo,Effu:77% Pleu: 0% Pneu: 0%
+606,Infilt,Infi:13%
+607,Edema Infilt,Edem: 0% Effu:85% Infi: 7%
+608,Infilt,Infi: 7%
+609,Infilt Pneumo,Effu:61% Infi: 1% Pneu: 1%
+610,Cardio,Card: 0%
+611,Mass Nodule,Effu:70% Mass: 0% Nodu: 1%
+612,Atelec,Atel:73%
+613,Infilt,Infi: 3%
+614,Edema,Edem: 0%
+615,Infilt Nodule,Effu:91% Infi: 5% Nodu: 0%
+616,Atelec,Atel: 5%
+617,Atelec Infilt Pneumo,Atel:21% Effu:75% Infi: 2% Pneu: 0%
+618,Atelec Consol Infilt Pneumo,Atel: 3% Cons:33% Infi:19% Pneu: 0%
+619,Effusi,Effu:74%
+620,Atelec Infilt,Atel: 5% Effu:77% Infi: 6%
+621,Cardio,Card: 0% Effu:56%
+622,Infilt Pneumo,Infi: 7% Pneu: 2%
+623,Atelec Cardio Effusi,Atel: 2% Card: 0% Cons:56% Effu:42%
+624,Edema Infilt,Cons:51% Edem: 1% Infi: 5%
+625,Infilt,Infi:37%
+626,Infilt,Cons:70% Infi: 1%
+627,Fibros,Effu:62% Fibr: 0%
+628,Emphys,Effu:71% Emph: 0%
+629,Atelec,Atel:16% Effu:61%
+630,Effusi Nodule,Effu:79% Nodu: 0%
+631,Infilt,Effu:97% Infi: 0%
+632,Infilt,Infi:34%
+633,Infilt,Effu:82% Infi: 0%
+634,Fibros Infilt Pleura,Cons:71% Fibr: 0% Infi:13% Pleu: 0%
+635,Cardio,Card:47%
+636,Infilt,Infi:11%
+637,Nodule,Effu:76% Nodu: 0%
+638,Effusi Infilt,Effu:90% Infi: 3%
+639,Infilt,Effu:67% Infi: 1%
+640,Hernia Mass,Effu:54% Hern: 0% Mass: 0%
+641,Effusi Infilt,Effu:86% Infi: 0%
+642,Pneumo,Effu:79% Pneu: 1%
+643,Nodule,Nodu: 1%
+644,Cardio Effusi Infilt,Card: 0% Effu:93% Infi: 0%
+645,Cardio Effusi Infilt,Card: 3% Effu:81% Infi:10%
+646,Atelec,Atel:32%
+647,Atelec,Atel: 8% Effu:65%
+648,Consol Effusi Infilt,Cons: 2% Effu:21% Infi:40%
+649,Effusi,Effu:89%
+650,Atelec Consol Effusi Fibros Pleura,Atel: 1% Cons: 0% Effu:99% Fibr: 0% Pleu: 0%
+651,Emphys Mass Pneumo,Emph: 0% Mass: 0% Pleu:60% Pneu: 0%
+652,Pneumo,Effu:93% Pneu: 0%
+653,Effusi,Effu:76%
+654,Consol Effusi Infilt Pleura,Cons: 0% Effu:95% Infi: 0% Pleu: 1%
+655,Atelec Infilt,Atel: 6% Effu:88% Infi: 2%
+656,Infilt,Cons:50% Infi: 6%
+657,Infilt,Effu:89% Infi: 1%
+658,Emphys,Effu:67% Emph: 0%
+659,Infilt,Atel:91% Infi: 4%
+660,Atelec Hernia,Atel: 0% Card:75% Hern: 1%
+661,Effusi,Effu:29%
+662,Consol,Cons: 0% Effu:99%
+663,Emphys,Effu:54% Emph: 0%
+664,Emphys Pneumo,Effu:99% Emph: 0% Pneu: 0%
+665,Emphys,Effu:97% Emph: 0%
+666,Effusi,Effu:54%
+667,Infilt Pneumo,Effu:90% Infi: 0% Pneu: 2%
+668,Cardio Infilt,Card: 4% Infi:18%
+669,Cardio,Card:52%
+670,Infilt,Infi: 4%
+671,Consol,Cons: 1% Effu:94%
+672,Infilt,Infi:10%
+673,Fibros Pleura Pneumo,Effu:53% Fibr: 0% Pleu: 2% Pneu: 5%
+674,Atelec Effusi,Atel: 4% Effu:86%
+675,Emphys,Effu:99% Emph: 0%
+676,Atelec Emphys,Atel:25% Emph: 1%
+677,Mass,Effu:60% Mass: 0%
+678,Atelec Effusi,Atel: 3% Effu:95%
+679,Consol,Cons:16%
+680,Infilt,Effu:94% Infi: 0%
+681,Mass Pleura,Card:55% Mass: 1% Pleu: 5%
+682,Infilt Mass,Effu:69% Infi: 0% Mass: 0%
+683,Atelec Effusi Emphys Infilt,Atel:50% Effu:32% Emph: 0% Infi: 2%
+684,Effusi Infilt,Effu:46% Infi:11%
+685,Atelec,Atel:48%
+686,Effusi,Effu:53%
+687,Atelec Emphys Infilt Mass Pneumo,Atel: 0% Emph: 0% Infi: 0% Mass: 0% Pneu: 0%
+688,Effusi,Effu:80%
+689,Pleura,Effu:96% Pleu: 0%
+690,Mass Nodule,Effu:60% Mass: 1% Nodu: 1%
+691,Infilt,Infi: 2%
+692,Pleura,Effu:73% Pleu: 1%
+693,Effusi,Card:74% Effu:23%
+694,Effusi Nodule,Effu:64% Nodu: 0%
+695,Effusi,Effu:73%
+696,Pleura,Effu:87% Pleu: 2%
+697,Emphys Fibros,Emph: 0% Fibr: 0%
+698,Consol Infilt,Cons:12% Infi: 6%
+699,Mass,Effu:54% Mass: 2%
+700,Atelec Consol Mass Pneumo,Atel:48% Cons: 0% Effu:51% Mass: 0% Pneu: 0%
+701,Atelec Consol Mass Pneumo,Atel: 7% Cons: 0% Effu:93% Mass: 0% Pneu: 0%
+702,Fibros,Effu:86% Fibr: 0%
+703,Atelec,Atel:26% Effu:62%
+704,Effusi,Effu:35%
+705,Infilt,Infi:16%
+706,Infilt,Effu:100% Infi: 0%
+707,Atelec,Atel: 8% Effu:91%
+708,Effusi Infilt,Effu:32% Infi:20%
+709,Emphys Pneumo,Cons:66% Emph: 0% Pneu: 0%
+710,Pneumo,Effu:51% Pneu: 0%
+711,Effusi,Effu:87%
+712,Nodule,Effu:65% Nodu: 0%
+713,Atelec Effusi Mass,Atel: 4% Effu:88% Mass: 0%
+714,Pneumo,Pneu: 1%
+715,Nodule,Nodu: 0%
+716,Nodule,Effu:76% Nodu: 0%
+717,Hernia,Hern: 0%
+718,Mass,Effu:69% Mass: 0%
+719,Atelec,Atel:23% Effu:76%
+720,Pneumo,Effu:89% Pneu: 4%
+721,Mass,Effu:76% Mass: 0%
+722,Effusi,Effu:82%
+723,Effusi,Effu:61%
+724,Emphys Nodule Pneumo,Effu:59% Emph: 0% Nodu: 1% Pneu: 0%
+725,Pneumo,Effu:61% Pneu: 1%
+726,Effusi,Effu:65%
+727,Effusi Infilt,Effu:92% Infi: 3%
+728,Atelec Effusi,Atel: 3% Effu:56%
+729,Atelec Pneumo,Atel: 0% Effu:96% Pneu: 0%
+730,Effusi,Effu:65%
+731,Consol Effusi Mass,Cons: 8% Effu:88% Mass: 0%
+732,Nodule,Effu:87% Nodu: 1%
+733,Infilt Pleura,Effu:67% Infi: 6% Pleu: 1%
+734,Infilt,Effu:85% Infi: 4%
+735,Effusi,Effu:86%
+736,Nodule,Effu:84% Nodu: 0%
+737,Nodule,Nodu: 0%
+738,Atelec,Atel: 2% Effu:72%
+739,Effusi,Atel:57% Effu:40%
+740,Pleura,Effu:90% Pleu: 0%
+741,Effusi,Effu:95%
+742,Atelec Infilt,Atel: 2% Effu:61% Infi:13%
+743,Infilt Mass,Effu:66% Infi: 3% Mass: 1%
+744,Effusi Mass,Effu:77% Mass: 0%
+745,Cardio,Card:16% Effu:70%
+746,Pleura,Effu:89% Pleu: 0%
+747,Atelec Edema Effusi Infilt Pneumo,Atel: 0% Edem: 1% Effu:70% Infi:27% Pneu: 0%
+748,Effusi Pneumo,Effu:94% Pneu: 0%
+749,Effusi Infilt,Effu:51% Infi:18%
+750,Edema,Edem: 0% Effu:65%
+751,Edema Infilt Mass Pneumo Pneumo,Edem: 1% Infi:22% Mass: 0% Pneu: 0% Pneu: 0%
+752,Effusi,Effu:95%
+753,Infilt Pleura,Effu:100% Infi: 0% Pleu: 0%
+754,Effusi Infilt Pneumo,Effu:89% Infi: 6% Pneu: 0%
+755,Cardio Effusi Infilt,Card: 0% Effu:42% Infi:38%
+756,Consol,Cons: 8% Effu:80%
+757,Edema Infilt,Edem: 1% Effu:60% Infi:12%
+758,Atelec Consol Pneumo,Atel: 0% Cons: 0% Pneu: 0%
+759,Atelec Emphys Infilt Pneumo,Atel: 8% Effu:90% Emph: 0% Infi: 1% Pneu: 0%
+760,Pneumo,Pneu: 0%
+761,Atelec Effusi,Atel:11% Effu:53%
+762,Effusi,Effu:90%
+763,Infilt,Infi:16%
+764,Infilt,Infi:54%
+765,Pneumo,Pneu: 2%
+766,Infilt,Infi:28%
+767,Atelec,Atel: 1% Effu:64%
+768,Atelec Effusi Pneumo,Atel: 7% Effu:60% Pneu: 0%
