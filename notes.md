@@ -36,7 +36,16 @@ NIH sample
 | 50%   | .08           | .40               | .09             | .26                 | .33      |
 
 
+### Xception
 
+1. train / test size: 30% / 70%.
+
+| noise | training loss | training accuracy | validation loss | validation accuracy | Accuracy |
+| ----- | ------------- | ----------------- | --------------- | ------------------- | -------- |
+| 0%    | .01           | .94               | .05             | .64                 | .64      |
+| 10%   | .01           | .95               | .07             | .56                 | .62     |
+| 30%   | .03           | .91               | .07             | .49                 | .51      |
+| 50%   | .06		| .45               | .09             | .22                 | .42     |
 
 
 ## Noise labels selection
