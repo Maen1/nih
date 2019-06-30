@@ -106,6 +106,14 @@ from keras.layers import Input, GaussianNoise, Conv2D
 from keras.applications.xception import Xception
 from keras.applications.mobilenet import MobileNet
 from keras.layers import Dropout, GlobalAveragePooling2D, Dense, Dropout, Flatten
+import keras.backend as K
+
+def multitask_loss(y_true, y_pred):
+    # Avoid divide by 0
+    y_pred = K.clip(y_pred, K.epsilon(), 1 - K.epsilon())
+    # Multi-task loss
+    return K.mean(K.sum(- y_true * K.log(y_pred) - (1 - y_true) * K.log(1 - y_pred), axis=1))
+
 
 base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights=None)
 model = Sequential()
@@ -117,7 +125,7 @@ model.add(Dropout(0.3))
 model.add(Dense(256))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
-model.compile(loss='mean_squared_logarithmic_error', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
+model.compile(loss=multitask_loss, optimizer='adamax', metrics=['top_k_categorical_accuracy'])
 model.summary()
 
 
@@ -195,8 +203,8 @@ y_pred = []
 y_pred_y_true = pd.DataFrame(columns=['y_true', 'y_pred'] )
 for (idx) in zip(sickest_idx):
     # c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
-    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
-    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
+    stat_str = [n_class[:] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
+    pred_str = ['%s ' % (n_class[:]) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     strA = ' '.join(stat_str)
     strP = ' '.join(pred_str)
     y_true.append(strA)

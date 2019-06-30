@@ -101,7 +101,7 @@ X_train.astype('float32')
 
 from keras.models import load_model
 
-model = load_model('./nih_model_50_55.h5')
+model = load_model('./models/nih_model_50_01.h5')
 
 score, acc = model.evaluate(X_test, y_test, batch_size=64)
 predictions = model.predict(X_test, batch_size = 64, verbose = True)
@@ -120,8 +120,8 @@ y_pred = []
 y_pred_y_true = pd.DataFrame(columns=['y_true', 'y_pred'] )
 for (idx) in zip(sickest_idx):
     # c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
-    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
-    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
+    stat_str = [n_class[:] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
+    pred_str = ['%s ' % (n_class[:]) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     strA = ' '.join(stat_str)
     strP = ' '.join(pred_str)
     y_true.append(strA)
@@ -132,10 +132,12 @@ for (idx) in zip(sickest_idx):
 # print(y_true[0:10])
 # print(Pred[0:10])
 y_pred_y_true['y_true'] = y_true
-y_pred_y_true['Predicted'] = y_pred
+y_pred_y_true['y_pred'] = y_pred
 
+from sklearn.metrics import hamming_loss
+print('Hamming Loss:', hamming_loss(y_true, y_pred))
 class_names = all_labels
 print(y_pred_y_true.tail(10))
-pred_y_true.to_csv("nih_predictions_50_55.csv", header=True, index=True)
+#y_pred_y_true.to_csv("test_nih_predictions_50_55.csv", header=True, index=True)
 
 

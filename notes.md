@@ -1,10 +1,12 @@
 NIH sample
 
-1. dataset size: 4000 images.
+1. dataset size: 2560 images.
 2. epochs: 50.
 3. training time: 30 minutes; 1 gpu.
-4. Algorithm: MobileNet.
-5. train / test size: 70% / 30%.
+
+### MobileNet
+
+1. train / test size: 70% / 30%.
 
 | noise | training loss | training accuracy | validation loss | validation accuracy | Accuracy |
 | ----- | ------------- | ----------------- | --------------- | ------------------- | -------- |
@@ -13,9 +15,7 @@ NIH sample
 | 30%   | .06           | .49               | .10             | .32                 | .56      |
 | 50%   | .07           | .35               | .10             | .20                 | .42      |
 
-
-
-7. train / test size: 50% / 50%.
+2. train / test size: 50% / 50%.
 
 | noise | training loss | training accuracy | validation loss | validation accuracy | Accuracy |
 | ----- | ------------- | ----------------- | --------------- | ------------------- | ----- |
@@ -26,7 +26,7 @@ NIH sample
 
 
 
-8. train / test size: 30% / 70%.
+3. train / test size: 30% / 70%.
 
 | noise | training loss | training accuracy | validation loss | validation accuracy | Accuracy |
 | ----- | ------------- | ----------------- | --------------- | ------------------- | -------- |
@@ -34,6 +34,7 @@ NIH sample
 | 10%   | .02           | .88               | .08             | .54                 | .57      |
 | 30%   | .03           | .84               | .09             | .37                 | .48      |
 | 50%   | .08           | .40               | .09             | .26                 | .33      |
+
 
 
 ### Xception
@@ -56,7 +57,7 @@ NIH sample
 | 30%   | .06           | .60               | .10             | .59                 | .59      |
 | 50%   | .02		    | .91               | .08             | .22                 | .46      |
 
-2. train / test size: 70% / 30%.
+3. train / test size: 70% / 30%.
 
 | noise | training loss | training accuracy | validation loss | validation accuracy | Accuracy |
 | ----- | ------------- | ----------------- | --------------- | ------------------- | -------- |
