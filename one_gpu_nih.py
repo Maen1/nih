@@ -127,13 +127,13 @@ model.add(Dropout(0.3))
 model.add(Dense(256))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
-model.compile(loss=multitask_loss, optimizer='adamax', metrics=['top_k_categorical_accuracy'])
+model.compile(loss='mean_squared_logarithmic_error', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
 model.summary()
 #mean_squared_logarithmic_error
 
 history = model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
 
-model.save('../nih_sample/xception_nih_model_70_01.h5')
+model.save('../nih_sample/xception_nih_model_half_70_01.h5')
 def history_plot(history):
     plt.plot(history.history['top_k_categorical_accuracy'])
     plt.plot(history.history['val_top_k_categorical_accuracy'])
@@ -166,7 +166,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./xception_images/xception_accuracy_70_01.png')
+plt.savefig('./xception_images/xception_accuracy_half_70_01.png')
 
 # summarize history for loss
 plt.plot(history.history['loss'])
@@ -175,7 +175,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./xception_images/xception_loss_70_01.png')
+plt.savefig('./xception_images/xception_loss_half_70_01.png')
 
 
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
@@ -185,7 +185,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('./xception_images/xception_trained_net_70_01.png')
+fig.savefig('./xception_images/xception_trained_net_half_70_01.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -197,7 +197,7 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
     for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('./xception_images/xception_trained_img_predictions_70_01.png')
+fig.savefig('./xception_images/xception_trained_img_predictions_half_70_01.png')
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<.2)
 y_true = []
@@ -221,6 +221,6 @@ y_pred_y_true['y_pred'] = y_pred
 
 class_names = all_labels
 print(y_pred_y_true.tail(10))
-y_pred_y_true.to_csv("./xception_csv/xception_nih_predictions_70_01.csv", header=True, index=True)
+y_pred_y_true.to_csv("./xception_csv/xception_nih_predictions_half_70_01.csv", header=True, index=True)
 
  
