@@ -34,15 +34,17 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 #         'Pleural_Thickening','Consolidation', 'Pneumothorax', 'Mass', 'Nodule', 
 #         'Atelectasis', 'Effusion', 'Infiltration']
 
-# work on 70 percent of the dataset
+# use half of the dataset 
 df_half = dataframe.sample(frac = 0.50, random_state = 1)
+
+# work on 70 percent of the dataset
 df_sample = df_half.sample(frac = 0.70, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
 df_sample_train = df_sample.sample(frac = 0.01, random_state = 1)
 # isolated for the test
-df_sample_test = dataframe.drop(df_sample.index)
+df_sample_test = df_half.drop(df_sample.index)
 
 
 df_sample = df_sample.drop(df_sample_train.index)
