@@ -90,7 +90,7 @@ parallel_model.summary()
 
 history = parallel_model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
 
-model.save('../nih_sample/xception_nih_model_all.h5')
+parallel_model.save('../nih_sample/xception_nih_model_all.h5')
 def history_plot(history):
     plt.plot(history.history['top_k_categorical_accuracy'])
     plt.plot(history.history['val_top_k_categorical_accuracy'])
@@ -108,8 +108,8 @@ def history_plot(history):
     plt.show()
 
 # history_plot(history)
-score, acc = model.evaluate(X_test, y_test, batch_size=64)
-predictions = model.predict(X_test, batch_size = 64, verbose = True)
+score, acc = parallel_model.evaluate(X_test, y_test, batch_size=64)
+predictions = parallel_model.predict(X_test, batch_size = 64, verbose = True)
 print('Score', score)
 print('Accuracy', acc)
 
