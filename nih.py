@@ -88,7 +88,7 @@ parallel_model.summary()
 
 
 
-history = model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
+history = parallel_model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
 
 model.save('../nih_sample/xception_nih_model_all.h5')
 def history_plot(history):
