@@ -19,13 +19,14 @@ all_image_paths = {os.path.basename(x): x for x in
                    glob(os.path.join('../nih_sample/','images', '*.png'))}
 
 # lables 
-dataframe = pd.read_csv('../nih_sample/sample_labels.csv')
+dataframe = pd.read_csv('./sample_labels.csv')
 
 dataframe['path'] = dataframe['Image Index'].map(all_image_paths.get)
 dataframe['Patient Age'] = dataframe['Patient Age'].map(lambda x: int(x[:-1]))
-dataframe = dataframe[dataframe['Finding Labels'] != 'No Finding']
+# dataframe = dataframe[dataframe['Finding Labels'] != 'No Finding']
 all_labels = np.unique(list(chain(*dataframe['Finding Labels'].map(lambda x: x.split('|')).tolist())))
 pathology_list = all_labels
+print(pathology_list)
 dataframe['path'] = dataframe['Image Index'].map(all_image_paths.get)
 dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Patient ID', 'View Position', 
         'OriginalImageWidth', 'OriginalImageHeight', 'OriginalImagePixelSpacing_x','OriginalImagePixelSpacing_y'], axis=1)
@@ -82,16 +83,17 @@ model.add(Dense(512))
 model.add(Dropout(0.3))
 model.add(Dense(len(all_labels), activation='softmax'))
 parallel_model = multi_gpu_model(model, gpus=4)
-parallel_model.compile(loss='kullback_leibler_divergence', optimizer='adam', metrics=['accuracy'])
+parallel_model.compile(loss='mean_squared_logarithmic_error', optimizer='adamax', metrics=['top_k_categorical_accuracy'])
 parallel_model.summary()
 
 
-history = parallel_model.fit(X_train, y_train, epochs = 40, verbose=1, validation_data=(X_test, y_test))
 
-parallel_model.save('nih_model.h5')
+history = model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
+
+model.save('../nih_sample/xception_nih_model_all.h5')
 def history_plot(history):
-    plt.plot(history.history['acc'])
-    plt.plot(history.history['val_acc'])
+    plt.plot(history.history['top_k_categorical_accuracy'])
+    plt.plot(history.history['val_top_k_categorical_accuracy'])
     plt.title('model accuracy')
     plt.ylabel('accuracy')
     plt.xlabel('epoch')
@@ -106,10 +108,33 @@ def history_plot(history):
     plt.show()
 
 # history_plot(history)
-
-predictions = model.predict(X_test, batch_size = 16, verbose = True)
+score, acc = model.evaluate(X_test, y_test, batch_size=64)
+predictions = model.predict(X_test, batch_size = 64, verbose = True)
+print('Score', score)
+print('Accuracy', acc)
 
 from sklearn.metrics import roc_curve, auc
+
+print(history.history.keys())
+# summarize history for accuracy
+plt.plot(history.history['top_k_categorical_accuracy'])
+plt.plot(history.history['val_top_k_categorical_accuracy'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('./xception_images/xception_accuracy_all.png')
+
+# summarize history for loss
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_top_k_categorical_accuracy'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.savefig('./xception_images/xception_loss_all.png')
+
+
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
 for (idx, c_label) in enumerate(all_labels):
     fpr, tpr, thresholds = roc_curve(y_test[:,idx].astype(int), predictions[:,idx])
@@ -117,19 +142,41 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('barely_trained_net.png')
+fig.savefig('./xception_images/xception_trained_net_all.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
 fig, m_axs = plt.subplots(4, 4, figsize = (16, 32))
 for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
     c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
-    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, 
-                                                                  y_test[idx]) 
-                             if n_score>0.5]
-    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100)  for n_class, n_score, p_score in zip(all_labels, 
-                                                                  y_test[idx], predictions[idx]) 
-                             if (n_score>0.5) or (p_score>0.5)]
+    stat_str = [n_class[:6] for n_class, n_score in zip(all_labels, y_test[idx]) if n_score>0.5]
+    pred_str = ['%s:%2.0f%%' % (n_class[:4], p_score*100)  
+    for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('trained_img_predictions.png')
+fig.savefig('./xception_images/xception_trained_img_predictions_all.png')
+
+sickest_idx = np.argsort(np.sum(y_test, 1)<.2)
+y_true = []
+y_pred = []
+y_pred_y_true = pd.DataFrame(columns=['y_true', 'y_pred'] )
+for (idx) in zip(sickest_idx):
+    # c_ax.imshow(X_test[idx, :,:,0], cmap = 'bone')
+    stat_str = [n_class[:] for n_class, n_score in zip(all_labels, y_test[idx]) if (n_score>0.5)]
+    pred_str = ['%s ' % (n_class[:]) for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
+    strA = ' '.join(stat_str)
+    strP = ' '.join(pred_str)
+    y_true.append(strA)
+    y_pred.append(strP)
+#     print('y_true: '+', '.join(stat_str)+'\tPredected: '+', '.join(pred_str))
+
+
+# print(y_true[0:10])
+# print(Pred[0:10])
+y_pred_y_true['y_true'] = y_true
+y_pred_y_true['y_pred'] = y_pred
+
+class_names = all_labels
+print(y_pred_y_true.tail(10))
+y_pred_y_true.to_csv("./xception_csv/xception_nih_predictions_all.csv", header=True, index=True)
+

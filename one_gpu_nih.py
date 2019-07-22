@@ -23,9 +23,11 @@ dataframe = pd.read_csv('../nih_sample/sample_labels.csv')
 
 dataframe['path'] = dataframe['Image Index'].map(all_image_paths.get)
 dataframe['Patient Age'] = dataframe['Patient Age'].map(lambda x: int(x[:-1]))
-dataframe = dataframe[dataframe['Finding Labels'] != 'No Finding']
+# dataframe = dataframe[dataframe['Finding Labels'] != 'No Finding']
 all_labels = np.unique(list(chain(*dataframe['Finding Labels'].map(lambda x: x.split('|')).tolist())))
 pathology_list = all_labels
+print(pathology_list)
+
 dataframe['path'] = dataframe['Image Index'].map(all_image_paths.get)
 dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Patient ID', 'View Position', 
         'OriginalImageWidth', 'OriginalImageHeight', 'OriginalImagePixelSpacing_x','OriginalImagePixelSpacing_y'], axis=1)
