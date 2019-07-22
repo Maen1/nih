@@ -1,0 +1,385 @@
+,y_true,y_pred
+0,Nodule,Nodule 
+1,Effusion,Effusion  Infiltration 
+2,Effusion Pneumothorax,Effusion  Pneumothorax 
+3,Consolidation Infiltration Mass Nodule,Consolidation  Infiltration  Mass  Nodule 
+4,Atelectasis Infiltration,Atelectasis  Infiltration 
+5,Atelectasis Effusion,Atelectasis  Effusion  Infiltration 
+6,Infiltration,Infiltration  Nodule 
+7,Infiltration,Infiltration 
+8,Infiltration Nodule Pleural_Thickening,Edema  Infiltration  Nodule  Pleural_Thickening 
+9,Consolidation Effusion Mass,Consolidation  Effusion  Mass 
+10,Effusion Infiltration Nodule,Effusion  Infiltration  Nodule 
+11,Infiltration,Infiltration  Mass 
+12,Infiltration,Infiltration 
+13,Cardiomegaly Edema,Cardiomegaly  Edema 
+14,Effusion,Effusion 
+15,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  Mass 
+16,Atelectasis Consolidation Nodule Pleural_Thickening Pneumothorax,Atelectasis  Consolidation  Nodule  Pleural_Thickening  Pneumothorax 
+17,Atelectasis Pneumothorax,Atelectasis  Pneumothorax 
+18,Mass,Mass  Nodule 
+19,Atelectasis,Atelectasis 
+20,Infiltration,Infiltration  Mass 
+21,Atelectasis Fibrosis,Atelectasis  Fibrosis  Infiltration 
+22,Infiltration Pleural_Thickening,Infiltration  Pleural_Thickening 
+23,Atelectasis,Atelectasis 
+24,Infiltration,Infiltration 
+25,Effusion,Effusion  Infiltration 
+26,Pleural_Thickening,Mass  Pleural_Thickening 
+27,Effusion,Effusion  Infiltration 
+28,Infiltration,Infiltration 
+29,Consolidation,Consolidation 
+30,Nodule,Nodule 
+31,Consolidation,Consolidation  Infiltration 
+32,Effusion,Effusion  Mass 
+33,Fibrosis,Fibrosis  Mass 
+34,Consolidation,Consolidation  Infiltration 
+35,Edema,Edema 
+36,Atelectasis Nodule Pneumothorax,Atelectasis  Mass  Nodule  Pneumothorax 
+37,Infiltration Pneumothorax,Infiltration  Pneumothorax 
+38,Infiltration,Infiltration  Mass 
+39,Atelectasis Effusion,Atelectasis  Effusion  Nodule 
+40,Infiltration,Infiltration 
+41,Mass,Mass 
+42,Effusion Infiltration Pneumothorax,Effusion  Infiltration  Pneumothorax 
+43,Infiltration Nodule,Infiltration  Nodule 
+44,Effusion,Effusion 
+45,Atelectasis Effusion,Atelectasis  Effusion 
+46,Atelectasis Effusion,Atelectasis  Effusion 
+47,Effusion Mass,Effusion  Mass 
+48,Effusion Pneumonia,Effusion  Infiltration  Pneumonia 
+49,Nodule,Nodule 
+50,Mass,Mass  Pneumothorax 
+51,Pleural_Thickening,Infiltration  Pleural_Thickening 
+52,Atelectasis,Atelectasis  Infiltration 
+53,Infiltration,Infiltration 
+54,Infiltration,Infiltration 
+55,Effusion Pneumothorax,Effusion  Mass  Pneumothorax 
+56,Edema,Edema 
+57,Infiltration Mass,Infiltration  Mass 
+58,Effusion,Effusion  Infiltration 
+59,Infiltration,Infiltration  Mass 
+60,Effusion,Effusion 
+61,Nodule,Nodule 
+62,Effusion Mass,Effusion  Mass  Nodule 
+63,Consolidation Mass,Consolidation  Mass 
+64,Edema,Edema 
+65,Effusion,Effusion 
+66,Infiltration,Infiltration 
+67,Effusion,Effusion  Infiltration 
+68,Effusion Infiltration Nodule,Effusion  Infiltration  Nodule 
+69,Atelectasis,Atelectasis  Pneumothorax 
+70,Cardiomegaly Effusion,Cardiomegaly  Effusion 
+71,Atelectasis Effusion Infiltration Mass,Atelectasis  Effusion  Infiltration  Mass 
+72,Emphysema Pleural_Thickening,Emphysema  Mass  Pleural_Thickening 
+73,Infiltration,Infiltration 
+74,Pneumothorax,Pneumothorax 
+75,Pneumothorax,Pneumothorax 
+76,Emphysema,Emphysema  Infiltration 
+77,Atelectasis,Atelectasis  Mass 
+78,Edema,Edema 
+79,Mass,Mass 
+80,Consolidation Effusion Infiltration,Consolidation  Effusion  Infiltration 
+81,Effusion Infiltration Pneumonia,Effusion  Infiltration  Pneumonia 
+82,Nodule,Nodule 
+83,Infiltration,Infiltration  Mass 
+84,Infiltration Pneumothorax,Edema  Infiltration  Pneumothorax 
+85,Consolidation Nodule,Consolidation  Infiltration  Nodule 
+86,Pneumothorax,Infiltration  Pneumothorax 
+87,Pneumonia,Infiltration  Pneumonia 
+88,Pleural_Thickening,Pleural_Thickening 
+89,Pneumothorax,Edema  Pneumothorax 
+90,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+91,Effusion,Effusion 
+92,Infiltration,Infiltration 
+93,Infiltration,Infiltration  Nodule 
+94,Infiltration,Infiltration  Mass 
+95,Infiltration,Infiltration 
+96,Consolidation,Consolidation  Effusion 
+97,Mass Pneumothorax,Infiltration  Mass  Pneumothorax 
+98,Consolidation Effusion Mass,Consolidation  Effusion  Mass 
+99,Atelectasis Nodule,Atelectasis  Mass  Nodule 
+100,Emphysema Mass,Emphysema  Mass 
+101,Fibrosis,Fibrosis 
+102,Mass Pneumothorax,Mass  Pneumothorax 
+103,Pleural_Thickening,Infiltration  Pleural_Thickening 
+104,Edema,Edema 
+105,Fibrosis,Fibrosis 
+106,Infiltration,Infiltration 
+107,Atelectasis Effusion Infiltration Nodule,Atelectasis  Effusion  Infiltration  Nodule 
+108,Edema Effusion Infiltration,Edema  Effusion  Infiltration 
+109,Atelectasis Effusion Pneumothorax,Atelectasis  Effusion  Infiltration  Pneumothorax 
+110,Nodule,Nodule 
+111,Infiltration,Infiltration  Pneumothorax 
+112,Mass,Mass  Nodule 
+113,Atelectasis Consolidation Infiltration,Atelectasis  Consolidation  Infiltration 
+114,Infiltration,Infiltration 
+115,Nodule,Nodule 
+116,Effusion,Effusion 
+117,Consolidation Effusion Infiltration Mass,Consolidation  Effusion  Infiltration  Mass 
+118,Cardiomegaly Effusion,Cardiomegaly  Effusion 
+119,Infiltration,Infiltration 
+120,Effusion,Effusion  Infiltration 
+121,Consolidation Infiltration Pneumothorax,Consolidation  Infiltration  Mass  Pneumothorax 
+122,Infiltration Pleural_Thickening,Infiltration  Mass  Pleural_Thickening 
+123,Atelectasis Effusion Pneumothorax,Atelectasis  Effusion  Mass  Pneumothorax 
+124,Emphysema,Emphysema  Mass 
+125,Consolidation Effusion Infiltration,Consolidation  Effusion  Infiltration 
+126,Infiltration Nodule,Infiltration  Nodule 
+127,Effusion Mass,Effusion  Mass 
+128,Infiltration,Infiltration  Mass 
+129,Pneumothorax,Infiltration  Pneumothorax 
+130,Atelectasis Mass,Atelectasis  Mass 
+131,Atelectasis Consolidation,Atelectasis  Consolidation 
+132,Infiltration,Infiltration 
+133,Effusion Pneumothorax,Effusion  Pneumothorax 
+134,Atelectasis Effusion Pneumothorax,Atelectasis  Effusion  Pneumothorax 
+135,Infiltration Nodule,Infiltration  Nodule 
+136,Edema,Edema  Infiltration 
+137,Edema Effusion Infiltration,Edema  Effusion  Infiltration 
+138,Nodule,Infiltration  Nodule 
+139,Cardiomegaly,Cardiomegaly  Infiltration 
+140,Infiltration,Infiltration  Pleural_Thickening 
+141,Nodule Pneumothorax,Nodule  Pneumothorax 
+142,Pneumothorax,Infiltration  Pneumothorax 
+143,Edema Nodule,Edema  Infiltration  Nodule 
+144,Atelectasis,Atelectasis  Mass 
+145,Atelectasis,Atelectasis 
+146,Infiltration Nodule,Infiltration  Nodule 
+147,Consolidation Infiltration,Consolidation  Infiltration 
+148,Infiltration Nodule Pneumonia,Infiltration  Nodule  Pneumonia 
+149,Consolidation Infiltration,Atelectasis  Consolidation  Infiltration 
+150,Infiltration,Infiltration 
+151,Infiltration,Infiltration 
+152,Effusion Infiltration,Effusion  Infiltration 
+153,Effusion,Effusion  Pneumothorax 
+154,Nodule,Atelectasis  Nodule 
+155,Mass Pleural_Thickening,Mass  Pleural_Thickening 
+156,Infiltration,Infiltration 
+157,Atelectasis Emphysema Fibrosis Pleural_Thickening,Atelectasis  Emphysema  Fibrosis  Infiltration  Pleural_Thickening 
+158,Consolidation,Consolidation  Infiltration 
+159,Infiltration,Effusion  Infiltration 
+160,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+161,Cardiomegaly,Cardiomegaly  Infiltration 
+162,Mass Pleural_Thickening,Mass  Pleural_Thickening 
+163,Mass Pneumothorax,Mass  Pneumothorax 
+164,Mass,Mass 
+165,Infiltration,Atelectasis  Infiltration 
+166,Infiltration,Infiltration 
+167,Atelectasis Consolidation Edema,Atelectasis  Consolidation  Edema  Infiltration 
+168,Effusion Infiltration,Effusion  Infiltration 
+169,Atelectasis,Atelectasis  Mass 
+170,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+171,Infiltration,Infiltration 
+172,Infiltration,Infiltration  Mass 
+173,Infiltration,Infiltration 
+174,Infiltration,Infiltration 
+175,Infiltration,Infiltration 
+176,Infiltration,Infiltration  Mass 
+177,Infiltration Pleural_Thickening,Infiltration  Pleural_Thickening 
+178,Consolidation,Consolidation  Infiltration 
+179,Infiltration Pneumothorax,Infiltration  Pneumothorax 
+180,Infiltration,Infiltration  Mass 
+181,Consolidation Effusion Infiltration Nodule,Consolidation  Effusion  Infiltration  Nodule 
+182,Infiltration,Infiltration 
+183,Nodule,Nodule 
+184,Consolidation Effusion,Consolidation  Effusion  Infiltration 
+185,Cardiomegaly,Cardiomegaly 
+186,Effusion Fibrosis,Effusion  Fibrosis 
+187,Nodule,Nodule 
+188,Atelectasis Consolidation Effusion Pleural_Thickening,Atelectasis  Consolidation  Effusion  Infiltration  Pleural_Thickening 
+189,Pleural_Thickening,Pleural_Thickening 
+190,Cardiomegaly,Cardiomegaly  Nodule 
+191,Atelectasis,Atelectasis  Infiltration 
+192,Infiltration,Infiltration 
+193,Edema Infiltration,Edema  Infiltration 
+194,Mass,Mass 
+195,Effusion Infiltration Pleural_Thickening,Effusion  Infiltration  Pleural_Thickening 
+196,Infiltration,Infiltration 
+197,Effusion Infiltration,Effusion  Infiltration  Mass 
+198,Nodule Pleural_Thickening,Infiltration  Nodule  Pleural_Thickening 
+199,Infiltration,Infiltration 
+200,Infiltration,Infiltration 
+201,Infiltration,Infiltration 
+202,Effusion,Effusion  Infiltration 
+203,Mass,Mass 
+204,Infiltration Mass,Infiltration  Mass 
+205,Edema Infiltration,Edema  Infiltration 
+206,Edema,Edema  Infiltration 
+207,Atelectasis,Atelectasis 
+208,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  Mass 
+209,Emphysema Pneumothorax,Emphysema  Mass  Pneumothorax 
+210,Fibrosis,Fibrosis  Mass 
+211,Emphysema Infiltration,Emphysema  Infiltration 
+212,Effusion,Effusion  Infiltration 
+213,Pneumothorax,Infiltration  Pneumothorax 
+214,Infiltration,Infiltration 
+215,Pneumothorax,Infiltration  Pneumothorax 
+216,Infiltration,Infiltration  Mass 
+217,Consolidation Emphysema Infiltration,Consolidation  Emphysema  Infiltration  Mass 
+218,Nodule,Nodule 
+219,Effusion,Effusion  Infiltration 
+220,Atelectasis Effusion,Atelectasis  Effusion 
+221,Infiltration,Infiltration 
+222,Mass,Mass 
+223,Pneumothorax,Infiltration  Pneumothorax 
+224,Emphysema,Emphysema 
+225,Pneumothorax,Mass  Pneumothorax 
+226,Mass,Fibrosis  Mass 
+227,Edema Infiltration,Edema  Infiltration 
+228,Infiltration,Infiltration 
+229,Infiltration Mass,Infiltration  Mass 
+230,Infiltration,Infiltration 
+231,Atelectasis Effusion Emphysema,Atelectasis  Effusion  Emphysema  Infiltration 
+232,Pneumothorax,Mass  Pneumothorax 
+233,Atelectasis,Atelectasis 
+234,Effusion,Effusion  Infiltration 
+235,Atelectasis,Atelectasis  Mass 
+236,Edema Effusion,Edema  Effusion  Mass 
+237,Infiltration,Infiltration 
+238,Atelectasis,Atelectasis 
+239,Nodule,Nodule 
+240,Infiltration,Infiltration 
+241,Infiltration,Infiltration 
+242,Infiltration,Infiltration  Mass 
+243,Atelectasis Infiltration,Atelectasis  Infiltration 
+244,Effusion Infiltration Mass Pneumothorax,Effusion  Infiltration  Mass  Nodule  Pneumothorax 
+245,Emphysema,Emphysema  Mass 
+246,Emphysema,Emphysema  Mass 
+247,Atelectasis Effusion,Atelectasis  Effusion 
+248,Effusion,Effusion 
+249,Infiltration Nodule,Infiltration  Mass  Nodule 
+250,Cardiomegaly,Cardiomegaly  Infiltration 
+251,Infiltration,Infiltration 
+252,Effusion Infiltration,Effusion  Infiltration 
+253,Fibrosis,Fibrosis  Mass 
+254,Atelectasis Consolidation Mass,Atelectasis  Consolidation  Mass 
+255,Effusion Mass,Effusion  Mass 
+256,Atelectasis,Atelectasis  Mass 
+257,Atelectasis Consolidation Effusion,Atelectasis  Consolidation  Edema  Effusion 
+258,Mass Nodule Pneumothorax,Infiltration  Mass  Nodule  Pneumothorax 
+259,Emphysema Pneumonia,Emphysema  Infiltration  Pneumonia 
+260,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  Mass 
+261,Effusion,Effusion 
+262,Infiltration Nodule,Infiltration  Nodule 
+263,Infiltration,Infiltration 
+264,Pneumothorax,Infiltration  Pneumothorax 
+265,Infiltration,Infiltration 
+266,Cardiomegaly Edema Infiltration Pneumonia,Cardiomegaly  Edema  Infiltration  Pneumonia 
+267,Infiltration,Infiltration  Pneumothorax 
+268,Infiltration,Infiltration 
+269,Pleural_Thickening,Pleural_Thickening 
+270,Mass,Mass 
+271,Infiltration,Atelectasis  Infiltration 
+272,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+273,Infiltration,Infiltration 
+274,Pleural_Thickening,Mass  Pleural_Thickening 
+275,Pleural_Thickening,Mass  Pleural_Thickening 
+276,Nodule,Infiltration  Nodule 
+277,Infiltration,Effusion  Infiltration 
+278,Edema Infiltration,Edema  Infiltration 
+279,Nodule,Infiltration  Nodule 
+280,Mass,Infiltration  Mass 
+281,Emphysema,Emphysema  Infiltration 
+282,Infiltration,Infiltration 
+283,Effusion,Effusion 
+284,Infiltration Pneumothorax,Infiltration  Pneumothorax 
+285,Atelectasis,Atelectasis  Infiltration 
+286,Atelectasis,Atelectasis  Infiltration 
+287,Mass,Mass 
+288,Infiltration Pneumothorax,Infiltration  Pneumothorax 
+289,Infiltration,Infiltration 
+290,Cardiomegaly,Cardiomegaly 
+291,Atelectasis,Atelectasis 
+292,Nodule,Nodule 
+293,Infiltration,Infiltration  Mass 
+294,Infiltration,Infiltration 
+295,Pleural_Thickening,Mass  Pleural_Thickening 
+296,Consolidation Mass,Consolidation  Mass 
+297,Edema,Edema  Nodule 
+298,Atelectasis Infiltration Pleural_Thickening,Atelectasis  Infiltration  Pleural_Thickening 
+299,Infiltration,Infiltration 
+300,Edema,Edema  Infiltration 
+301,Effusion,Atelectasis  Effusion 
+302,Atelectasis Effusion,Atelectasis  Effusion 
+303,Cardiomegaly Effusion Emphysema,Cardiomegaly  Effusion  Emphysema 
+304,Cardiomegaly,Cardiomegaly  Infiltration 
+305,Effusion Mass Nodule,Effusion  Mass  Nodule 
+306,Atelectasis Effusion,Atelectasis  Effusion 
+307,Nodule,Fibrosis  Nodule 
+308,Atelectasis Infiltration,Atelectasis  Infiltration 
+309,Effusion Emphysema,Effusion  Emphysema  Infiltration 
+310,Effusion,Effusion  Infiltration 
+311,Pneumothorax,Mass  Pneumothorax 
+312,Atelectasis Infiltration,Atelectasis  Infiltration  Mass 
+313,Edema,Edema 
+314,Effusion,Effusion  Infiltration 
+315,Cardiomegaly Effusion,Cardiomegaly  Effusion 
+316,Infiltration,Infiltration 
+317,Effusion,Effusion  Infiltration 
+318,Edema Infiltration Pneumonia,Edema  Infiltration  Pneumonia 
+319,Effusion Infiltration,Effusion  Infiltration 
+320,Infiltration Nodule,Infiltration  Nodule 
+321,Fibrosis,Fibrosis 
+322,Cardiomegaly,Cardiomegaly  Nodule 
+323,Nodule,Nodule 
+324,Nodule,Nodule 
+325,Effusion,Effusion  Mass 
+326,Atelectasis Consolidation Infiltration,Atelectasis  Consolidation  Infiltration 
+327,Pneumothorax,Pneumothorax 
+328,Cardiomegaly Emphysema,Cardiomegaly  Emphysema  Mass 
+329,Pneumothorax,Infiltration  Pneumothorax 
+330,Atelectasis,Atelectasis  Infiltration 
+331,Nodule,Atelectasis  Nodule 
+332,Infiltration Mass,Infiltration  Mass 
+333,Pneumothorax,Pneumothorax 
+334,Effusion,Effusion 
+335,Mass,Infiltration  Mass 
+336,Infiltration,Infiltration  Nodule 
+337,Atelectasis Infiltration Pneumothorax,Atelectasis  Infiltration  Pneumothorax 
+338,Effusion Infiltration,Effusion  Infiltration 
+339,Nodule,Nodule 
+340,Atelectasis Effusion,Atelectasis  Effusion  Infiltration 
+341,Consolidation,Consolidation 
+342,Infiltration,Infiltration 
+343,Atelectasis,Atelectasis 
+344,Emphysema,Effusion  Emphysema 
+345,Nodule,Infiltration  Nodule 
+346,Infiltration,Infiltration  Mass 
+347,Infiltration,Fibrosis  Infiltration 
+348,Effusion,Effusion 
+349,Infiltration,Infiltration 
+350,Atelectasis Emphysema Fibrosis,Atelectasis  Emphysema  Fibrosis  Mass 
+351,Effusion,Effusion 
+352,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+353,Cardiomegaly Emphysema,Cardiomegaly  Emphysema 
+354,Infiltration Mass,Infiltration  Mass 
+355,Effusion,Effusion 
+356,Pneumothorax,Mass  Pneumothorax 
+357,Effusion Emphysema Infiltration,Effusion  Emphysema  Infiltration 
+358,Emphysema Pneumothorax,Emphysema  Mass  Pneumothorax 
+359,Effusion Mass Nodule,Effusion  Mass  Nodule 
+360,Atelectasis Pneumothorax,Atelectasis  Pneumothorax 
+361,Cardiomegaly,Cardiomegaly  Infiltration 
+362,Cardiomegaly Edema,Cardiomegaly  Edema 
+363,Infiltration,Infiltration 
+364,Infiltration,Infiltration 
+365,Effusion,Effusion  Infiltration 
+366,Atelectasis Effusion,Atelectasis  Effusion 
+367,Edema Infiltration,Edema  Infiltration  Nodule 
+368,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+369,Atelectasis Consolidation Effusion,Atelectasis  Consolidation  Effusion 
+370,Nodule,Nodule 
+371,Atelectasis,Atelectasis 
+372,Pleural_Thickening,Mass  Pleural_Thickening 
+373,Atelectasis Effusion Nodule,Atelectasis  Effusion  Infiltration  Nodule 
+374,Infiltration,Infiltration 
+375,Infiltration,Infiltration 
+376,Atelectasis Nodule,Atelectasis  Infiltration  Nodule 
+377,Mass,Infiltration  Mass 
+378,Atelectasis,Atelectasis  Infiltration 
+379,Cardiomegaly Consolidation Effusion Mass Pneumothorax,Cardiomegaly  Consolidation  Effusion  Mass  Pneumothorax 
+380,Cardiomegaly,Cardiomegaly  Mass 
+381,Mass,Mass 
+382,Emphysema Infiltration,Emphysema  Infiltration  Nodule 
+383,Atelectasis,Atelectasis 
