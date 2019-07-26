@@ -40,7 +40,7 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 df_half = dataframe.sample(frac = 1.0, random_state = 1)
 
 # work on 70 percent of the dataset
-df_sample = df_half.sample(frac = 1.0, random_state = 1)
+df_sample = df_half.sample(frac = 0.7, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
