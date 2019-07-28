@@ -44,7 +44,7 @@ df_sample = df_half.sample(frac = 0.3, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.35, random_state = 1)
+df_sample_train = df_sample.sample(frac = 0.15, random_state = 1)
 # isolated for the test
 df_sample_test = df_half.drop(df_sample.index)
 
