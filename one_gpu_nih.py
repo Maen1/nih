@@ -121,7 +121,7 @@ def multitask_loss(y_true, y_pred):
     return K.mean(K.sum(- y_true * K.log(y_pred) - (1 - y_true) * K.log(1 - y_pred), axis=1))
 
 
-base_model = Xception(input_shape = (128, 128, 1), include_top = False, weights=None)
+base_model = MobileNet(input_shape = (128, 128, 1), include_top = False, weights=None)
 model = Sequential()
 model.add(base_model)
 model.add(GlobalAveragePooling2D())
