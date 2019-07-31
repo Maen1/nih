@@ -40,11 +40,11 @@ dataframe = dataframe.drop(['Patient Age', 'Patient Gender', 'Follow-up #', 'Pat
 df_half = dataframe.sample(frac = 1.0, random_state = 1)
 
 # work on 70 percent of the dataset
-df_sample = df_half.sample(frac = 0.3, random_state = 1)
+df_sample = df_half.sample(frac = 0.5, random_state = 1)
 deasises = list(df_sample["Finding Labels"].unique())
 
 #train data set
-df_sample_train = df_sample.sample(frac = 0.55, random_state = 1)
+df_sample_train = df_sample.sample(frac = 0.00, random_state = 1)
 # isolated for the test
 df_sample_test = df_half.drop(df_sample.index)
 
@@ -137,7 +137,7 @@ model.summary()
 
 history = model.fit(X_train, y_train, epochs = 50, batch_size=64, verbose=1, validation_split=0.2 , shuffle=True)
 
-model.save('../nih_sample/mobilenet_nih_model_all_30_55.h5')
+model.save('../nih_sample/mobilenet_nih_model_all_30_00.h5')
 def history_plot(history):
     plt.plot(history.history['top_k_categorical_accuracy'])
     plt.plot(history.history['val_top_k_categorical_accuracy'])
@@ -170,7 +170,7 @@ plt.title('model accuracy')
 plt.ylabel('accuracy')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./images/mobilenet_accuracy_all_30_55.png')
+plt.savefig('./images/mobilenet_accuracy_all_30_00.png')
 
 # summarize history for loss
 plt.plot(history.history['loss'])
@@ -179,7 +179,7 @@ plt.title('model loss')
 plt.ylabel('loss')
 plt.xlabel('epoch')
 plt.legend(['train', 'test'], loc='upper left')
-plt.savefig('./images/mobilenet_loss_all_30_55.png')
+plt.savefig('./images/mobilenet_loss_all_30_00.png')
 
 
 fig, c_ax = plt.subplots(1,1, figsize = (9, 9))
@@ -189,7 +189,7 @@ for (idx, c_label) in enumerate(all_labels):
 c_ax.legend()
 c_ax.set_xlabel('False Positive Rate')
 c_ax.set_ylabel('True Positive Rate')
-fig.savefig('./images/mobilenet_trained_net_all_30_55.png')
+fig.savefig('./images/mobilenet_trained_net_all_30_00.png')
 
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<1)
@@ -201,7 +201,7 @@ for (idx, c_ax) in zip(sickest_idx, m_axs.flatten()):
     for n_class, n_score, p_score in zip(all_labels, y_test[idx], predictions[idx]) if (n_score>0.5) or (p_score>0.5)]
     c_ax.set_title('Dx: '+', '.join(stat_str)+'\nPDx: '+', '.join(pred_str))
     c_ax.axis('off')
-fig.savefig('./images/mobilenet_trained_img_predictions_all_30_55.png')
+fig.savefig('./images/mobilenet_trained_img_predictions_all_30_00.png')
 
 sickest_idx = np.argsort(np.sum(y_test, 1)<.2)
 y_true = []
@@ -225,6 +225,6 @@ y_pred_y_true['y_pred'] = y_pred
 
 class_names = all_labels
 print(y_pred_y_true.tail(10))
-y_pred_y_true.to_csv("./csv/mobilenet_nih_predictions_all_30_55.csv", header=True, index=True)
+y_pred_y_true.to_csv("./csv/mobilenet_nih_predictions_all_30_00.csv", header=True, index=True)
 
  
