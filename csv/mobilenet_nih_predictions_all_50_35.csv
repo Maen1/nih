@@ -1,0 +1,2804 @@
+,y_true,y_pred
+0,Infiltration,Infiltration  No_Finding 
+1,Effusion,Atelectasis  Effusion 
+2,No_Finding,No_Finding 
+3,No_Finding,No_Finding 
+4,No_Finding,Atelectasis  No_Finding 
+5,No_Finding,No_Finding 
+6,Nodule,No_Finding  Nodule 
+7,Atelectasis Consolidation,Atelectasis  Consolidation 
+8,No_Finding,No_Finding 
+9,Pleural_Thickening,No_Finding  Pleural_Thickening 
+10,No_Finding,No_Finding 
+11,Infiltration,Infiltration  No_Finding 
+12,No_Finding,Atelectasis  No_Finding 
+13,No_Finding,No_Finding 
+14,No_Finding,Atelectasis  No_Finding 
+15,Fibrosis,Fibrosis  No_Finding 
+16,Nodule,No_Finding  Nodule 
+17,No_Finding,No_Finding 
+18,No_Finding,Atelectasis  No_Finding 
+19,No_Finding,No_Finding 
+20,Infiltration,Infiltration  No_Finding 
+21,Infiltration,Infiltration  No_Finding 
+22,No_Finding,No_Finding 
+23,No_Finding,No_Finding 
+24,No_Finding,No_Finding 
+25,Emphysema,Emphysema  No_Finding 
+26,Infiltration Mass,Infiltration  Mass  No_Finding 
+27,No_Finding,Atelectasis  No_Finding 
+28,No_Finding,Atelectasis  No_Finding 
+29,Nodule,Nodule 
+30,No_Finding,No_Finding 
+31,No_Finding,No_Finding 
+32,Consolidation Effusion Infiltration,Consolidation  Effusion  Infiltration 
+33,No_Finding,Atelectasis  No_Finding 
+34,Effusion Nodule,Atelectasis  Effusion  Nodule 
+35,Atelectasis,Atelectasis  No_Finding 
+36,Infiltration Nodule,Infiltration  Nodule 
+37,No_Finding,No_Finding 
+38,No_Finding,No_Finding 
+39,No_Finding,No_Finding 
+40,Nodule,No_Finding  Nodule 
+41,No_Finding,No_Finding 
+42,No_Finding,No_Finding 
+43,No_Finding,No_Finding 
+44,No_Finding,No_Finding 
+45,No_Finding,No_Finding 
+46,No_Finding,No_Finding 
+47,Infiltration,Infiltration  No_Finding 
+48,No_Finding,No_Finding 
+49,No_Finding,No_Finding 
+50,No_Finding,Atelectasis  No_Finding 
+51,Effusion Mass Pleural_Thickening,Effusion  Mass  No_Finding  Pleural_Thickening 
+52,No_Finding,No_Finding 
+53,Pleural_Thickening,Pleural_Thickening 
+54,No_Finding,No_Finding 
+55,No_Finding,No_Finding 
+56,No_Finding,No_Finding 
+57,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+58,Effusion,Effusion  No_Finding 
+59,No_Finding,No_Finding 
+60,Emphysema,Emphysema  No_Finding 
+61,No_Finding,No_Finding 
+62,Infiltration,Infiltration  No_Finding 
+63,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+64,Infiltration,Infiltration  No_Finding 
+65,Nodule,No_Finding  Nodule 
+66,Edema Effusion,Edema  Effusion 
+67,No_Finding,No_Finding 
+68,No_Finding,No_Finding 
+69,Consolidation Effusion,Consolidation  Effusion 
+70,Mass,Mass  No_Finding 
+71,Consolidation,Consolidation  No_Finding 
+72,No_Finding,No_Finding 
+73,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+74,Atelectasis,Atelectasis  No_Finding 
+75,Mass,Mass  No_Finding 
+76,Cardiomegaly,Cardiomegaly  No_Finding 
+77,No_Finding,No_Finding 
+78,No_Finding,No_Finding 
+79,Cardiomegaly,Cardiomegaly  No_Finding 
+80,No_Finding,No_Finding 
+81,No_Finding,Atelectasis  No_Finding 
+82,Nodule,No_Finding  Nodule 
+83,Infiltration Pneumonia,Infiltration  Pneumonia 
+84,No_Finding,No_Finding 
+85,Atelectasis,Atelectasis  No_Finding 
+86,No_Finding,No_Finding 
+87,Atelectasis Infiltration Pleural_Thickening,Atelectasis  Infiltration  No_Finding  Pleural_Thickening 
+88,No_Finding,Atelectasis  No_Finding 
+89,Effusion,Effusion  No_Finding 
+90,No_Finding,No_Finding 
+91,No_Finding,No_Finding 
+92,No_Finding,No_Finding 
+93,No_Finding,No_Finding 
+94,No_Finding,No_Finding 
+95,No_Finding,No_Finding 
+96,Infiltration,Infiltration 
+97,No_Finding,No_Finding 
+98,No_Finding,Atelectasis  No_Finding 
+99,No_Finding,No_Finding 
+100,Nodule,No_Finding  Nodule 
+101,Atelectasis Effusion Fibrosis,Atelectasis  Effusion  Fibrosis  No_Finding 
+102,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+103,No_Finding,No_Finding 
+104,No_Finding,No_Finding 
+105,Effusion,Effusion 
+106,Consolidation Infiltration,Consolidation  Infiltration  No_Finding 
+107,Infiltration,Infiltration  No_Finding 
+108,Edema,Edema  No_Finding 
+109,No_Finding,No_Finding 
+110,Effusion,Effusion  No_Finding 
+111,No_Finding,No_Finding 
+112,No_Finding,No_Finding 
+113,No_Finding,No_Finding 
+114,Infiltration,Infiltration  No_Finding 
+115,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+116,No_Finding,Atelectasis  No_Finding 
+117,Mass,Mass  No_Finding 
+118,No_Finding,Atelectasis  No_Finding 
+119,Infiltration,Infiltration  No_Finding 
+120,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+121,No_Finding,No_Finding 
+122,No_Finding,No_Finding 
+123,No_Finding,No_Finding 
+124,No_Finding,No_Finding 
+125,Infiltration,Infiltration  No_Finding 
+126,No_Finding,No_Finding 
+127,No_Finding,No_Finding 
+128,No_Finding,No_Finding 
+129,No_Finding,No_Finding 
+130,Fibrosis,Fibrosis  No_Finding 
+131,No_Finding,No_Finding 
+132,Fibrosis Infiltration,Fibrosis  Infiltration 
+133,No_Finding,No_Finding 
+134,No_Finding,No_Finding 
+135,Infiltration,Atelectasis  Infiltration 
+136,Atelectasis Consolidation Edema Infiltration Pneumonia,Atelectasis  Consolidation  Edema  Infiltration  No_Finding  Pneumonia 
+137,Fibrosis Infiltration Mass,Fibrosis  Infiltration  Mass  No_Finding 
+138,No_Finding,No_Finding 
+139,No_Finding,No_Finding 
+140,No_Finding,No_Finding 
+141,Infiltration,Infiltration 
+142,Pneumothorax,No_Finding  Pneumothorax 
+143,No_Finding,No_Finding 
+144,No_Finding,No_Finding 
+145,No_Finding,No_Finding 
+146,Infiltration,Infiltration 
+147,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+148,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+149,Nodule,No_Finding  Nodule 
+150,Effusion Pleural_Thickening Pneumothorax,Effusion  No_Finding  Pleural_Thickening  Pneumothorax 
+151,Consolidation,Consolidation 
+152,No_Finding,No_Finding 
+153,No_Finding,No_Finding 
+154,No_Finding,No_Finding 
+155,No_Finding,No_Finding 
+156,No_Finding,No_Finding 
+157,Nodule,No_Finding  Nodule 
+158,No_Finding,No_Finding 
+159,No_Finding,No_Finding 
+160,No_Finding,No_Finding 
+161,Atelectasis Cardiomegaly Effusion,Atelectasis  Cardiomegaly  Effusion  No_Finding 
+162,Effusion Infiltration Mass Pneumothorax,Effusion  Infiltration  Mass  No_Finding  Pneumothorax 
+163,No_Finding,Atelectasis  No_Finding 
+164,Effusion,Effusion  No_Finding 
+165,No_Finding,No_Finding 
+166,No_Finding,No_Finding 
+167,Pneumonia,No_Finding  Pneumonia 
+168,Infiltration Pneumothorax,Infiltration  Pneumothorax 
+169,No_Finding,No_Finding 
+170,No_Finding,No_Finding 
+171,No_Finding,No_Finding 
+172,Atelectasis,Atelectasis 
+173,No_Finding,No_Finding 
+174,No_Finding,No_Finding 
+175,No_Finding,No_Finding 
+176,No_Finding,No_Finding 
+177,Fibrosis,Fibrosis  No_Finding 
+178,Infiltration Nodule,Infiltration  Nodule 
+179,No_Finding,No_Finding 
+180,Effusion,Effusion  No_Finding 
+181,Infiltration,Infiltration  No_Finding 
+182,Effusion Pleural_Thickening,Effusion  No_Finding  Pleural_Thickening 
+183,Atelectasis Emphysema Infiltration Pneumothorax,Atelectasis  Emphysema  Infiltration  Pneumothorax 
+184,No_Finding,No_Finding 
+185,No_Finding,No_Finding 
+186,No_Finding,Atelectasis  No_Finding 
+187,No_Finding,No_Finding 
+188,Infiltration,Infiltration  No_Finding 
+189,Pneumothorax,No_Finding  Pneumothorax 
+190,No_Finding,No_Finding 
+191,Infiltration Nodule,Atelectasis  Infiltration  Nodule 
+192,No_Finding,Atelectasis  No_Finding 
+193,No_Finding,No_Finding 
+194,No_Finding,No_Finding 
+195,Effusion,Effusion 
+196,No_Finding,No_Finding 
+197,No_Finding,No_Finding 
+198,Nodule,No_Finding  Nodule 
+199,No_Finding,No_Finding 
+200,Atelectasis Effusion Pneumothorax,Atelectasis  Effusion  No_Finding  Pneumothorax 
+201,No_Finding,Atelectasis  No_Finding 
+202,No_Finding,No_Finding 
+203,No_Finding,No_Finding 
+204,No_Finding,No_Finding 
+205,No_Finding,No_Finding 
+206,No_Finding,No_Finding 
+207,No_Finding,No_Finding 
+208,Infiltration,Infiltration  No_Finding 
+209,Atelectasis Pneumothorax,Atelectasis  Pneumothorax 
+210,No_Finding,No_Finding 
+211,Effusion,Effusion 
+212,No_Finding,No_Finding 
+213,Infiltration,Infiltration  No_Finding 
+214,No_Finding,No_Finding 
+215,No_Finding,No_Finding 
+216,Infiltration,Infiltration  No_Finding 
+217,No_Finding,No_Finding 
+218,No_Finding,Atelectasis  No_Finding 
+219,Infiltration Pneumonia,Infiltration  No_Finding  Pneumonia 
+220,Cardiomegaly,Cardiomegaly  No_Finding 
+221,Edema Infiltration,Edema  Infiltration 
+222,No_Finding,No_Finding 
+223,Infiltration,Infiltration  No_Finding 
+224,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+225,No_Finding,Atelectasis  No_Finding 
+226,No_Finding,No_Finding 
+227,Effusion Fibrosis,Effusion  Fibrosis  No_Finding 
+228,Atelectasis Effusion Mass Nodule,Atelectasis  Effusion  Mass  No_Finding  Nodule 
+229,No_Finding,Infiltration  No_Finding 
+230,No_Finding,No_Finding 
+231,No_Finding,No_Finding 
+232,Emphysema Pneumothorax,Emphysema  No_Finding  Pneumothorax 
+233,No_Finding,No_Finding 
+234,Cardiomegaly,Atelectasis  Cardiomegaly 
+235,Consolidation,Consolidation  No_Finding 
+236,Infiltration,Infiltration  No_Finding 
+237,Emphysema,Emphysema  No_Finding 
+238,No_Finding,No_Finding 
+239,No_Finding,No_Finding 
+240,Atelectasis,Atelectasis  No_Finding 
+241,No_Finding,No_Finding 
+242,No_Finding,No_Finding 
+243,No_Finding,No_Finding 
+244,No_Finding,No_Finding 
+245,No_Finding,No_Finding 
+246,No_Finding,No_Finding 
+247,No_Finding,No_Finding 
+248,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+249,No_Finding,No_Finding 
+250,Effusion,Effusion 
+251,No_Finding,No_Finding 
+252,Infiltration,Infiltration  No_Finding 
+253,Pleural_Thickening,Atelectasis  Pleural_Thickening 
+254,No_Finding,No_Finding 
+255,No_Finding,No_Finding 
+256,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+257,Nodule,No_Finding  Nodule 
+258,No_Finding,Atelectasis  No_Finding 
+259,No_Finding,No_Finding 
+260,Atelectasis Consolidation,Atelectasis  Consolidation  No_Finding 
+261,Mass Pneumothorax,Mass  No_Finding  Pneumothorax 
+262,Atelectasis Effusion Emphysema Infiltration,Atelectasis  Effusion  Emphysema  Infiltration  No_Finding 
+263,No_Finding,Infiltration  No_Finding 
+264,No_Finding,No_Finding 
+265,Infiltration,Infiltration  No_Finding 
+266,No_Finding,No_Finding 
+267,No_Finding,No_Finding 
+268,Mass Pneumothorax,Mass  No_Finding  Pneumothorax 
+269,Nodule,Nodule 
+270,No_Finding,No_Finding 
+271,Nodule,Atelectasis  Nodule 
+272,Cardiomegaly Effusion Emphysema,Cardiomegaly  Effusion  Emphysema  No_Finding 
+273,No_Finding,No_Finding 
+274,No_Finding,Atelectasis  No_Finding 
+275,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+276,Fibrosis,Fibrosis  No_Finding 
+277,Consolidation,Consolidation 
+278,Nodule,No_Finding  Nodule 
+279,Infiltration,Infiltration  No_Finding 
+280,No_Finding,No_Finding 
+281,Infiltration,Infiltration  No_Finding 
+282,No_Finding,No_Finding 
+283,Fibrosis,Fibrosis  No_Finding 
+284,No_Finding,No_Finding 
+285,No_Finding,No_Finding 
+286,No_Finding,No_Finding 
+287,Mass Nodule,Mass  No_Finding  Nodule 
+288,Infiltration,Infiltration  No_Finding 
+289,Effusion Mass,Effusion  Mass  No_Finding 
+290,No_Finding,No_Finding 
+291,Nodule,No_Finding  Nodule 
+292,No_Finding,No_Finding 
+293,No_Finding,No_Finding 
+294,Nodule,Nodule 
+295,No_Finding,No_Finding 
+296,No_Finding,No_Finding 
+297,No_Finding,No_Finding 
+298,No_Finding,No_Finding 
+299,No_Finding,No_Finding 
+300,No_Finding,No_Finding 
+301,Atelectasis Infiltration,Atelectasis  Infiltration 
+302,No_Finding,No_Finding 
+303,No_Finding,No_Finding 
+304,No_Finding,No_Finding 
+305,Effusion,Effusion 
+306,Nodule,No_Finding  Nodule 
+307,No_Finding,No_Finding 
+308,No_Finding,No_Finding 
+309,Effusion Pleural_Thickening,Effusion  No_Finding  Pleural_Thickening 
+310,Nodule,Nodule 
+311,Infiltration,Infiltration  No_Finding 
+312,No_Finding,No_Finding 
+313,Infiltration,Infiltration  No_Finding 
+314,No_Finding,No_Finding 
+315,Emphysema,Emphysema  No_Finding 
+316,No_Finding,No_Finding 
+317,Fibrosis,Fibrosis  No_Finding 
+318,No_Finding,No_Finding 
+319,Infiltration Pleural_Thickening,Infiltration  No_Finding  Pleural_Thickening 
+320,Infiltration,Infiltration  No_Finding 
+321,No_Finding,No_Finding 
+322,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+323,Effusion Infiltration,Effusion  Infiltration 
+324,Pleural_Thickening,No_Finding  Pleural_Thickening 
+325,No_Finding,No_Finding 
+326,No_Finding,Atelectasis  No_Finding 
+327,No_Finding,Atelectasis  No_Finding 
+328,Infiltration,Infiltration  No_Finding 
+329,Infiltration,Infiltration  No_Finding 
+330,Nodule,Effusion  Nodule 
+331,No_Finding,Atelectasis  No_Finding 
+332,No_Finding,No_Finding 
+333,Effusion,Effusion 
+334,No_Finding,No_Finding 
+335,No_Finding,No_Finding 
+336,No_Finding,No_Finding 
+337,Pneumonia,No_Finding  Pneumonia 
+338,No_Finding,No_Finding 
+339,Effusion,Effusion  No_Finding 
+340,No_Finding,No_Finding 
+341,No_Finding,No_Finding 
+342,Cardiomegaly,Atelectasis  Cardiomegaly 
+343,No_Finding,Atelectasis  No_Finding 
+344,Infiltration,Infiltration 
+345,No_Finding,No_Finding 
+346,No_Finding,No_Finding 
+347,No_Finding,No_Finding 
+348,No_Finding,No_Finding 
+349,No_Finding,No_Finding 
+350,No_Finding,Atelectasis  No_Finding 
+351,Mass Nodule,Mass  No_Finding  Nodule 
+352,No_Finding,No_Finding 
+353,Pleural_Thickening,Atelectasis  Pleural_Thickening 
+354,No_Finding,No_Finding 
+355,Edema Effusion,Edema  Effusion 
+356,No_Finding,No_Finding 
+357,No_Finding,Atelectasis  No_Finding 
+358,No_Finding,No_Finding 
+359,Atelectasis,Atelectasis  No_Finding 
+360,No_Finding,No_Finding 
+361,No_Finding,No_Finding 
+362,No_Finding,No_Finding 
+363,Infiltration Pneumothorax,Infiltration  No_Finding  Pneumothorax 
+364,Atelectasis,Atelectasis 
+365,No_Finding,Atelectasis  No_Finding 
+366,Pneumothorax,Pneumothorax 
+367,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+368,No_Finding,No_Finding 
+369,No_Finding,No_Finding 
+370,Atelectasis Consolidation Effusion,Atelectasis  Consolidation  Effusion 
+371,No_Finding,No_Finding 
+372,No_Finding,No_Finding 
+373,Infiltration,Infiltration  No_Finding 
+374,No_Finding,No_Finding 
+375,No_Finding,Atelectasis  No_Finding 
+376,No_Finding,No_Finding 
+377,Atelectasis Effusion,Atelectasis  Effusion 
+378,Atelectasis,Atelectasis  No_Finding 
+379,No_Finding,Infiltration  No_Finding 
+380,No_Finding,No_Finding 
+381,No_Finding,No_Finding 
+382,Cardiomegaly Consolidation,Atelectasis  Cardiomegaly  Consolidation 
+383,No_Finding,No_Finding 
+384,Atelectasis Consolidation Mass Pneumothorax,Atelectasis  Consolidation  Mass  No_Finding  Pneumothorax 
+385,No_Finding,No_Finding 
+386,No_Finding,No_Finding 
+387,Mass Nodule Pneumothorax,Effusion  Mass  Nodule  Pneumothorax 
+388,Effusion,Effusion  No_Finding 
+389,No_Finding,No_Finding 
+390,No_Finding,No_Finding 
+391,No_Finding,No_Finding 
+392,No_Finding,No_Finding 
+393,No_Finding,No_Finding 
+394,No_Finding,No_Finding 
+395,No_Finding,No_Finding 
+396,Infiltration,Infiltration  No_Finding 
+397,Consolidation,Consolidation  No_Finding 
+398,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+399,No_Finding,No_Finding 
+400,No_Finding,No_Finding 
+401,No_Finding,No_Finding 
+402,No_Finding,No_Finding 
+403,No_Finding,No_Finding 
+404,Infiltration,Infiltration 
+405,Mass Pleural_Thickening,Mass  No_Finding  Pleural_Thickening 
+406,Atelectasis,Atelectasis 
+407,No_Finding,No_Finding 
+408,No_Finding,No_Finding 
+409,No_Finding,Atelectasis  No_Finding 
+410,No_Finding,No_Finding 
+411,No_Finding,No_Finding 
+412,Pneumothorax,No_Finding  Pneumothorax 
+413,No_Finding,No_Finding 
+414,No_Finding,No_Finding 
+415,No_Finding,No_Finding 
+416,Infiltration,Infiltration  No_Finding 
+417,Cardiomegaly,Cardiomegaly 
+418,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+419,No_Finding,No_Finding 
+420,Atelectasis Emphysema Pneumothorax,Atelectasis  Emphysema  Pneumothorax 
+421,No_Finding,No_Finding 
+422,No_Finding,No_Finding 
+423,No_Finding,No_Finding 
+424,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+425,No_Finding,No_Finding 
+426,Infiltration,Infiltration 
+427,No_Finding,No_Finding 
+428,No_Finding,Infiltration  No_Finding 
+429,No_Finding,No_Finding 
+430,No_Finding,Atelectasis  No_Finding 
+431,Consolidation,Atelectasis  Consolidation 
+432,No_Finding,No_Finding 
+433,Mass,Atelectasis  Mass 
+434,No_Finding,No_Finding 
+435,No_Finding,No_Finding 
+436,Edema Infiltration,Edema  Infiltration 
+437,Atelectasis Consolidation,Atelectasis  Consolidation  No_Finding 
+438,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+439,No_Finding,No_Finding 
+440,No_Finding,No_Finding 
+441,Infiltration,Infiltration  No_Finding 
+442,No_Finding,No_Finding 
+443,Infiltration Pneumonia,Infiltration  Pneumonia 
+444,No_Finding,No_Finding 
+445,No_Finding,No_Finding 
+446,Pleural_Thickening,Atelectasis  Pleural_Thickening 
+447,No_Finding,No_Finding 
+448,No_Finding,No_Finding 
+449,Infiltration,Atelectasis  Infiltration 
+450,Atelectasis Nodule,Atelectasis  No_Finding  Nodule 
+451,Edema Infiltration,Atelectasis  Edema  Infiltration 
+452,No_Finding,No_Finding 
+453,Fibrosis Pleural_Thickening Pneumothorax,Fibrosis  No_Finding  Pleural_Thickening  Pneumothorax 
+454,No_Finding,No_Finding 
+455,No_Finding,Atelectasis  No_Finding 
+456,Infiltration,Infiltration 
+457,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+458,Emphysema Infiltration Mass Pneumothorax,Emphysema  Infiltration  Mass  Pneumothorax 
+459,No_Finding,No_Finding 
+460,Consolidation,Consolidation 
+461,No_Finding,Atelectasis  No_Finding 
+462,Atelectasis Effusion,Atelectasis  Effusion 
+463,Infiltration Nodule,Infiltration  Nodule 
+464,No_Finding,Infiltration  No_Finding 
+465,No_Finding,No_Finding 
+466,No_Finding,No_Finding 
+467,No_Finding,Effusion  No_Finding 
+468,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+469,Atelectasis,Atelectasis  No_Finding 
+470,No_Finding,No_Finding 
+471,No_Finding,No_Finding 
+472,Nodule,No_Finding  Nodule 
+473,Emphysema Infiltration,Emphysema  Infiltration  No_Finding 
+474,No_Finding,No_Finding 
+475,No_Finding,No_Finding 
+476,No_Finding,No_Finding 
+477,Infiltration,Atelectasis  Infiltration 
+478,Mass,Mass  No_Finding 
+479,Pneumothorax,Atelectasis  Pneumothorax 
+480,No_Finding,No_Finding 
+481,No_Finding,No_Finding 
+482,No_Finding,No_Finding 
+483,No_Finding,No_Finding 
+484,No_Finding,No_Finding 
+485,Atelectasis,Atelectasis 
+486,No_Finding,No_Finding 
+487,Infiltration,Atelectasis  Infiltration 
+488,No_Finding,Atelectasis  No_Finding 
+489,Edema,Edema  No_Finding 
+490,No_Finding,Effusion  No_Finding 
+491,Hernia,Hernia  No_Finding 
+492,Atelectasis,Atelectasis 
+493,No_Finding,Atelectasis  No_Finding 
+494,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+495,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+496,No_Finding,No_Finding 
+497,No_Finding,No_Finding 
+498,Effusion,Effusion 
+499,Infiltration,Infiltration 
+500,No_Finding,No_Finding 
+501,Nodule,No_Finding  Nodule 
+502,No_Finding,No_Finding 
+503,Atelectasis,Atelectasis 
+504,Infiltration,Infiltration  No_Finding 
+505,Infiltration,Infiltration  No_Finding 
+506,Infiltration,Infiltration  No_Finding 
+507,Edema,Edema  No_Finding 
+508,Infiltration Mass Nodule,Atelectasis  Infiltration  Mass  Nodule 
+509,No_Finding,No_Finding 
+510,Effusion Infiltration,Effusion  Infiltration 
+511,Consolidation Infiltration,Consolidation  Infiltration  No_Finding 
+512,Infiltration,Atelectasis  Infiltration 
+513,Mass,Mass 
+514,No_Finding,No_Finding 
+515,No_Finding,No_Finding 
+516,Infiltration,Infiltration  No_Finding 
+517,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+518,Mass Nodule,Mass  Nodule 
+519,Fibrosis,Fibrosis  No_Finding 
+520,No_Finding,No_Finding 
+521,No_Finding,No_Finding 
+522,Pneumothorax,Atelectasis  Pneumothorax 
+523,No_Finding,Infiltration  No_Finding 
+524,No_Finding,No_Finding 
+525,No_Finding,No_Finding 
+526,Infiltration Pneumothorax,Infiltration  No_Finding  Pneumothorax 
+527,No_Finding,No_Finding 
+528,No_Finding,Atelectasis  No_Finding 
+529,Infiltration,Infiltration  No_Finding 
+530,No_Finding,Atelectasis  No_Finding 
+531,No_Finding,No_Finding 
+532,No_Finding,No_Finding 
+533,Atelectasis,Atelectasis 
+534,No_Finding,Atelectasis  No_Finding 
+535,No_Finding,No_Finding 
+536,No_Finding,No_Finding 
+537,No_Finding,No_Finding 
+538,No_Finding,No_Finding 
+539,No_Finding,No_Finding 
+540,Cardiomegaly,Cardiomegaly 
+541,Mass Pleural_Thickening,Effusion  Mass  Pleural_Thickening 
+542,Infiltration,Infiltration  No_Finding 
+543,No_Finding,No_Finding 
+544,No_Finding,No_Finding 
+545,No_Finding,No_Finding 
+546,Atelectasis,Atelectasis  No_Finding 
+547,No_Finding,No_Finding 
+548,Effusion,Atelectasis  Effusion 
+549,Infiltration,Infiltration 
+550,Infiltration,Infiltration  No_Finding 
+551,No_Finding,Atelectasis  No_Finding 
+552,Infiltration,Infiltration  No_Finding 
+553,No_Finding,No_Finding 
+554,Atelectasis,Atelectasis 
+555,No_Finding,No_Finding 
+556,No_Finding,No_Finding 
+557,No_Finding,No_Finding 
+558,Consolidation Infiltration,Consolidation  Infiltration 
+559,No_Finding,No_Finding 
+560,Effusion,Effusion  No_Finding 
+561,No_Finding,No_Finding 
+562,No_Finding,No_Finding 
+563,No_Finding,Infiltration  No_Finding 
+564,No_Finding,No_Finding 
+565,No_Finding,No_Finding 
+566,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+567,Pneumothorax,No_Finding  Pneumothorax 
+568,Atelectasis Infiltration,Atelectasis  Infiltration 
+569,Infiltration,Infiltration  No_Finding 
+570,No_Finding,No_Finding 
+571,Infiltration,Infiltration  No_Finding 
+572,Atelectasis,Atelectasis 
+573,Atelectasis,Atelectasis  No_Finding 
+574,Emphysema Pneumothorax,Emphysema  Infiltration  Pneumothorax 
+575,Infiltration Mass,Infiltration  Mass  No_Finding 
+576,No_Finding,No_Finding 
+577,No_Finding,No_Finding 
+578,No_Finding,No_Finding 
+579,Atelectasis Effusion,Atelectasis  Effusion 
+580,Consolidation Effusion Infiltration,Consolidation  Effusion  Infiltration 
+581,No_Finding,No_Finding 
+582,No_Finding,No_Finding 
+583,No_Finding,No_Finding 
+584,No_Finding,No_Finding 
+585,No_Finding,Atelectasis  No_Finding 
+586,No_Finding,Infiltration  No_Finding 
+587,Infiltration,Infiltration  No_Finding 
+588,Edema,Edema 
+589,No_Finding,No_Finding 
+590,Effusion Emphysema,Atelectasis  Effusion  Emphysema 
+591,No_Finding,No_Finding 
+592,Consolidation,Consolidation  Effusion 
+593,Consolidation Effusion Mass Nodule Pleural_Thickening,Consolidation  Effusion  Mass  Nodule  Pleural_Thickening 
+594,No_Finding,No_Finding 
+595,No_Finding,Atelectasis  No_Finding 
+596,Edema Effusion Mass,Edema  Effusion  Mass  No_Finding 
+597,No_Finding,No_Finding 
+598,Nodule,No_Finding  Nodule 
+599,No_Finding,No_Finding 
+600,No_Finding,No_Finding 
+601,Infiltration,Infiltration  No_Finding 
+602,Pneumothorax,No_Finding  Pneumothorax 
+603,No_Finding,No_Finding 
+604,No_Finding,No_Finding 
+605,No_Finding,No_Finding 
+606,No_Finding,No_Finding 
+607,Effusion Nodule,Effusion  Nodule 
+608,Atelectasis Effusion Pneumothorax,Atelectasis  Effusion  Pneumothorax 
+609,No_Finding,No_Finding 
+610,No_Finding,No_Finding 
+611,No_Finding,No_Finding 
+612,No_Finding,No_Finding 
+613,No_Finding,No_Finding 
+614,Edema,Edema 
+615,No_Finding,No_Finding 
+616,No_Finding,No_Finding 
+617,Infiltration,Infiltration  No_Finding 
+618,No_Finding,Atelectasis  No_Finding 
+619,No_Finding,Atelectasis  No_Finding 
+620,No_Finding,No_Finding 
+621,No_Finding,No_Finding 
+622,No_Finding,No_Finding 
+623,No_Finding,No_Finding 
+624,Mass,Atelectasis  Mass 
+625,No_Finding,No_Finding 
+626,Atelectasis,Atelectasis  No_Finding 
+627,Infiltration,Infiltration  No_Finding 
+628,No_Finding,Atelectasis  No_Finding 
+629,No_Finding,No_Finding 
+630,Consolidation Effusion Mass,Consolidation  Effusion  Mass  No_Finding 
+631,No_Finding,No_Finding 
+632,No_Finding,No_Finding 
+633,No_Finding,No_Finding 
+634,No_Finding,No_Finding 
+635,Pneumothorax,No_Finding  Pneumothorax 
+636,Effusion,Atelectasis  Effusion 
+637,Atelectasis Effusion Mass,Atelectasis  Effusion  Mass 
+638,Infiltration Pneumothorax,Infiltration  Pneumothorax 
+639,Mass,Mass  No_Finding 
+640,Cardiomegaly,Cardiomegaly 
+641,No_Finding,No_Finding 
+642,No_Finding,No_Finding 
+643,No_Finding,No_Finding 
+644,Fibrosis,Fibrosis  No_Finding 
+645,Mass Nodule,Mass  Nodule 
+646,No_Finding,No_Finding 
+647,Cardiomegaly,Cardiomegaly  No_Finding 
+648,Effusion Mass Nodule,Effusion  Mass  No_Finding  Nodule 
+649,No_Finding,No_Finding 
+650,Consolidation Infiltration,Consolidation  Infiltration  No_Finding 
+651,Atelectasis Effusion,Atelectasis  Effusion 
+652,Atelectasis Pneumonia,Atelectasis  No_Finding  Pneumonia 
+653,No_Finding,No_Finding 
+654,Pleural_Thickening,No_Finding  Pleural_Thickening 
+655,No_Finding,No_Finding 
+656,No_Finding,No_Finding 
+657,Effusion,Atelectasis  Effusion 
+658,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+659,No_Finding,No_Finding 
+660,No_Finding,No_Finding 
+661,No_Finding,No_Finding 
+662,Effusion,Effusion  No_Finding 
+663,Infiltration,Infiltration  No_Finding 
+664,Effusion Mass,Effusion  Mass 
+665,No_Finding,No_Finding 
+666,Infiltration,Infiltration  No_Finding 
+667,No_Finding,No_Finding 
+668,Atelectasis Consolidation Effusion Pleural_Thickening,Atelectasis  Consolidation  Effusion  No_Finding  Pleural_Thickening 
+669,Pneumothorax,No_Finding  Pneumothorax 
+670,No_Finding,No_Finding 
+671,No_Finding,No_Finding 
+672,No_Finding,No_Finding 
+673,Infiltration,Infiltration  No_Finding 
+674,No_Finding,No_Finding 
+675,No_Finding,No_Finding 
+676,Effusion Mass Nodule Pleural_Thickening,Effusion  Mass  No_Finding  Nodule  Pleural_Thickening 
+677,Consolidation,Atelectasis  Consolidation 
+678,No_Finding,Atelectasis  No_Finding 
+679,Infiltration,Infiltration  No_Finding 
+680,No_Finding,No_Finding 
+681,No_Finding,No_Finding 
+682,No_Finding,No_Finding 
+683,No_Finding,No_Finding 
+684,No_Finding,No_Finding 
+685,Consolidation Effusion Infiltration Pleural_Thickening,Consolidation  Effusion  Infiltration  No_Finding  Pleural_Thickening 
+686,No_Finding,No_Finding 
+687,No_Finding,No_Finding 
+688,No_Finding,No_Finding 
+689,No_Finding,No_Finding 
+690,No_Finding,No_Finding 
+691,Emphysema Nodule Pneumothorax,Emphysema  No_Finding  Nodule  Pneumothorax 
+692,No_Finding,No_Finding 
+693,No_Finding,No_Finding 
+694,Infiltration,Atelectasis  Infiltration 
+695,No_Finding,No_Finding 
+696,No_Finding,No_Finding 
+697,Emphysema,Emphysema  No_Finding 
+698,No_Finding,Atelectasis  No_Finding 
+699,Atelectasis,Atelectasis  No_Finding 
+700,No_Finding,No_Finding 
+701,No_Finding,Effusion  No_Finding 
+702,No_Finding,No_Finding 
+703,Atelectasis Edema Effusion Infiltration,Atelectasis  Edema  Effusion  Infiltration  No_Finding 
+704,Infiltration Pneumothorax,Infiltration  No_Finding  Pneumothorax 
+705,Infiltration,Infiltration  No_Finding 
+706,No_Finding,No_Finding 
+707,No_Finding,No_Finding 
+708,No_Finding,No_Finding 
+709,No_Finding,No_Finding 
+710,Atelectasis Infiltration,Atelectasis  Infiltration 
+711,No_Finding,No_Finding 
+712,Infiltration,Infiltration 
+713,Atelectasis,Atelectasis  No_Finding 
+714,No_Finding,No_Finding 
+715,Infiltration Nodule,Atelectasis  Infiltration  Nodule 
+716,Infiltration,Atelectasis  Infiltration 
+717,Fibrosis,Fibrosis  No_Finding 
+718,No_Finding,No_Finding 
+719,Infiltration,Infiltration  No_Finding 
+720,No_Finding,No_Finding 
+721,No_Finding,No_Finding 
+722,No_Finding,Atelectasis  No_Finding 
+723,No_Finding,No_Finding 
+724,Infiltration,Infiltration  No_Finding 
+725,No_Finding,No_Finding 
+726,Effusion,Atelectasis  Effusion 
+727,No_Finding,No_Finding 
+728,No_Finding,No_Finding 
+729,Infiltration,Infiltration  No_Finding 
+730,Mass,Atelectasis  Mass 
+731,No_Finding,No_Finding 
+732,No_Finding,No_Finding 
+733,Cardiomegaly Effusion,Cardiomegaly  Effusion 
+734,Consolidation,Consolidation  No_Finding 
+735,Infiltration,Infiltration  No_Finding 
+736,No_Finding,Atelectasis  No_Finding 
+737,No_Finding,Atelectasis  No_Finding 
+738,Cardiomegaly,Cardiomegaly  No_Finding 
+739,Atelectasis,Atelectasis  No_Finding 
+740,No_Finding,Atelectasis  No_Finding 
+741,Edema,Edema  No_Finding 
+742,No_Finding,No_Finding 
+743,No_Finding,No_Finding 
+744,No_Finding,No_Finding 
+745,Infiltration,Infiltration  No_Finding 
+746,No_Finding,No_Finding 
+747,Atelectasis Pneumonia,Atelectasis  No_Finding  Pneumonia 
+748,Effusion,Effusion  No_Finding 
+749,No_Finding,No_Finding 
+750,No_Finding,No_Finding 
+751,No_Finding,No_Finding 
+752,Cardiomegaly,Cardiomegaly  No_Finding 
+753,Nodule,Atelectasis  Nodule 
+754,No_Finding,Atelectasis  No_Finding 
+755,No_Finding,Atelectasis  No_Finding 
+756,Atelectasis Infiltration,Atelectasis  Infiltration 
+757,Infiltration Nodule Pneumonia,Infiltration  Nodule  Pneumonia 
+758,No_Finding,No_Finding 
+759,Consolidation,Consolidation  No_Finding 
+760,No_Finding,No_Finding 
+761,No_Finding,Atelectasis  No_Finding 
+762,Effusion,Effusion 
+763,No_Finding,No_Finding 
+764,Cardiomegaly Effusion Infiltration,Cardiomegaly  Effusion  Infiltration  No_Finding 
+765,No_Finding,No_Finding 
+766,No_Finding,No_Finding 
+767,No_Finding,No_Finding 
+768,No_Finding,No_Finding 
+769,Mass,Atelectasis  Mass 
+770,No_Finding,No_Finding 
+771,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+772,Mass,Mass  No_Finding 
+773,No_Finding,No_Finding 
+774,No_Finding,No_Finding 
+775,Infiltration,Infiltration  No_Finding 
+776,No_Finding,No_Finding 
+777,Consolidation,Atelectasis  Consolidation 
+778,No_Finding,Effusion  No_Finding 
+779,No_Finding,No_Finding 
+780,Effusion Nodule,Effusion  No_Finding  Nodule 
+781,No_Finding,No_Finding 
+782,No_Finding,No_Finding 
+783,Effusion Emphysema,Effusion  Emphysema 
+784,Effusion Nodule,Effusion  No_Finding  Nodule 
+785,No_Finding,No_Finding 
+786,No_Finding,No_Finding 
+787,Edema,Edema 
+788,Atelectasis Consolidation,Atelectasis  Consolidation  No_Finding 
+789,No_Finding,No_Finding 
+790,Mass,Mass 
+791,No_Finding,No_Finding 
+792,Atelectasis Consolidation Infiltration Pneumonia,Atelectasis  Consolidation  Infiltration  No_Finding  Pneumonia 
+793,Infiltration,Atelectasis  Infiltration 
+794,Pleural_Thickening,Atelectasis  Pleural_Thickening 
+795,Effusion,Atelectasis  Effusion 
+796,Infiltration,Infiltration  No_Finding 
+797,No_Finding,No_Finding 
+798,Infiltration,Infiltration  No_Finding 
+799,No_Finding,No_Finding 
+800,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+801,Fibrosis Infiltration,Fibrosis  Infiltration  No_Finding 
+802,Nodule Pneumothorax,No_Finding  Nodule  Pneumothorax 
+803,No_Finding,No_Finding 
+804,Atelectasis Consolidation Effusion,Atelectasis  Consolidation  Effusion 
+805,No_Finding,No_Finding 
+806,No_Finding,No_Finding 
+807,Pleural_Thickening Pneumothorax,Pleural_Thickening  Pneumothorax 
+808,No_Finding,No_Finding 
+809,No_Finding,No_Finding 
+810,Nodule,No_Finding  Nodule 
+811,No_Finding,No_Finding 
+812,Fibrosis,Fibrosis  No_Finding 
+813,No_Finding,No_Finding 
+814,No_Finding,No_Finding 
+815,No_Finding,No_Finding 
+816,No_Finding,No_Finding 
+817,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+818,Infiltration,Infiltration  No_Finding 
+819,Infiltration,Infiltration  No_Finding 
+820,Pneumothorax,No_Finding  Pneumothorax 
+821,No_Finding,No_Finding 
+822,Infiltration Mass,Atelectasis  Infiltration  Mass 
+823,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+824,Nodule,Nodule 
+825,Edema,Edema  No_Finding 
+826,No_Finding,No_Finding 
+827,No_Finding,No_Finding 
+828,Effusion,Effusion  No_Finding 
+829,Atelectasis Effusion Mass,Atelectasis  Effusion  Mass  No_Finding 
+830,Infiltration,Effusion  Infiltration 
+831,No_Finding,No_Finding 
+832,No_Finding,No_Finding 
+833,Infiltration,Infiltration  No_Finding 
+834,No_Finding,No_Finding 
+835,Effusion,Effusion  No_Finding 
+836,Hernia Infiltration Mass,Hernia  Infiltration  Mass  No_Finding 
+837,Infiltration,Infiltration  No_Finding 
+838,Infiltration,Infiltration  No_Finding 
+839,No_Finding,No_Finding 
+840,Fibrosis,Fibrosis  No_Finding 
+841,Effusion,Atelectasis  Effusion 
+842,No_Finding,No_Finding 
+843,Pneumothorax,No_Finding  Pneumothorax 
+844,Infiltration,Infiltration 
+845,No_Finding,Atelectasis  No_Finding 
+846,No_Finding,No_Finding 
+847,No_Finding,Atelectasis  No_Finding 
+848,No_Finding,No_Finding 
+849,No_Finding,No_Finding 
+850,No_Finding,No_Finding 
+851,No_Finding,Atelectasis  No_Finding 
+852,No_Finding,No_Finding 
+853,Effusion,Effusion  No_Finding 
+854,No_Finding,Atelectasis  No_Finding 
+855,Atelectasis Consolidation Nodule Pleural_Thickening Pneumothorax,Atelectasis  Consolidation  Nodule  Pleural_Thickening  Pneumothorax 
+856,No_Finding,Effusion  No_Finding 
+857,No_Finding,No_Finding 
+858,No_Finding,Infiltration  No_Finding 
+859,No_Finding,No_Finding 
+860,Mass,Mass 
+861,No_Finding,No_Finding 
+862,No_Finding,No_Finding 
+863,No_Finding,No_Finding 
+864,No_Finding,No_Finding 
+865,No_Finding,Infiltration  No_Finding 
+866,No_Finding,No_Finding 
+867,Mass Nodule Pneumonia,Mass  No_Finding  Nodule  Pneumonia 
+868,No_Finding,No_Finding 
+869,Effusion,Atelectasis  Effusion 
+870,No_Finding,No_Finding 
+871,No_Finding,Atelectasis  No_Finding 
+872,No_Finding,No_Finding 
+873,Atelectasis,Atelectasis  No_Finding 
+874,Atelectasis Effusion Pneumothorax,Atelectasis  Effusion  No_Finding  Pneumothorax 
+875,Effusion Mass,Effusion  Mass  No_Finding 
+876,No_Finding,Atelectasis  No_Finding 
+877,No_Finding,No_Finding 
+878,No_Finding,No_Finding 
+879,Atelectasis Consolidation Nodule,Atelectasis  Consolidation  No_Finding  Nodule 
+880,Infiltration,Infiltration  No_Finding 
+881,Consolidation Effusion Pneumothorax,Atelectasis  Consolidation  Effusion  Pneumothorax 
+882,No_Finding,No_Finding 
+883,Atelectasis Infiltration,Atelectasis  Infiltration 
+884,Atelectasis Infiltration,Atelectasis  Infiltration 
+885,No_Finding,No_Finding 
+886,No_Finding,No_Finding 
+887,No_Finding,No_Finding 
+888,No_Finding,No_Finding 
+889,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+890,Infiltration,Infiltration  No_Finding 
+891,No_Finding,No_Finding 
+892,No_Finding,No_Finding 
+893,No_Finding,No_Finding 
+894,Infiltration,Infiltration  No_Finding 
+895,No_Finding,No_Finding 
+896,No_Finding,No_Finding 
+897,Cardiomegaly,Cardiomegaly 
+898,No_Finding,No_Finding 
+899,Infiltration,Infiltration 
+900,Pneumothorax,Pneumothorax 
+901,Edema,Edema  No_Finding 
+902,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+903,No_Finding,No_Finding 
+904,Effusion Infiltration Pneumothorax,Effusion  Infiltration  Pneumothorax 
+905,Edema,Edema  No_Finding 
+906,No_Finding,No_Finding 
+907,Emphysema,Emphysema  No_Finding 
+908,No_Finding,No_Finding 
+909,No_Finding,No_Finding 
+910,Infiltration,Infiltration  No_Finding 
+911,No_Finding,No_Finding 
+912,No_Finding,No_Finding 
+913,No_Finding,No_Finding 
+914,No_Finding,No_Finding 
+915,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+916,No_Finding,No_Finding 
+917,No_Finding,No_Finding 
+918,No_Finding,No_Finding 
+919,Mass,Mass  No_Finding 
+920,No_Finding,No_Finding 
+921,No_Finding,No_Finding 
+922,No_Finding,No_Finding 
+923,Pleural_Thickening,No_Finding  Pleural_Thickening 
+924,No_Finding,No_Finding 
+925,No_Finding,No_Finding 
+926,No_Finding,No_Finding 
+927,No_Finding,No_Finding 
+928,No_Finding,No_Finding 
+929,No_Finding,No_Finding 
+930,No_Finding,No_Finding 
+931,Pneumothorax,Pneumothorax 
+932,Atelectasis,Atelectasis  No_Finding 
+933,No_Finding,No_Finding 
+934,No_Finding,Atelectasis  No_Finding 
+935,Effusion Mass Nodule Pneumothorax,Effusion  Mass  No_Finding  Nodule  Pneumothorax 
+936,Effusion,Effusion 
+937,Mass,Mass  No_Finding 
+938,Pneumothorax,No_Finding  Pneumothorax 
+939,No_Finding,Atelectasis  No_Finding 
+940,No_Finding,Atelectasis  No_Finding 
+941,Effusion,Effusion  No_Finding 
+942,Cardiomegaly Infiltration,Atelectasis  Cardiomegaly  Infiltration 
+943,Pneumothorax,No_Finding  Pneumothorax 
+944,No_Finding,No_Finding 
+945,Nodule,Nodule 
+946,No_Finding,No_Finding 
+947,No_Finding,No_Finding 
+948,No_Finding,Infiltration  No_Finding 
+949,Infiltration Pleural_Thickening,Infiltration  No_Finding  Pleural_Thickening 
+950,No_Finding,No_Finding 
+951,No_Finding,Infiltration  No_Finding 
+952,No_Finding,No_Finding 
+953,No_Finding,Atelectasis  No_Finding 
+954,No_Finding,No_Finding 
+955,Mass,Mass  No_Finding 
+956,Consolidation,Atelectasis  Consolidation 
+957,No_Finding,No_Finding 
+958,Effusion,Atelectasis  Effusion 
+959,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+960,No_Finding,No_Finding 
+961,Infiltration Pneumothorax,Infiltration  Pneumothorax 
+962,Atelectasis,Atelectasis 
+963,Effusion,Effusion  Infiltration 
+964,Atelectasis,Atelectasis 
+965,Infiltration,Infiltration  No_Finding 
+966,Infiltration,Infiltration 
+967,No_Finding,No_Finding 
+968,Infiltration,Infiltration  No_Finding 
+969,No_Finding,No_Finding 
+970,Atelectasis,Atelectasis  No_Finding 
+971,Infiltration,Infiltration  No_Finding 
+972,Cardiomegaly Effusion Nodule,Cardiomegaly  Effusion  No_Finding  Nodule 
+973,No_Finding,No_Finding 
+974,Infiltration Pleural_Thickening,Infiltration  Pleural_Thickening 
+975,Mass,Mass  No_Finding 
+976,No_Finding,No_Finding 
+977,No_Finding,No_Finding 
+978,No_Finding,No_Finding 
+979,No_Finding,Atelectasis  No_Finding 
+980,No_Finding,No_Finding 
+981,No_Finding,No_Finding 
+982,Edema Effusion,Edema  Effusion 
+983,Nodule,No_Finding  Nodule 
+984,Consolidation Fibrosis Pneumothorax,Consolidation  Fibrosis  No_Finding  Pneumothorax 
+985,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+986,Edema Effusion,Edema  Effusion  No_Finding 
+987,No_Finding,No_Finding 
+988,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+989,No_Finding,No_Finding 
+990,No_Finding,No_Finding 
+991,Edema,Edema 
+992,Mass,Mass  No_Finding 
+993,No_Finding,No_Finding 
+994,No_Finding,No_Finding 
+995,Atelectasis,Atelectasis 
+996,Atelectasis,Atelectasis 
+997,No_Finding,No_Finding 
+998,Infiltration,Infiltration  No_Finding 
+999,Nodule,Effusion  Nodule 
+1000,No_Finding,No_Finding 
+1001,No_Finding,No_Finding 
+1002,Edema Effusion Infiltration,Edema  Effusion  Infiltration  No_Finding 
+1003,No_Finding,No_Finding 
+1004,No_Finding,No_Finding 
+1005,No_Finding,Atelectasis  No_Finding 
+1006,No_Finding,No_Finding 
+1007,Atelectasis,Atelectasis  No_Finding 
+1008,No_Finding,No_Finding 
+1009,No_Finding,No_Finding 
+1010,No_Finding,No_Finding 
+1011,Infiltration Mass,Infiltration  Mass  No_Finding 
+1012,No_Finding,No_Finding 
+1013,Mass,Mass 
+1014,No_Finding,No_Finding 
+1015,No_Finding,No_Finding 
+1016,No_Finding,No_Finding 
+1017,Consolidation Edema Infiltration,Consolidation  Edema  Effusion  Infiltration 
+1018,Nodule,No_Finding  Nodule 
+1019,Effusion Pneumonia,Effusion  No_Finding  Pneumonia 
+1020,Effusion,Effusion  No_Finding 
+1021,No_Finding,Effusion  No_Finding 
+1022,No_Finding,No_Finding 
+1023,Atelectasis Emphysema Mass,Atelectasis  Emphysema  Infiltration  Mass 
+1024,No_Finding,No_Finding 
+1025,No_Finding,Atelectasis  No_Finding 
+1026,No_Finding,No_Finding 
+1027,Atelectasis Hernia,Atelectasis  Hernia  No_Finding 
+1028,Atelectasis Fibrosis,Atelectasis  Fibrosis 
+1029,Emphysema,Emphysema 
+1030,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+1031,Effusion,Atelectasis  Effusion 
+1032,Consolidation Pneumonia,Consolidation  Pneumonia 
+1033,Pneumothorax,Atelectasis  Pneumothorax 
+1034,No_Finding,Atelectasis  No_Finding 
+1035,No_Finding,No_Finding 
+1036,No_Finding,No_Finding 
+1037,No_Finding,No_Finding 
+1038,No_Finding,No_Finding 
+1039,Effusion Emphysema,Effusion  Emphysema  No_Finding 
+1040,Cardiomegaly Edema,Cardiomegaly  Edema 
+1041,Infiltration,Infiltration  No_Finding 
+1042,Nodule,No_Finding  Nodule 
+1043,Atelectasis,Atelectasis  No_Finding 
+1044,No_Finding,No_Finding 
+1045,Infiltration,Atelectasis  Infiltration 
+1046,No_Finding,Atelectasis  No_Finding 
+1047,Infiltration,Infiltration 
+1048,Effusion Infiltration Nodule,Effusion  Infiltration  Nodule 
+1049,Nodule,No_Finding  Nodule 
+1050,No_Finding,No_Finding 
+1051,No_Finding,No_Finding 
+1052,Atelectasis Effusion,Atelectasis  Effusion 
+1053,No_Finding,No_Finding 
+1054,Consolidation Effusion Mass,Consolidation  Effusion  Mass  No_Finding 
+1055,No_Finding,Infiltration  No_Finding 
+1056,No_Finding,No_Finding 
+1057,Atelectasis Mass Nodule,Atelectasis  Mass  No_Finding  Nodule 
+1058,No_Finding,No_Finding 
+1059,No_Finding,No_Finding 
+1060,No_Finding,No_Finding 
+1061,No_Finding,No_Finding 
+1062,No_Finding,No_Finding 
+1063,No_Finding,No_Finding 
+1064,No_Finding,No_Finding 
+1065,Pneumothorax,No_Finding  Pneumothorax 
+1066,No_Finding,No_Finding 
+1067,No_Finding,No_Finding 
+1068,No_Finding,No_Finding 
+1069,No_Finding,No_Finding 
+1070,Consolidation,Consolidation 
+1071,No_Finding,Atelectasis  No_Finding 
+1072,No_Finding,No_Finding 
+1073,No_Finding,No_Finding 
+1074,Infiltration,Infiltration  No_Finding 
+1075,No_Finding,No_Finding 
+1076,Emphysema,Emphysema  No_Finding 
+1077,Effusion Infiltration,Effusion  Infiltration 
+1078,No_Finding,No_Finding 
+1079,Infiltration,Infiltration  No_Finding 
+1080,No_Finding,No_Finding 
+1081,No_Finding,Atelectasis  No_Finding 
+1082,Cardiomegaly Effusion Fibrosis,Atelectasis  Cardiomegaly  Effusion  Fibrosis 
+1083,No_Finding,No_Finding 
+1084,No_Finding,No_Finding 
+1085,Atelectasis Mass,Atelectasis  Mass  No_Finding 
+1086,Atelectasis,Atelectasis  No_Finding 
+1087,No_Finding,No_Finding 
+1088,Consolidation Effusion Infiltration,Consolidation  Effusion  Infiltration  No_Finding 
+1089,No_Finding,No_Finding 
+1090,Pneumothorax,Pneumothorax 
+1091,No_Finding,No_Finding 
+1092,Consolidation,Consolidation  No_Finding 
+1093,Atelectasis Cardiomegaly Effusion,Atelectasis  Cardiomegaly  Effusion  No_Finding 
+1094,Infiltration,Atelectasis  Infiltration 
+1095,No_Finding,Atelectasis  No_Finding 
+1096,No_Finding,No_Finding 
+1097,No_Finding,No_Finding 
+1098,Effusion,Effusion  No_Finding 
+1099,No_Finding,No_Finding 
+1100,Effusion Emphysema Pneumothorax,Effusion  Emphysema  Infiltration  Pneumothorax 
+1101,No_Finding,No_Finding 
+1102,Effusion Infiltration,Effusion  Infiltration 
+1103,Nodule,Nodule 
+1104,No_Finding,No_Finding 
+1105,Infiltration,Infiltration  No_Finding 
+1106,No_Finding,No_Finding 
+1107,No_Finding,No_Finding 
+1108,Infiltration,Infiltration  No_Finding 
+1109,Atelectasis Consolidation,Atelectasis  Consolidation  No_Finding 
+1110,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+1111,No_Finding,No_Finding 
+1112,Infiltration,Infiltration  No_Finding 
+1113,Atelectasis,Atelectasis  No_Finding 
+1114,No_Finding,No_Finding 
+1115,Infiltration,Infiltration  No_Finding 
+1116,No_Finding,No_Finding 
+1117,No_Finding,No_Finding 
+1118,No_Finding,No_Finding 
+1119,No_Finding,No_Finding 
+1120,No_Finding,No_Finding 
+1121,Nodule,No_Finding  Nodule 
+1122,No_Finding,No_Finding 
+1123,No_Finding,No_Finding 
+1124,No_Finding,No_Finding 
+1125,No_Finding,No_Finding 
+1126,Atelectasis,Atelectasis  No_Finding 
+1127,Edema Infiltration,Edema  Infiltration 
+1128,No_Finding,No_Finding 
+1129,No_Finding,No_Finding 
+1130,No_Finding,No_Finding 
+1131,Edema Infiltration,Atelectasis  Edema  Infiltration 
+1132,No_Finding,No_Finding 
+1133,No_Finding,No_Finding 
+1134,No_Finding,No_Finding 
+1135,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+1136,No_Finding,No_Finding 
+1137,Cardiomegaly Effusion,Cardiomegaly  Effusion 
+1138,Infiltration Mass,Infiltration  Mass  No_Finding 
+1139,Mass Nodule Pneumothorax,Mass  Nodule  Pneumothorax 
+1140,Atelectasis,Atelectasis 
+1141,Fibrosis,Fibrosis  No_Finding 
+1142,Atelectasis Effusion,Atelectasis  Effusion 
+1143,No_Finding,No_Finding 
+1144,No_Finding,Atelectasis  No_Finding 
+1145,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1146,Infiltration,Infiltration 
+1147,No_Finding,No_Finding 
+1148,Pneumothorax,Pneumothorax 
+1149,No_Finding,No_Finding 
+1150,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+1151,No_Finding,No_Finding 
+1152,Emphysema Infiltration Pleural_Thickening Pneumothorax,Effusion  Emphysema  Infiltration  Pleural_Thickening  Pneumothorax 
+1153,No_Finding,No_Finding 
+1154,No_Finding,No_Finding 
+1155,No_Finding,Atelectasis  No_Finding 
+1156,No_Finding,No_Finding 
+1157,No_Finding,No_Finding 
+1158,Effusion Emphysema Pneumothorax,Effusion  Emphysema  No_Finding  Pneumothorax 
+1159,No_Finding,No_Finding 
+1160,No_Finding,No_Finding 
+1161,No_Finding,No_Finding 
+1162,No_Finding,No_Finding 
+1163,Pneumothorax,Pneumothorax 
+1164,No_Finding,No_Finding 
+1165,Infiltration,Infiltration  No_Finding 
+1166,No_Finding,No_Finding 
+1167,Effusion,Effusion  Infiltration 
+1168,No_Finding,No_Finding 
+1169,No_Finding,No_Finding 
+1170,Effusion,Atelectasis  Effusion 
+1171,Atelectasis,Atelectasis  No_Finding 
+1172,Effusion,Effusion  No_Finding 
+1173,No_Finding,No_Finding 
+1174,No_Finding,No_Finding 
+1175,No_Finding,No_Finding 
+1176,No_Finding,No_Finding 
+1177,Effusion,Atelectasis  Effusion 
+1178,No_Finding,No_Finding 
+1179,No_Finding,No_Finding 
+1180,Cardiomegaly Consolidation Effusion,Cardiomegaly  Consolidation  Effusion  Infiltration 
+1181,Pneumothorax,Effusion  Pneumothorax 
+1182,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1183,Mass,Mass  No_Finding 
+1184,No_Finding,No_Finding 
+1185,No_Finding,No_Finding 
+1186,Infiltration,Infiltration  No_Finding 
+1187,No_Finding,No_Finding 
+1188,No_Finding,No_Finding 
+1189,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+1190,No_Finding,No_Finding 
+1191,No_Finding,No_Finding 
+1192,Nodule,No_Finding  Nodule 
+1193,No_Finding,No_Finding 
+1194,No_Finding,No_Finding 
+1195,No_Finding,No_Finding 
+1196,No_Finding,No_Finding 
+1197,No_Finding,No_Finding 
+1198,Infiltration,Infiltration  No_Finding 
+1199,No_Finding,No_Finding 
+1200,No_Finding,No_Finding 
+1201,Pneumothorax,No_Finding  Pneumothorax 
+1202,No_Finding,No_Finding 
+1203,Cardiomegaly Infiltration,Cardiomegaly  Infiltration  No_Finding 
+1204,No_Finding,No_Finding 
+1205,No_Finding,No_Finding 
+1206,Infiltration,Infiltration  No_Finding 
+1207,No_Finding,No_Finding 
+1208,Mass,Mass  No_Finding 
+1209,Infiltration Pneumonia,Infiltration  Pneumonia 
+1210,Cardiomegaly Emphysema,Cardiomegaly  Emphysema  No_Finding 
+1211,No_Finding,No_Finding 
+1212,No_Finding,No_Finding 
+1213,No_Finding,No_Finding 
+1214,Emphysema Infiltration Nodule Pneumothorax,Emphysema  Infiltration  No_Finding  Nodule  Pneumothorax 
+1215,No_Finding,No_Finding 
+1216,Pneumothorax,Atelectasis  Pneumothorax 
+1217,Infiltration,Infiltration  No_Finding 
+1218,Infiltration,Infiltration  No_Finding 
+1219,No_Finding,No_Finding 
+1220,No_Finding,No_Finding 
+1221,No_Finding,No_Finding 
+1222,No_Finding,No_Finding 
+1223,No_Finding,No_Finding 
+1224,No_Finding,No_Finding 
+1225,No_Finding,No_Finding 
+1226,Infiltration,Infiltration  No_Finding 
+1227,Infiltration,Infiltration 
+1228,Effusion Pneumothorax,Effusion  Pneumothorax 
+1229,Infiltration,Infiltration  No_Finding 
+1230,No_Finding,No_Finding 
+1231,No_Finding,No_Finding 
+1232,Pneumothorax,Pneumothorax 
+1233,Mass,Mass  No_Finding 
+1234,Infiltration,Infiltration  No_Finding 
+1235,No_Finding,No_Finding 
+1236,No_Finding,No_Finding 
+1237,No_Finding,No_Finding 
+1238,No_Finding,Atelectasis  No_Finding 
+1239,No_Finding,No_Finding 
+1240,No_Finding,No_Finding 
+1241,No_Finding,No_Finding 
+1242,No_Finding,No_Finding 
+1243,Infiltration,Atelectasis  Infiltration 
+1244,Infiltration,Infiltration  No_Finding 
+1245,Cardiomegaly,Cardiomegaly  No_Finding 
+1246,No_Finding,No_Finding 
+1247,No_Finding,Atelectasis  No_Finding 
+1248,Edema Infiltration,Edema  Infiltration 
+1249,No_Finding,No_Finding 
+1250,Atelectasis,Atelectasis  No_Finding 
+1251,Infiltration,Infiltration  No_Finding 
+1252,No_Finding,No_Finding 
+1253,No_Finding,No_Finding 
+1254,Atelectasis,Atelectasis 
+1255,No_Finding,No_Finding 
+1256,No_Finding,No_Finding 
+1257,Cardiomegaly,Cardiomegaly  No_Finding 
+1258,Atelectasis Effusion,Atelectasis  Effusion 
+1259,Pneumonia,No_Finding  Pneumonia 
+1260,No_Finding,No_Finding 
+1261,Effusion,Effusion  No_Finding 
+1262,Effusion Infiltration,Effusion  Infiltration 
+1263,Effusion,Effusion  No_Finding 
+1264,No_Finding,No_Finding 
+1265,Consolidation,Consolidation  No_Finding 
+1266,Atelectasis,Atelectasis  No_Finding 
+1267,No_Finding,No_Finding 
+1268,Infiltration,Atelectasis  Infiltration 
+1269,Nodule,No_Finding  Nodule 
+1270,No_Finding,No_Finding 
+1271,Effusion,Effusion 
+1272,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1273,No_Finding,No_Finding 
+1274,No_Finding,No_Finding 
+1275,Infiltration,Infiltration 
+1276,Nodule,No_Finding  Nodule 
+1277,No_Finding,No_Finding 
+1278,Atelectasis Emphysema Infiltration Mass Pneumothorax,Atelectasis  Emphysema  Infiltration  Mass  Pneumothorax 
+1279,No_Finding,Atelectasis  No_Finding 
+1280,No_Finding,No_Finding 
+1281,No_Finding,No_Finding 
+1282,No_Finding,No_Finding 
+1283,Infiltration,Infiltration  No_Finding 
+1284,No_Finding,No_Finding 
+1285,Pneumothorax,No_Finding  Pneumothorax 
+1286,No_Finding,Atelectasis  No_Finding 
+1287,No_Finding,No_Finding 
+1288,No_Finding,No_Finding 
+1289,Infiltration,Infiltration  No_Finding 
+1290,No_Finding,No_Finding 
+1291,Edema,Edema  No_Finding 
+1292,Mass,Mass 
+1293,No_Finding,Atelectasis  No_Finding 
+1294,No_Finding,No_Finding 
+1295,Consolidation Infiltration,Consolidation  Infiltration 
+1296,No_Finding,No_Finding 
+1297,Infiltration,Infiltration 
+1298,Effusion,Effusion 
+1299,No_Finding,No_Finding 
+1300,Infiltration,Effusion  Infiltration 
+1301,No_Finding,Atelectasis  No_Finding 
+1302,No_Finding,No_Finding 
+1303,No_Finding,No_Finding 
+1304,No_Finding,No_Finding 
+1305,No_Finding,No_Finding 
+1306,Effusion,Effusion  No_Finding 
+1307,No_Finding,No_Finding 
+1308,Infiltration,Infiltration  No_Finding 
+1309,No_Finding,No_Finding 
+1310,Effusion Fibrosis,Effusion  Fibrosis  No_Finding 
+1311,No_Finding,No_Finding 
+1312,No_Finding,No_Finding 
+1313,Infiltration,Infiltration 
+1314,Infiltration,Atelectasis  Infiltration 
+1315,Nodule,No_Finding  Nodule 
+1316,No_Finding,No_Finding 
+1317,Nodule,Atelectasis  Nodule 
+1318,No_Finding,No_Finding 
+1319,No_Finding,No_Finding 
+1320,No_Finding,No_Finding 
+1321,No_Finding,No_Finding 
+1322,No_Finding,Effusion  No_Finding 
+1323,Mass Pleural_Thickening,Mass  Pleural_Thickening 
+1324,No_Finding,No_Finding 
+1325,Cardiomegaly Effusion,Atelectasis  Cardiomegaly  Effusion 
+1326,Cardiomegaly,Atelectasis  Cardiomegaly 
+1327,No_Finding,No_Finding 
+1328,No_Finding,No_Finding 
+1329,No_Finding,Atelectasis  No_Finding 
+1330,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+1331,No_Finding,Atelectasis  No_Finding 
+1332,No_Finding,No_Finding 
+1333,No_Finding,No_Finding 
+1334,Infiltration,Infiltration  No_Finding 
+1335,No_Finding,No_Finding 
+1336,Hernia,Hernia  No_Finding 
+1337,Infiltration,Infiltration 
+1338,No_Finding,Atelectasis  No_Finding 
+1339,No_Finding,No_Finding 
+1340,No_Finding,No_Finding 
+1341,Emphysema,Emphysema  No_Finding 
+1342,No_Finding,No_Finding 
+1343,Infiltration,Infiltration  No_Finding 
+1344,Consolidation,Consolidation  No_Finding 
+1345,Effusion,Effusion  No_Finding 
+1346,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1347,Effusion Infiltration Pleural_Thickening,Effusion  Infiltration  No_Finding  Pleural_Thickening 
+1348,No_Finding,No_Finding 
+1349,Atelectasis Effusion Emphysema Pneumothorax,Atelectasis  Effusion  Emphysema  No_Finding  Pneumothorax 
+1350,No_Finding,No_Finding 
+1351,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+1352,Atelectasis,Atelectasis  No_Finding 
+1353,No_Finding,No_Finding 
+1354,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+1355,No_Finding,No_Finding 
+1356,Atelectasis Mass,Atelectasis  Mass 
+1357,Infiltration Nodule,Infiltration  Nodule 
+1358,No_Finding,No_Finding 
+1359,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+1360,No_Finding,Atelectasis  No_Finding 
+1361,No_Finding,No_Finding 
+1362,No_Finding,No_Finding 
+1363,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+1364,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1365,No_Finding,No_Finding 
+1366,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1367,Effusion Infiltration,Effusion  Infiltration 
+1368,No_Finding,No_Finding 
+1369,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+1370,No_Finding,No_Finding 
+1371,No_Finding,Atelectasis  No_Finding 
+1372,No_Finding,No_Finding 
+1373,No_Finding,No_Finding 
+1374,No_Finding,No_Finding 
+1375,No_Finding,No_Finding 
+1376,Atelectasis Consolidation Effusion Infiltration Pneumonia,Atelectasis  Consolidation  Effusion  Infiltration  No_Finding  Pneumonia 
+1377,No_Finding,No_Finding 
+1378,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+1379,Infiltration,Infiltration  No_Finding 
+1380,No_Finding,No_Finding 
+1381,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+1382,Mass Nodule,Mass  Nodule 
+1383,No_Finding,No_Finding 
+1384,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+1385,No_Finding,No_Finding 
+1386,Emphysema,Emphysema  No_Finding 
+1387,No_Finding,Atelectasis  No_Finding 
+1388,No_Finding,No_Finding 
+1389,Atelectasis,Atelectasis 
+1390,No_Finding,No_Finding 
+1391,Effusion Mass,Effusion  Mass 
+1392,No_Finding,No_Finding 
+1393,Infiltration,Atelectasis  Infiltration 
+1394,Emphysema,Emphysema 
+1395,Effusion Emphysema Pneumothorax,Effusion  Emphysema  No_Finding  Pneumothorax 
+1396,No_Finding,No_Finding 
+1397,No_Finding,No_Finding 
+1398,Consolidation Infiltration Mass Nodule,Consolidation  Infiltration  Mass  No_Finding  Nodule 
+1399,Fibrosis,Fibrosis  No_Finding 
+1400,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+1401,No_Finding,No_Finding 
+1402,No_Finding,Atelectasis  No_Finding 
+1403,No_Finding,No_Finding 
+1404,Effusion,Effusion  No_Finding 
+1405,Infiltration,Infiltration 
+1406,Atelectasis,Atelectasis  No_Finding 
+1407,No_Finding,No_Finding 
+1408,No_Finding,No_Finding 
+1409,Infiltration,Infiltration  No_Finding 
+1410,Atelectasis,Atelectasis  No_Finding 
+1411,No_Finding,No_Finding 
+1412,No_Finding,No_Finding 
+1413,Edema Fibrosis,Edema  Fibrosis 
+1414,No_Finding,Effusion  No_Finding 
+1415,Pneumothorax,Pneumothorax 
+1416,No_Finding,No_Finding 
+1417,No_Finding,No_Finding 
+1418,Effusion,Effusion 
+1419,No_Finding,No_Finding 
+1420,Consolidation Infiltration,Consolidation  Infiltration  No_Finding 
+1421,Fibrosis,Fibrosis  No_Finding 
+1422,No_Finding,Atelectasis  No_Finding 
+1423,No_Finding,No_Finding 
+1424,No_Finding,No_Finding 
+1425,No_Finding,No_Finding 
+1426,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1427,Consolidation,Consolidation  No_Finding 
+1428,No_Finding,No_Finding 
+1429,No_Finding,Atelectasis  No_Finding 
+1430,Atelectasis Effusion Infiltration Nodule,Atelectasis  Effusion  Infiltration  No_Finding  Nodule 
+1431,Cardiomegaly,Atelectasis  Cardiomegaly 
+1432,Fibrosis,Fibrosis  No_Finding 
+1433,Atelectasis Effusion,Atelectasis  Effusion 
+1434,No_Finding,No_Finding 
+1435,Atelectasis,Atelectasis 
+1436,Nodule,No_Finding  Nodule 
+1437,No_Finding,Atelectasis  No_Finding 
+1438,No_Finding,No_Finding 
+1439,No_Finding,No_Finding 
+1440,No_Finding,No_Finding 
+1441,No_Finding,No_Finding 
+1442,No_Finding,No_Finding 
+1443,No_Finding,No_Finding 
+1444,No_Finding,No_Finding 
+1445,Effusion Infiltration,Effusion  Infiltration 
+1446,No_Finding,No_Finding 
+1447,No_Finding,No_Finding 
+1448,No_Finding,Atelectasis  No_Finding 
+1449,Atelectasis,Atelectasis  No_Finding 
+1450,No_Finding,No_Finding 
+1451,No_Finding,No_Finding 
+1452,No_Finding,No_Finding 
+1453,No_Finding,No_Finding 
+1454,Infiltration Mass,Atelectasis  Infiltration  Mass 
+1455,Atelectasis Pneumothorax,Atelectasis  Pneumothorax 
+1456,Infiltration,Infiltration  No_Finding 
+1457,Cardiomegaly,Cardiomegaly 
+1458,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+1459,No_Finding,No_Finding 
+1460,No_Finding,No_Finding 
+1461,Infiltration Pneumonia,Infiltration  No_Finding  Pneumonia 
+1462,No_Finding,No_Finding 
+1463,No_Finding,No_Finding 
+1464,Mass Nodule Pleural_Thickening,Mass  Nodule  Pleural_Thickening 
+1465,Consolidation,Consolidation  No_Finding 
+1466,No_Finding,No_Finding 
+1467,No_Finding,No_Finding 
+1468,No_Finding,No_Finding 
+1469,No_Finding,No_Finding 
+1470,No_Finding,No_Finding 
+1471,No_Finding,No_Finding 
+1472,No_Finding,No_Finding 
+1473,No_Finding,No_Finding 
+1474,No_Finding,No_Finding 
+1475,Emphysema Infiltration,Emphysema  Infiltration  No_Finding 
+1476,No_Finding,No_Finding 
+1477,Pneumothorax,No_Finding  Pneumothorax 
+1478,Pleural_Thickening Pneumothorax,No_Finding  Pleural_Thickening  Pneumothorax 
+1479,No_Finding,Atelectasis  No_Finding 
+1480,No_Finding,No_Finding 
+1481,Cardiomegaly,Cardiomegaly  No_Finding 
+1482,Consolidation,Atelectasis  Consolidation 
+1483,No_Finding,No_Finding 
+1484,No_Finding,No_Finding 
+1485,Nodule,No_Finding  Nodule 
+1486,Nodule,Atelectasis  Nodule 
+1487,Effusion Fibrosis,Effusion  Fibrosis  No_Finding 
+1488,No_Finding,No_Finding 
+1489,Atelectasis,Atelectasis 
+1490,No_Finding,Atelectasis  No_Finding 
+1491,Infiltration,Infiltration  No_Finding 
+1492,Effusion,Effusion 
+1493,No_Finding,No_Finding 
+1494,Emphysema Pneumonia,Emphysema  No_Finding  Pneumonia 
+1495,Atelectasis Effusion Infiltration Mass,Atelectasis  Effusion  Infiltration  Mass  No_Finding 
+1496,No_Finding,No_Finding 
+1497,No_Finding,No_Finding 
+1498,No_Finding,No_Finding 
+1499,No_Finding,Atelectasis  No_Finding 
+1500,No_Finding,No_Finding 
+1501,No_Finding,No_Finding 
+1502,Infiltration,Infiltration  No_Finding 
+1503,No_Finding,No_Finding 
+1504,No_Finding,No_Finding 
+1505,No_Finding,No_Finding 
+1506,Atelectasis Infiltration,Atelectasis  Infiltration 
+1507,No_Finding,Atelectasis  No_Finding 
+1508,Nodule,No_Finding  Nodule 
+1509,No_Finding,No_Finding 
+1510,No_Finding,No_Finding 
+1511,No_Finding,No_Finding 
+1512,Mass,Mass  No_Finding 
+1513,Atelectasis,Atelectasis  No_Finding 
+1514,Infiltration,Infiltration  No_Finding 
+1515,Atelectasis,Atelectasis 
+1516,No_Finding,Atelectasis  No_Finding 
+1517,Consolidation Effusion Infiltration,Consolidation  Effusion  Infiltration 
+1518,No_Finding,No_Finding 
+1519,No_Finding,No_Finding 
+1520,No_Finding,No_Finding 
+1521,No_Finding,No_Finding 
+1522,No_Finding,Atelectasis  No_Finding 
+1523,No_Finding,No_Finding 
+1524,No_Finding,No_Finding 
+1525,No_Finding,No_Finding 
+1526,Atelectasis,Atelectasis  No_Finding 
+1527,Emphysema,Emphysema  Infiltration 
+1528,Infiltration,Infiltration  No_Finding 
+1529,No_Finding,No_Finding 
+1530,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1531,No_Finding,No_Finding 
+1532,Atelectasis,Atelectasis 
+1533,No_Finding,No_Finding 
+1534,No_Finding,No_Finding 
+1535,No_Finding,No_Finding 
+1536,Infiltration,Infiltration  No_Finding 
+1537,No_Finding,No_Finding 
+1538,Mass,Mass 
+1539,No_Finding,No_Finding 
+1540,Mass,Mass 
+1541,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+1542,No_Finding,No_Finding 
+1543,No_Finding,No_Finding 
+1544,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+1545,No_Finding,No_Finding 
+1546,Pneumothorax,Pneumothorax 
+1547,No_Finding,No_Finding 
+1548,No_Finding,No_Finding 
+1549,No_Finding,No_Finding 
+1550,No_Finding,No_Finding 
+1551,No_Finding,No_Finding 
+1552,Cardiomegaly,Cardiomegaly  No_Finding 
+1553,No_Finding,No_Finding 
+1554,Nodule,No_Finding  Nodule 
+1555,Emphysema Pneumothorax,Atelectasis  Emphysema  Pneumothorax 
+1556,Atelectasis Effusion,Atelectasis  Effusion 
+1557,No_Finding,No_Finding 
+1558,Infiltration,Infiltration 
+1559,Consolidation,Consolidation  No_Finding 
+1560,No_Finding,No_Finding 
+1561,Infiltration Mass,Infiltration  Mass 
+1562,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+1563,Mass Pneumothorax,Mass  No_Finding  Pneumothorax 
+1564,No_Finding,No_Finding 
+1565,Effusion Nodule,Effusion  No_Finding  Nodule 
+1566,No_Finding,No_Finding 
+1567,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+1568,No_Finding,No_Finding 
+1569,No_Finding,Atelectasis  No_Finding 
+1570,No_Finding,Atelectasis  No_Finding 
+1571,Atelectasis,Atelectasis 
+1572,Infiltration,Infiltration 
+1573,Cardiomegaly Edema Infiltration Pneumonia,Cardiomegaly  Edema  Infiltration  No_Finding  Pneumonia 
+1574,Nodule Pleural_Thickening,No_Finding  Nodule  Pleural_Thickening 
+1575,No_Finding,No_Finding 
+1576,No_Finding,No_Finding 
+1577,No_Finding,No_Finding 
+1578,No_Finding,No_Finding 
+1579,No_Finding,No_Finding 
+1580,No_Finding,Atelectasis  No_Finding 
+1581,Pneumothorax,No_Finding  Pneumothorax 
+1582,Atelectasis,Atelectasis 
+1583,No_Finding,No_Finding 
+1584,Effusion,Atelectasis  Effusion 
+1585,No_Finding,No_Finding 
+1586,No_Finding,No_Finding 
+1587,No_Finding,No_Finding 
+1588,Mass Nodule Pneumothorax,Mass  No_Finding  Nodule  Pneumothorax 
+1589,No_Finding,No_Finding 
+1590,No_Finding,No_Finding 
+1591,No_Finding,No_Finding 
+1592,No_Finding,No_Finding 
+1593,Atelectasis Consolidation Infiltration,Atelectasis  Consolidation  Infiltration 
+1594,Effusion,Effusion 
+1595,No_Finding,No_Finding 
+1596,Infiltration,Infiltration  No_Finding 
+1597,No_Finding,No_Finding 
+1598,Infiltration,Infiltration  No_Finding 
+1599,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1600,No_Finding,No_Finding 
+1601,No_Finding,Atelectasis  No_Finding 
+1602,No_Finding,No_Finding 
+1603,Emphysema Nodule,Emphysema  No_Finding  Nodule 
+1604,No_Finding,No_Finding 
+1605,Consolidation,Atelectasis  Consolidation 
+1606,No_Finding,No_Finding 
+1607,No_Finding,No_Finding 
+1608,No_Finding,No_Finding 
+1609,No_Finding,No_Finding 
+1610,Nodule,No_Finding  Nodule 
+1611,Consolidation Mass Nodule Pneumonia,Consolidation  Mass  Nodule  Pneumonia 
+1612,Mass,Mass  No_Finding 
+1613,No_Finding,No_Finding 
+1614,Atelectasis Infiltration,Atelectasis  Infiltration 
+1615,No_Finding,No_Finding 
+1616,Edema Effusion Infiltration,Edema  Effusion  Infiltration 
+1617,Infiltration,Infiltration  No_Finding 
+1618,No_Finding,Atelectasis  No_Finding 
+1619,No_Finding,No_Finding 
+1620,No_Finding,No_Finding 
+1621,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1622,Mass,Mass 
+1623,No_Finding,No_Finding 
+1624,No_Finding,No_Finding 
+1625,Nodule Pneumonia,No_Finding  Nodule  Pneumonia 
+1626,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1627,No_Finding,No_Finding 
+1628,No_Finding,Atelectasis  No_Finding 
+1629,No_Finding,No_Finding 
+1630,Fibrosis,Fibrosis  No_Finding 
+1631,No_Finding,No_Finding 
+1632,Atelectasis,Atelectasis  No_Finding 
+1633,No_Finding,No_Finding 
+1634,No_Finding,No_Finding 
+1635,No_Finding,No_Finding 
+1636,Mass,Mass  No_Finding 
+1637,Nodule,No_Finding  Nodule 
+1638,No_Finding,Atelectasis  No_Finding 
+1639,Effusion,Atelectasis  Effusion 
+1640,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+1641,No_Finding,No_Finding 
+1642,No_Finding,No_Finding 
+1643,Consolidation,Consolidation  No_Finding 
+1644,Atelectasis Consolidation Infiltration Pneumothorax,Atelectasis  Consolidation  Infiltration  No_Finding  Pneumothorax 
+1645,No_Finding,Atelectasis  No_Finding 
+1646,No_Finding,Atelectasis  No_Finding 
+1647,No_Finding,No_Finding 
+1648,No_Finding,No_Finding 
+1649,Infiltration,Atelectasis  Infiltration 
+1650,No_Finding,Atelectasis  No_Finding 
+1651,No_Finding,No_Finding 
+1652,Infiltration,Atelectasis  Infiltration 
+1653,No_Finding,No_Finding 
+1654,No_Finding,No_Finding 
+1655,No_Finding,No_Finding 
+1656,Infiltration,Infiltration  No_Finding 
+1657,Effusion,Effusion  No_Finding 
+1658,No_Finding,No_Finding 
+1659,No_Finding,No_Finding 
+1660,No_Finding,No_Finding 
+1661,No_Finding,No_Finding 
+1662,Infiltration,Infiltration  No_Finding 
+1663,Pneumothorax,No_Finding  Pneumothorax 
+1664,No_Finding,No_Finding 
+1665,Effusion,Effusion  No_Finding 
+1666,No_Finding,Atelectasis  No_Finding 
+1667,No_Finding,No_Finding 
+1668,No_Finding,No_Finding 
+1669,No_Finding,No_Finding 
+1670,No_Finding,No_Finding 
+1671,Fibrosis Infiltration,Fibrosis  Infiltration 
+1672,No_Finding,Atelectasis  No_Finding 
+1673,Infiltration,Atelectasis  Infiltration 
+1674,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1675,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1676,No_Finding,No_Finding 
+1677,No_Finding,No_Finding 
+1678,No_Finding,No_Finding 
+1679,Consolidation,Consolidation  No_Finding 
+1680,No_Finding,No_Finding 
+1681,No_Finding,Atelectasis  No_Finding 
+1682,No_Finding,No_Finding 
+1683,No_Finding,No_Finding 
+1684,Atelectasis Effusion,Atelectasis  Effusion 
+1685,No_Finding,No_Finding 
+1686,Edema Effusion Infiltration,Atelectasis  Edema  Effusion  Infiltration 
+1687,No_Finding,No_Finding 
+1688,Infiltration,Infiltration  No_Finding 
+1689,No_Finding,No_Finding 
+1690,No_Finding,No_Finding 
+1691,Effusion,Atelectasis  Effusion 
+1692,No_Finding,No_Finding 
+1693,Infiltration,Infiltration  No_Finding 
+1694,No_Finding,No_Finding 
+1695,No_Finding,Atelectasis  No_Finding 
+1696,Edema,Edema 
+1697,No_Finding,No_Finding 
+1698,No_Finding,Atelectasis  No_Finding 
+1699,Mass,Mass  No_Finding 
+1700,No_Finding,Atelectasis  No_Finding 
+1701,No_Finding,No_Finding 
+1702,No_Finding,No_Finding 
+1703,Infiltration,Infiltration  No_Finding 
+1704,Atelectasis,Atelectasis  Infiltration 
+1705,Cardiomegaly Consolidation Infiltration,Cardiomegaly  Consolidation  Infiltration  No_Finding 
+1706,No_Finding,No_Finding 
+1707,Consolidation Effusion,Consolidation  Effusion  No_Finding 
+1708,Mass Pleural_Thickening,Mass  No_Finding  Pleural_Thickening 
+1709,Infiltration,Infiltration  No_Finding 
+1710,No_Finding,No_Finding 
+1711,Effusion Infiltration Pneumothorax,Effusion  Infiltration  Pneumothorax 
+1712,Effusion Mass Nodule Pleural_Thickening,Effusion  Mass  No_Finding  Nodule  Pleural_Thickening 
+1713,Atelectasis,Atelectasis  No_Finding 
+1714,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+1715,Infiltration,Infiltration  No_Finding 
+1716,Effusion,Effusion  No_Finding 
+1717,No_Finding,No_Finding 
+1718,No_Finding,No_Finding 
+1719,No_Finding,No_Finding 
+1720,No_Finding,No_Finding 
+1721,No_Finding,No_Finding 
+1722,No_Finding,No_Finding 
+1723,No_Finding,No_Finding 
+1724,No_Finding,No_Finding 
+1725,No_Finding,No_Finding 
+1726,Infiltration Pleural_Thickening,Infiltration  No_Finding  Pleural_Thickening 
+1727,No_Finding,No_Finding 
+1728,No_Finding,No_Finding 
+1729,No_Finding,No_Finding 
+1730,No_Finding,No_Finding 
+1731,No_Finding,No_Finding 
+1732,No_Finding,No_Finding 
+1733,Nodule Pneumothorax,No_Finding  Nodule  Pneumothorax 
+1734,Infiltration,Atelectasis  Infiltration 
+1735,No_Finding,No_Finding 
+1736,Atelectasis,Atelectasis 
+1737,Infiltration,Infiltration  No_Finding 
+1738,Atelectasis Pneumothorax,Atelectasis  Effusion  Pneumothorax 
+1739,No_Finding,No_Finding 
+1740,No_Finding,No_Finding 
+1741,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+1742,Infiltration,Infiltration  No_Finding 
+1743,No_Finding,No_Finding 
+1744,Cardiomegaly,Cardiomegaly  No_Finding 
+1745,No_Finding,No_Finding 
+1746,Infiltration,Infiltration  No_Finding 
+1747,Pneumothorax,No_Finding  Pneumothorax 
+1748,No_Finding,No_Finding 
+1749,No_Finding,No_Finding 
+1750,Pneumothorax,No_Finding  Pneumothorax 
+1751,Pneumothorax,No_Finding  Pneumothorax 
+1752,No_Finding,No_Finding 
+1753,Consolidation Pneumonia,Consolidation  Pneumonia 
+1754,No_Finding,Atelectasis  No_Finding 
+1755,No_Finding,No_Finding 
+1756,No_Finding,Atelectasis  No_Finding 
+1757,No_Finding,No_Finding 
+1758,No_Finding,No_Finding 
+1759,Atelectasis Infiltration,Atelectasis  Infiltration 
+1760,Atelectasis,Atelectasis  No_Finding 
+1761,Effusion,Effusion 
+1762,Consolidation Effusion,Consolidation  Effusion 
+1763,Edema Infiltration,Edema  Infiltration 
+1764,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+1765,Pneumothorax,No_Finding  Pneumothorax 
+1766,No_Finding,No_Finding 
+1767,Atelectasis,Atelectasis  No_Finding 
+1768,No_Finding,No_Finding 
+1769,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1770,No_Finding,No_Finding 
+1771,Emphysema Infiltration,Emphysema  Infiltration 
+1772,No_Finding,No_Finding 
+1773,Infiltration,Infiltration  No_Finding 
+1774,Infiltration,Infiltration 
+1775,No_Finding,No_Finding 
+1776,Effusion,Effusion 
+1777,Effusion Fibrosis,Effusion  Fibrosis  Infiltration 
+1778,No_Finding,No_Finding 
+1779,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+1780,No_Finding,No_Finding 
+1781,No_Finding,No_Finding 
+1782,Atelectasis,Atelectasis  No_Finding 
+1783,No_Finding,No_Finding 
+1784,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1785,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+1786,No_Finding,No_Finding 
+1787,No_Finding,No_Finding 
+1788,Atelectasis,Atelectasis  No_Finding 
+1789,Effusion,Atelectasis  Effusion 
+1790,No_Finding,No_Finding 
+1791,Infiltration,Infiltration  No_Finding 
+1792,No_Finding,No_Finding 
+1793,No_Finding,No_Finding 
+1794,Mass,Mass 
+1795,No_Finding,No_Finding 
+1796,No_Finding,No_Finding 
+1797,No_Finding,No_Finding 
+1798,No_Finding,No_Finding 
+1799,No_Finding,No_Finding 
+1800,Mass Nodule,Mass  No_Finding  Nodule 
+1801,No_Finding,No_Finding 
+1802,Effusion Infiltration Mass,Effusion  Infiltration  Mass  No_Finding 
+1803,No_Finding,No_Finding 
+1804,Edema Effusion Infiltration,Edema  Effusion  Infiltration  No_Finding 
+1805,No_Finding,No_Finding 
+1806,Effusion Pleural_Thickening,Effusion  No_Finding  Pleural_Thickening 
+1807,No_Finding,No_Finding 
+1808,Edema,Edema  No_Finding 
+1809,Atelectasis,Atelectasis  No_Finding 
+1810,No_Finding,No_Finding 
+1811,Atelectasis,Atelectasis 
+1812,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1813,No_Finding,No_Finding 
+1814,No_Finding,No_Finding 
+1815,No_Finding,Atelectasis  No_Finding 
+1816,No_Finding,No_Finding 
+1817,No_Finding,No_Finding 
+1818,Effusion Pneumothorax,Atelectasis  Effusion  Pneumothorax 
+1819,No_Finding,No_Finding 
+1820,No_Finding,Atelectasis  No_Finding 
+1821,No_Finding,No_Finding 
+1822,No_Finding,No_Finding 
+1823,Atelectasis Fibrosis,Atelectasis  Fibrosis  No_Finding 
+1824,Atelectasis Consolidation Mass Pneumonia,Atelectasis  Consolidation  Mass  No_Finding  Pneumonia 
+1825,Pneumothorax,No_Finding  Pneumothorax 
+1826,Atelectasis Consolidation Effusion,Atelectasis  Consolidation  Effusion 
+1827,No_Finding,No_Finding 
+1828,Atelectasis,Atelectasis  No_Finding 
+1829,No_Finding,No_Finding 
+1830,No_Finding,No_Finding 
+1831,No_Finding,No_Finding 
+1832,No_Finding,No_Finding 
+1833,No_Finding,No_Finding 
+1834,Atelectasis Nodule,Atelectasis  No_Finding  Nodule 
+1835,No_Finding,No_Finding 
+1836,No_Finding,Atelectasis  No_Finding 
+1837,Effusion,Effusion  No_Finding 
+1838,Effusion,Effusion  No_Finding 
+1839,Atelectasis Nodule,Atelectasis  No_Finding  Nodule 
+1840,Consolidation Mass,Consolidation  Mass  No_Finding 
+1841,Infiltration,Infiltration  No_Finding 
+1842,No_Finding,No_Finding 
+1843,No_Finding,No_Finding 
+1844,Effusion,Effusion  No_Finding 
+1845,No_Finding,No_Finding 
+1846,Infiltration,Infiltration 
+1847,Atelectasis,Atelectasis 
+1848,Infiltration,Infiltration 
+1849,Cardiomegaly Infiltration,Cardiomegaly  Infiltration  No_Finding 
+1850,No_Finding,No_Finding 
+1851,No_Finding,No_Finding 
+1852,Infiltration,Infiltration 
+1853,No_Finding,No_Finding 
+1854,No_Finding,No_Finding 
+1855,Fibrosis,Fibrosis  No_Finding 
+1856,Effusion,Effusion  No_Finding 
+1857,No_Finding,No_Finding 
+1858,Atelectasis Infiltration,Atelectasis  Infiltration 
+1859,No_Finding,No_Finding 
+1860,Infiltration,Infiltration 
+1861,No_Finding,No_Finding 
+1862,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+1863,No_Finding,No_Finding 
+1864,Pneumothorax,Pneumothorax 
+1865,No_Finding,No_Finding 
+1866,No_Finding,No_Finding 
+1867,No_Finding,No_Finding 
+1868,No_Finding,No_Finding 
+1869,Nodule,No_Finding  Nodule 
+1870,No_Finding,No_Finding 
+1871,Cardiomegaly Consolidation,Atelectasis  Cardiomegaly  Consolidation 
+1872,Emphysema Mass,Emphysema  Mass  No_Finding 
+1873,No_Finding,No_Finding 
+1874,No_Finding,No_Finding 
+1875,No_Finding,No_Finding 
+1876,Infiltration,Infiltration 
+1877,No_Finding,No_Finding 
+1878,No_Finding,No_Finding 
+1879,No_Finding,No_Finding 
+1880,No_Finding,No_Finding 
+1881,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+1882,No_Finding,No_Finding 
+1883,Infiltration,Infiltration  No_Finding 
+1884,No_Finding,Atelectasis  No_Finding 
+1885,No_Finding,No_Finding 
+1886,Atelectasis Fibrosis,Atelectasis  Fibrosis  No_Finding 
+1887,Edema,Edema  No_Finding 
+1888,No_Finding,No_Finding 
+1889,Atelectasis Consolidation,Atelectasis  Consolidation  No_Finding 
+1890,No_Finding,No_Finding 
+1891,No_Finding,No_Finding 
+1892,Effusion,Effusion 
+1893,Infiltration,Infiltration  No_Finding 
+1894,No_Finding,No_Finding 
+1895,No_Finding,No_Finding 
+1896,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+1897,No_Finding,No_Finding 
+1898,No_Finding,No_Finding 
+1899,No_Finding,No_Finding 
+1900,No_Finding,No_Finding 
+1901,No_Finding,No_Finding 
+1902,No_Finding,No_Finding 
+1903,Nodule,No_Finding  Nodule 
+1904,Cardiomegaly Pleural_Thickening,Cardiomegaly  Pleural_Thickening 
+1905,Infiltration Pleural_Thickening,Infiltration  No_Finding  Pleural_Thickening 
+1906,No_Finding,No_Finding 
+1907,No_Finding,No_Finding 
+1908,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1909,Infiltration,Infiltration  No_Finding 
+1910,Infiltration,Infiltration  No_Finding 
+1911,No_Finding,No_Finding 
+1912,No_Finding,No_Finding 
+1913,Infiltration,Infiltration  No_Finding 
+1914,No_Finding,No_Finding 
+1915,No_Finding,No_Finding 
+1916,Nodule,No_Finding  Nodule 
+1917,Cardiomegaly,Cardiomegaly  No_Finding 
+1918,No_Finding,Atelectasis  No_Finding 
+1919,Infiltration Pneumonia,Infiltration  Pneumonia 
+1920,Infiltration,Infiltration  No_Finding 
+1921,Atelectasis Effusion Pneumothorax,Atelectasis  Effusion  No_Finding  Pneumothorax 
+1922,No_Finding,No_Finding 
+1923,No_Finding,No_Finding 
+1924,Infiltration Mass,Infiltration  Mass  No_Finding 
+1925,No_Finding,Atelectasis  No_Finding 
+1926,Effusion,Effusion  No_Finding 
+1927,No_Finding,Atelectasis  No_Finding 
+1928,No_Finding,No_Finding 
+1929,Nodule,No_Finding  Nodule 
+1930,No_Finding,No_Finding 
+1931,No_Finding,Atelectasis  No_Finding 
+1932,No_Finding,Effusion  No_Finding 
+1933,Mass,Mass  No_Finding 
+1934,Infiltration,Infiltration  No_Finding 
+1935,No_Finding,No_Finding 
+1936,No_Finding,No_Finding 
+1937,No_Finding,No_Finding 
+1938,Mass,Mass  No_Finding 
+1939,Atelectasis Consolidation Effusion,Atelectasis  Consolidation  Effusion 
+1940,No_Finding,No_Finding 
+1941,No_Finding,No_Finding 
+1942,Nodule,Atelectasis  Nodule 
+1943,Infiltration,Atelectasis  Infiltration 
+1944,Atelectasis,Atelectasis  No_Finding 
+1945,Mass,Mass 
+1946,Edema,Edema 
+1947,Effusion,Effusion 
+1948,No_Finding,No_Finding 
+1949,Effusion,Effusion 
+1950,Infiltration,Infiltration  No_Finding 
+1951,Infiltration Pleural_Thickening,Infiltration  No_Finding  Pleural_Thickening 
+1952,No_Finding,No_Finding 
+1953,No_Finding,No_Finding 
+1954,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+1955,No_Finding,Infiltration  No_Finding 
+1956,Atelectasis Cardiomegaly Effusion Mass,Atelectasis  Cardiomegaly  Effusion  Mass  No_Finding 
+1957,Consolidation,Atelectasis  Consolidation 
+1958,No_Finding,No_Finding 
+1959,No_Finding,Atelectasis  No_Finding 
+1960,No_Finding,No_Finding 
+1961,Atelectasis,Atelectasis  No_Finding 
+1962,No_Finding,No_Finding 
+1963,No_Finding,No_Finding 
+1964,No_Finding,No_Finding 
+1965,Consolidation Mass,Consolidation  Mass  No_Finding 
+1966,Infiltration,Effusion  Infiltration 
+1967,No_Finding,No_Finding 
+1968,Nodule,Atelectasis  Nodule 
+1969,No_Finding,No_Finding 
+1970,No_Finding,No_Finding 
+1971,No_Finding,Atelectasis  No_Finding 
+1972,No_Finding,Atelectasis  No_Finding 
+1973,No_Finding,No_Finding 
+1974,No_Finding,No_Finding 
+1975,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+1976,Emphysema Infiltration,Emphysema  Infiltration  No_Finding 
+1977,No_Finding,No_Finding 
+1978,Pneumothorax,Atelectasis  Pneumothorax 
+1979,No_Finding,No_Finding 
+1980,Effusion Infiltration,Effusion  Infiltration 
+1981,Consolidation,Consolidation  No_Finding 
+1982,Pleural_Thickening,Atelectasis  Pleural_Thickening 
+1983,No_Finding,No_Finding 
+1984,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+1985,Fibrosis,Fibrosis  No_Finding 
+1986,Atelectasis Edema Effusion Pneumonia,Atelectasis  Edema  Effusion  No_Finding  Pneumonia 
+1987,Pleural_Thickening,No_Finding  Pleural_Thickening 
+1988,Mass Pneumothorax,Mass  No_Finding  Pneumothorax 
+1989,Infiltration Mass,Infiltration  Mass  No_Finding 
+1990,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+1991,Infiltration,Infiltration 
+1992,Atelectasis Emphysema Infiltration Nodule Pneumothorax,Atelectasis  Emphysema  Infiltration  No_Finding  Nodule  Pneumothorax 
+1993,No_Finding,No_Finding 
+1994,Infiltration,Infiltration  No_Finding 
+1995,No_Finding,Atelectasis  No_Finding 
+1996,Mass,Mass  No_Finding 
+1997,Nodule,No_Finding  Nodule 
+1998,No_Finding,No_Finding 
+1999,No_Finding,No_Finding 
+2000,No_Finding,No_Finding 
+2001,No_Finding,No_Finding 
+2002,Infiltration Pneumothorax,Infiltration  No_Finding  Pneumothorax 
+2003,No_Finding,No_Finding 
+2004,Infiltration,Infiltration  No_Finding 
+2005,Infiltration,Infiltration  No_Finding 
+2006,No_Finding,No_Finding 
+2007,No_Finding,No_Finding 
+2008,No_Finding,No_Finding 
+2009,No_Finding,No_Finding 
+2010,No_Finding,Effusion  No_Finding 
+2011,No_Finding,Atelectasis  No_Finding 
+2012,No_Finding,No_Finding 
+2013,Infiltration,Infiltration  No_Finding 
+2014,Mass,Mass  No_Finding 
+2015,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+2016,No_Finding,No_Finding 
+2017,No_Finding,No_Finding 
+2018,Atelectasis Effusion Infiltration Mass,Atelectasis  Effusion  Infiltration  Mass  No_Finding 
+2019,No_Finding,No_Finding 
+2020,Infiltration,Infiltration  No_Finding 
+2021,Pneumothorax,Atelectasis  Pneumothorax 
+2022,No_Finding,No_Finding 
+2023,No_Finding,No_Finding 
+2024,No_Finding,Atelectasis  No_Finding 
+2025,No_Finding,No_Finding 
+2026,Edema Infiltration Pneumonia,Edema  Infiltration  No_Finding  Pneumonia 
+2027,Infiltration,Infiltration  No_Finding 
+2028,Effusion Emphysema Pneumothorax,Effusion  Emphysema  Pneumothorax 
+2029,Cardiomegaly,Cardiomegaly 
+2030,No_Finding,No_Finding 
+2031,No_Finding,No_Finding 
+2032,Atelectasis Infiltration Pleural_Thickening,Atelectasis  Infiltration  Pleural_Thickening 
+2033,No_Finding,No_Finding 
+2034,No_Finding,No_Finding 
+2035,No_Finding,No_Finding 
+2036,No_Finding,No_Finding 
+2037,No_Finding,No_Finding 
+2038,No_Finding,No_Finding 
+2039,No_Finding,No_Finding 
+2040,No_Finding,No_Finding 
+2041,Effusion,Effusion  No_Finding 
+2042,Atelectasis Consolidation Infiltration,Atelectasis  Consolidation  Infiltration 
+2043,Infiltration,Infiltration  No_Finding 
+2044,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+2045,Effusion,Effusion  No_Finding 
+2046,Mass,Mass  No_Finding 
+2047,Infiltration,Infiltration  No_Finding 
+2048,Atelectasis,Atelectasis 
+2049,No_Finding,No_Finding 
+2050,No_Finding,No_Finding 
+2051,Atelectasis,Atelectasis  No_Finding 
+2052,Nodule,Nodule 
+2053,No_Finding,No_Finding 
+2054,Infiltration,Infiltration  No_Finding 
+2055,Emphysema Infiltration,Emphysema  Infiltration  No_Finding 
+2056,No_Finding,No_Finding 
+2057,Pneumothorax,Pneumothorax 
+2058,Infiltration Mass,Infiltration  Mass  No_Finding 
+2059,No_Finding,No_Finding 
+2060,Effusion,Effusion 
+2061,No_Finding,No_Finding 
+2062,No_Finding,Atelectasis  No_Finding 
+2063,Infiltration,Effusion  Infiltration 
+2064,No_Finding,No_Finding 
+2065,Effusion,Effusion  No_Finding 
+2066,No_Finding,No_Finding 
+2067,No_Finding,No_Finding 
+2068,No_Finding,No_Finding 
+2069,Pneumothorax,No_Finding  Pneumothorax 
+2070,Infiltration,Infiltration  No_Finding 
+2071,No_Finding,No_Finding 
+2072,Infiltration,Infiltration  No_Finding 
+2073,No_Finding,No_Finding 
+2074,Effusion Nodule,Effusion  No_Finding  Nodule 
+2075,No_Finding,Atelectasis  No_Finding 
+2076,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+2077,No_Finding,No_Finding 
+2078,Mass Nodule,Atelectasis  Mass  Nodule 
+2079,Fibrosis,Fibrosis  No_Finding 
+2080,Cardiomegaly,Cardiomegaly  No_Finding 
+2081,Infiltration,Atelectasis  Infiltration 
+2082,Edema Nodule,Edema  No_Finding  Nodule 
+2083,No_Finding,No_Finding 
+2084,Emphysema Mass Pneumothorax,Emphysema  Mass  No_Finding  Pneumothorax 
+2085,No_Finding,No_Finding 
+2086,Nodule,No_Finding  Nodule 
+2087,Nodule,Atelectasis  Nodule 
+2088,Emphysema Infiltration Pleural_Thickening,Emphysema  Infiltration  No_Finding  Pleural_Thickening 
+2089,No_Finding,No_Finding 
+2090,No_Finding,No_Finding 
+2091,Infiltration,Infiltration  No_Finding 
+2092,No_Finding,No_Finding 
+2093,Infiltration,Infiltration  No_Finding 
+2094,No_Finding,No_Finding 
+2095,No_Finding,No_Finding 
+2096,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2097,No_Finding,No_Finding 
+2098,Infiltration,Infiltration 
+2099,No_Finding,No_Finding 
+2100,No_Finding,Atelectasis  No_Finding 
+2101,No_Finding,No_Finding 
+2102,Infiltration,Infiltration  No_Finding 
+2103,No_Finding,No_Finding 
+2104,Cardiomegaly Infiltration,Atelectasis  Cardiomegaly  Infiltration 
+2105,Consolidation Effusion Mass,Consolidation  Effusion  Mass  No_Finding 
+2106,No_Finding,No_Finding 
+2107,No_Finding,No_Finding 
+2108,Nodule,Atelectasis  Nodule 
+2109,Atelectasis,Atelectasis 
+2110,Effusion,Effusion 
+2111,No_Finding,No_Finding 
+2112,No_Finding,No_Finding 
+2113,Mass Pleural_Thickening Pneumothorax,Atelectasis  Mass  Pleural_Thickening  Pneumothorax 
+2114,Effusion Pleural_Thickening,Effusion  No_Finding  Pleural_Thickening 
+2115,Infiltration,Infiltration  No_Finding 
+2116,Effusion Infiltration Nodule Pneumothorax,Effusion  Infiltration  No_Finding  Nodule  Pneumothorax 
+2117,Edema,Edema 
+2118,No_Finding,No_Finding 
+2119,Nodule,No_Finding  Nodule 
+2120,No_Finding,No_Finding 
+2121,Pneumothorax,Atelectasis  Pneumothorax 
+2122,Atelectasis Cardiomegaly,Atelectasis  Cardiomegaly  No_Finding 
+2123,Effusion,Atelectasis  Effusion 
+2124,Atelectasis,Atelectasis  No_Finding 
+2125,Effusion Emphysema Pleural_Thickening,Atelectasis  Effusion  Emphysema  Pleural_Thickening 
+2126,No_Finding,No_Finding 
+2127,No_Finding,No_Finding 
+2128,No_Finding,No_Finding 
+2129,No_Finding,No_Finding 
+2130,No_Finding,No_Finding 
+2131,Infiltration,Infiltration  No_Finding 
+2132,No_Finding,No_Finding 
+2133,No_Finding,No_Finding 
+2134,No_Finding,No_Finding 
+2135,No_Finding,No_Finding 
+2136,No_Finding,No_Finding 
+2137,No_Finding,No_Finding 
+2138,Mass,Mass 
+2139,Pneumonia,Atelectasis  Pneumonia 
+2140,Consolidation Effusion Infiltration,Atelectasis  Consolidation  Effusion  Infiltration 
+2141,No_Finding,Atelectasis  No_Finding 
+2142,No_Finding,No_Finding 
+2143,Effusion,Atelectasis  Effusion 
+2144,No_Finding,No_Finding 
+2145,Edema Effusion Infiltration,Atelectasis  Edema  Effusion  Infiltration 
+2146,Effusion Nodule,Atelectasis  Effusion  Nodule 
+2147,Atelectasis Pneumonia,Atelectasis  Pneumonia 
+2148,Atelectasis Consolidation,Atelectasis  Consolidation 
+2149,No_Finding,No_Finding 
+2150,Effusion,Effusion  No_Finding 
+2151,Infiltration,Infiltration  No_Finding 
+2152,Effusion,Effusion 
+2153,No_Finding,No_Finding 
+2154,Atelectasis Infiltration Mass Pleural_Thickening,Atelectasis  Infiltration  Mass  Pleural_Thickening 
+2155,Consolidation Mass,Consolidation  Mass  No_Finding 
+2156,Effusion Pleural_Thickening Pneumothorax,Effusion  No_Finding  Pleural_Thickening  Pneumothorax 
+2157,No_Finding,No_Finding 
+2158,No_Finding,No_Finding 
+2159,Pneumothorax,No_Finding  Pneumothorax 
+2160,No_Finding,No_Finding 
+2161,Infiltration,Infiltration 
+2162,Atelectasis,Atelectasis 
+2163,No_Finding,No_Finding 
+2164,No_Finding,No_Finding 
+2165,No_Finding,No_Finding 
+2166,Consolidation,Consolidation  No_Finding 
+2167,Atelectasis Effusion Mass Pleural_Thickening,Atelectasis  Effusion  Mass  No_Finding  Pleural_Thickening 
+2168,Infiltration,Infiltration  No_Finding 
+2169,No_Finding,No_Finding 
+2170,Infiltration,Infiltration  No_Finding 
+2171,No_Finding,No_Finding 
+2172,Infiltration,Infiltration  No_Finding 
+2173,No_Finding,No_Finding 
+2174,Infiltration,Infiltration  No_Finding 
+2175,No_Finding,No_Finding 
+2176,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+2177,No_Finding,No_Finding 
+2178,No_Finding,No_Finding 
+2179,Consolidation Infiltration,Consolidation  Infiltration 
+2180,No_Finding,No_Finding 
+2181,No_Finding,No_Finding 
+2182,No_Finding,No_Finding 
+2183,Atelectasis Consolidation,Atelectasis  Consolidation 
+2184,Infiltration Nodule Pneumonia,Infiltration  No_Finding  Nodule  Pneumonia 
+2185,Atelectasis Infiltration,Atelectasis  Infiltration 
+2186,Consolidation Infiltration,Consolidation  Infiltration  No_Finding 
+2187,No_Finding,No_Finding 
+2188,No_Finding,No_Finding 
+2189,No_Finding,No_Finding 
+2190,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+2191,No_Finding,No_Finding 
+2192,Atelectasis Pleural_Thickening,Atelectasis  No_Finding  Pleural_Thickening 
+2193,Infiltration,Infiltration 
+2194,Effusion,Effusion  No_Finding 
+2195,No_Finding,No_Finding 
+2196,No_Finding,No_Finding 
+2197,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+2198,Consolidation Effusion,Consolidation  Effusion  No_Finding 
+2199,No_Finding,No_Finding 
+2200,Edema,Edema  No_Finding 
+2201,Nodule,No_Finding  Nodule 
+2202,No_Finding,No_Finding 
+2203,No_Finding,Atelectasis  No_Finding 
+2204,No_Finding,No_Finding 
+2205,No_Finding,No_Finding 
+2206,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2207,Infiltration,Infiltration  No_Finding 
+2208,Consolidation Infiltration,Atelectasis  Consolidation  Infiltration 
+2209,No_Finding,Atelectasis  No_Finding 
+2210,Effusion Infiltration Nodule,Atelectasis  Effusion  Infiltration  Nodule 
+2211,No_Finding,No_Finding 
+2212,No_Finding,No_Finding 
+2213,No_Finding,No_Finding 
+2214,Effusion,Effusion  No_Finding 
+2215,No_Finding,No_Finding 
+2216,No_Finding,No_Finding 
+2217,Cardiomegaly Effusion,Cardiomegaly  Effusion  Infiltration 
+2218,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2219,No_Finding,No_Finding 
+2220,No_Finding,No_Finding 
+2221,Infiltration,Atelectasis  Infiltration 
+2222,No_Finding,No_Finding 
+2223,Infiltration,Infiltration  No_Finding 
+2224,Infiltration,Infiltration  No_Finding 
+2225,No_Finding,Atelectasis  No_Finding 
+2226,No_Finding,No_Finding 
+2227,No_Finding,Atelectasis  No_Finding 
+2228,No_Finding,Atelectasis  No_Finding 
+2229,No_Finding,No_Finding 
+2230,No_Finding,No_Finding 
+2231,Effusion,Effusion  No_Finding 
+2232,Atelectasis,Atelectasis 
+2233,No_Finding,No_Finding 
+2234,Infiltration,Infiltration  No_Finding 
+2235,Infiltration,Infiltration  No_Finding 
+2236,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+2237,No_Finding,Effusion  No_Finding 
+2238,Effusion Nodule Pneumothorax,Effusion  No_Finding  Nodule  Pneumothorax 
+2239,No_Finding,No_Finding 
+2240,No_Finding,No_Finding 
+2241,Atelectasis Consolidation Mass,Atelectasis  Consolidation  Mass 
+2242,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+2243,Pneumothorax,Pneumothorax 
+2244,No_Finding,No_Finding 
+2245,Emphysema,Emphysema 
+2246,No_Finding,No_Finding 
+2247,No_Finding,No_Finding 
+2248,Cardiomegaly Effusion Mass Pneumothorax,Cardiomegaly  Effusion  Mass  Pneumothorax 
+2249,Effusion Mass Nodule,Effusion  Mass  No_Finding  Nodule 
+2250,No_Finding,No_Finding 
+2251,Effusion,Atelectasis  Effusion 
+2252,Pneumothorax,No_Finding  Pneumothorax 
+2253,Atelectasis,Atelectasis 
+2254,No_Finding,No_Finding 
+2255,No_Finding,No_Finding 
+2256,No_Finding,No_Finding 
+2257,No_Finding,No_Finding 
+2258,No_Finding,No_Finding 
+2259,Consolidation Pleural_Thickening,Consolidation  No_Finding  Pleural_Thickening 
+2260,Nodule,No_Finding  Nodule 
+2261,Infiltration,Infiltration  No_Finding 
+2262,Effusion,Effusion  Infiltration 
+2263,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+2264,Infiltration,Infiltration 
+2265,Infiltration Mass,Infiltration  Mass  No_Finding 
+2266,No_Finding,No_Finding 
+2267,Consolidation Infiltration Mass,Consolidation  Infiltration  Mass 
+2268,Infiltration,Infiltration  No_Finding 
+2269,Infiltration,Infiltration  No_Finding 
+2270,Infiltration,Infiltration  No_Finding 
+2271,No_Finding,No_Finding 
+2272,No_Finding,No_Finding 
+2273,No_Finding,Atelectasis  No_Finding 
+2274,Infiltration,Infiltration 
+2275,No_Finding,No_Finding 
+2276,No_Finding,No_Finding 
+2277,No_Finding,No_Finding 
+2278,Cardiomegaly,Cardiomegaly  No_Finding 
+2279,No_Finding,No_Finding 
+2280,No_Finding,No_Finding 
+2281,Effusion,Effusion  No_Finding 
+2282,No_Finding,No_Finding 
+2283,Emphysema,Emphysema  No_Finding 
+2284,Atelectasis Consolidation Effusion,Atelectasis  Consolidation  Effusion  No_Finding 
+2285,Atelectasis,Atelectasis  No_Finding 
+2286,Atelectasis Infiltration,Atelectasis  Infiltration 
+2287,No_Finding,Atelectasis  No_Finding 
+2288,Infiltration,Infiltration  No_Finding 
+2289,No_Finding,No_Finding 
+2290,No_Finding,No_Finding 
+2291,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+2292,No_Finding,No_Finding 
+2293,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+2294,No_Finding,Infiltration  No_Finding 
+2295,No_Finding,No_Finding 
+2296,Nodule,No_Finding  Nodule 
+2297,Cardiomegaly Effusion Infiltration,Cardiomegaly  Effusion  Infiltration 
+2298,Infiltration Pleural_Thickening,Infiltration  No_Finding  Pleural_Thickening 
+2299,No_Finding,No_Finding 
+2300,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+2301,No_Finding,No_Finding 
+2302,No_Finding,No_Finding 
+2303,No_Finding,No_Finding 
+2304,No_Finding,No_Finding 
+2305,Nodule Pleural_Thickening,No_Finding  Nodule  Pleural_Thickening 
+2306,No_Finding,No_Finding 
+2307,Nodule Pneumothorax,No_Finding  Nodule  Pneumothorax 
+2308,No_Finding,No_Finding 
+2309,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+2310,Atelectasis,Atelectasis  No_Finding 
+2311,No_Finding,No_Finding 
+2312,Emphysema Mass,Effusion  Emphysema  Mass 
+2313,Nodule,No_Finding  Nodule 
+2314,No_Finding,Atelectasis  No_Finding 
+2315,No_Finding,Atelectasis  No_Finding 
+2316,No_Finding,No_Finding 
+2317,No_Finding,Atelectasis  No_Finding 
+2318,No_Finding,No_Finding 
+2319,No_Finding,No_Finding 
+2320,No_Finding,Infiltration  No_Finding 
+2321,No_Finding,No_Finding 
+2322,Edema,Atelectasis  Edema 
+2323,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+2324,Effusion,Effusion  No_Finding 
+2325,Infiltration Pneumothorax,Infiltration  No_Finding  Pneumothorax 
+2326,No_Finding,Atelectasis  No_Finding 
+2327,Effusion,Effusion  No_Finding 
+2328,Pneumothorax,No_Finding  Pneumothorax 
+2329,Cardiomegaly Consolidation Effusion,Cardiomegaly  Consolidation  Effusion  No_Finding 
+2330,Atelectasis,Atelectasis 
+2331,Cardiomegaly,Cardiomegaly  No_Finding 
+2332,Consolidation,Consolidation  No_Finding 
+2333,No_Finding,No_Finding 
+2334,Consolidation Effusion Infiltration Nodule,Consolidation  Effusion  Infiltration  No_Finding  Nodule 
+2335,Infiltration Nodule Pleural_Thickening,Infiltration  No_Finding  Nodule  Pleural_Thickening 
+2336,No_Finding,No_Finding 
+2337,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+2338,Mass,Mass 
+2339,Effusion,Effusion  No_Finding 
+2340,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+2341,No_Finding,Infiltration  No_Finding 
+2342,No_Finding,No_Finding 
+2343,Infiltration,Atelectasis  Infiltration 
+2344,No_Finding,No_Finding 
+2345,Infiltration,Infiltration 
+2346,No_Finding,No_Finding 
+2347,No_Finding,No_Finding 
+2348,No_Finding,No_Finding 
+2349,Mass Pneumothorax,Atelectasis  Mass  Pneumothorax 
+2350,Pneumothorax,No_Finding  Pneumothorax 
+2351,Atelectasis Infiltration,Atelectasis  Infiltration 
+2352,No_Finding,No_Finding 
+2353,No_Finding,Atelectasis  No_Finding 
+2354,No_Finding,No_Finding 
+2355,Mass Nodule,Mass  No_Finding  Nodule 
+2356,No_Finding,No_Finding 
+2357,No_Finding,No_Finding 
+2358,No_Finding,No_Finding 
+2359,No_Finding,No_Finding 
+2360,No_Finding,No_Finding 
+2361,No_Finding,No_Finding 
+2362,Infiltration,Infiltration  No_Finding 
+2363,Nodule,No_Finding  Nodule 
+2364,No_Finding,Atelectasis  No_Finding 
+2365,No_Finding,No_Finding 
+2366,No_Finding,No_Finding 
+2367,No_Finding,No_Finding 
+2368,Cardiomegaly,Cardiomegaly 
+2369,No_Finding,No_Finding 
+2370,No_Finding,No_Finding 
+2371,Infiltration,Infiltration  No_Finding 
+2372,No_Finding,No_Finding 
+2373,No_Finding,No_Finding 
+2374,No_Finding,No_Finding 
+2375,No_Finding,No_Finding 
+2376,No_Finding,No_Finding 
+2377,Atelectasis,Atelectasis  No_Finding 
+2378,Atelectasis,Atelectasis  No_Finding 
+2379,Consolidation Infiltration,Atelectasis  Consolidation  Infiltration 
+2380,No_Finding,No_Finding 
+2381,Effusion Pleural_Thickening,Effusion  No_Finding  Pleural_Thickening 
+2382,Atelectasis,Atelectasis 
+2383,No_Finding,No_Finding 
+2384,Atelectasis Effusion Mass,Atelectasis  Effusion  Mass  No_Finding 
+2385,Emphysema,Emphysema  No_Finding 
+2386,No_Finding,No_Finding 
+2387,Mass,Mass  No_Finding 
+2388,Cardiomegaly,Cardiomegaly  No_Finding 
+2389,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+2390,No_Finding,No_Finding 
+2391,No_Finding,No_Finding 
+2392,No_Finding,No_Finding 
+2393,Atelectasis,Atelectasis  No_Finding 
+2394,No_Finding,No_Finding 
+2395,Atelectasis Infiltration Nodule,Atelectasis  Infiltration  No_Finding  Nodule 
+2396,Edema Effusion,Edema  Effusion  No_Finding 
+2397,No_Finding,No_Finding 
+2398,No_Finding,No_Finding 
+2399,No_Finding,No_Finding 
+2400,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+2401,Infiltration,Infiltration 
+2402,Emphysema Pneumothorax,Emphysema  Pneumothorax 
+2403,No_Finding,No_Finding 
+2404,No_Finding,No_Finding 
+2405,No_Finding,No_Finding 
+2406,No_Finding,No_Finding 
+2407,No_Finding,Atelectasis  No_Finding 
+2408,Mass,Atelectasis  Mass 
+2409,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+2410,Atelectasis Edema Effusion,Atelectasis  Edema  Effusion  No_Finding 
+2411,No_Finding,No_Finding 
+2412,No_Finding,No_Finding 
+2413,No_Finding,Atelectasis  No_Finding 
+2414,Nodule Pleural_Thickening,No_Finding  Nodule  Pleural_Thickening 
+2415,No_Finding,No_Finding 
+2416,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+2417,Mass,Mass 
+2418,No_Finding,No_Finding 
+2419,No_Finding,No_Finding 
+2420,Atelectasis Cardiomegaly Infiltration,Atelectasis  Cardiomegaly  Infiltration  No_Finding 
+2421,No_Finding,No_Finding 
+2422,Atelectasis,Atelectasis 
+2423,No_Finding,No_Finding 
+2424,No_Finding,No_Finding 
+2425,No_Finding,No_Finding 
+2426,No_Finding,Atelectasis  No_Finding 
+2427,No_Finding,No_Finding 
+2428,No_Finding,No_Finding 
+2429,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+2430,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+2431,Consolidation Pneumonia,Consolidation  No_Finding  Pneumonia 
+2432,Nodule,No_Finding  Nodule 
+2433,No_Finding,No_Finding 
+2434,Nodule,No_Finding  Nodule 
+2435,Consolidation,Consolidation 
+2436,No_Finding,No_Finding 
+2437,No_Finding,No_Finding 
+2438,No_Finding,No_Finding 
+2439,No_Finding,No_Finding 
+2440,Infiltration,Infiltration 
+2441,Infiltration,Infiltration  No_Finding 
+2442,No_Finding,No_Finding 
+2443,Atelectasis Consolidation Effusion Emphysema Nodule Pneumothorax,Atelectasis  Consolidation  Effusion  Emphysema  No_Finding  Nodule  Pneumothorax 
+2444,No_Finding,Atelectasis  No_Finding 
+2445,No_Finding,No_Finding 
+2446,Atelectasis Consolidation,Atelectasis  Consolidation  No_Finding 
+2447,Infiltration,Atelectasis  Infiltration 
+2448,No_Finding,No_Finding 
+2449,Mass,Mass  No_Finding 
+2450,No_Finding,No_Finding 
+2451,No_Finding,No_Finding 
+2452,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2453,Effusion Pneumothorax,Effusion  No_Finding  Pneumothorax 
+2454,No_Finding,No_Finding 
+2455,No_Finding,No_Finding 
+2456,No_Finding,No_Finding 
+2457,Effusion,Effusion  No_Finding 
+2458,Infiltration,Infiltration  No_Finding 
+2459,No_Finding,No_Finding 
+2460,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+2461,No_Finding,No_Finding 
+2462,Fibrosis Mass,Atelectasis  Fibrosis  Mass 
+2463,No_Finding,No_Finding 
+2464,Effusion Infiltration,Effusion  Infiltration 
+2465,Pneumothorax,No_Finding  Pneumothorax 
+2466,No_Finding,No_Finding 
+2467,No_Finding,Infiltration  No_Finding 
+2468,No_Finding,No_Finding 
+2469,No_Finding,No_Finding 
+2470,No_Finding,No_Finding 
+2471,No_Finding,No_Finding 
+2472,Consolidation Edema,Consolidation  Edema  No_Finding 
+2473,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+2474,No_Finding,No_Finding 
+2475,Infiltration,Infiltration 
+2476,No_Finding,No_Finding 
+2477,Nodule,Atelectasis  Nodule 
+2478,Nodule,No_Finding  Nodule 
+2479,No_Finding,No_Finding 
+2480,Consolidation,Consolidation  No_Finding 
+2481,Infiltration,Infiltration  No_Finding 
+2482,Cardiomegaly,Cardiomegaly  No_Finding 
+2483,No_Finding,No_Finding 
+2484,No_Finding,No_Finding 
+2485,Infiltration,Infiltration  No_Finding 
+2486,Infiltration,Infiltration  No_Finding 
+2487,No_Finding,No_Finding 
+2488,No_Finding,No_Finding 
+2489,No_Finding,No_Finding 
+2490,No_Finding,No_Finding 
+2491,No_Finding,No_Finding 
+2492,No_Finding,No_Finding 
+2493,Pneumothorax,Pneumothorax 
+2494,No_Finding,No_Finding 
+2495,No_Finding,No_Finding 
+2496,No_Finding,No_Finding 
+2497,Pneumothorax,No_Finding  Pneumothorax 
+2498,No_Finding,No_Finding 
+2499,Effusion,Atelectasis  Effusion 
+2500,Atelectasis Infiltration,Atelectasis  Infiltration  No_Finding 
+2501,No_Finding,No_Finding 
+2502,Pneumothorax,Pneumothorax 
+2503,No_Finding,No_Finding 
+2504,No_Finding,No_Finding 
+2505,No_Finding,No_Finding 
+2506,Effusion Pleural_Thickening,Effusion  No_Finding  Pleural_Thickening 
+2507,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2508,No_Finding,No_Finding 
+2509,No_Finding,No_Finding 
+2510,No_Finding,No_Finding 
+2511,Infiltration,Infiltration  No_Finding 
+2512,No_Finding,No_Finding 
+2513,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+2514,Pneumothorax,No_Finding  Pneumothorax 
+2515,Mass Pneumothorax,Mass  No_Finding  Pneumothorax 
+2516,No_Finding,No_Finding 
+2517,No_Finding,No_Finding 
+2518,Infiltration,Infiltration 
+2519,No_Finding,No_Finding 
+2520,No_Finding,No_Finding 
+2521,No_Finding,No_Finding 
+2522,Nodule,No_Finding  Nodule 
+2523,No_Finding,No_Finding 
+2524,Infiltration Mass,Infiltration  Mass  No_Finding 
+2525,No_Finding,No_Finding 
+2526,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+2527,No_Finding,No_Finding 
+2528,Emphysema,Emphysema  No_Finding 
+2529,Atelectasis,Atelectasis  No_Finding 
+2530,Fibrosis,Atelectasis  Fibrosis 
+2531,No_Finding,No_Finding 
+2532,No_Finding,No_Finding 
+2533,Infiltration,Infiltration  No_Finding 
+2534,Atelectasis Infiltration,Atelectasis  Infiltration 
+2535,No_Finding,No_Finding 
+2536,No_Finding,No_Finding 
+2537,No_Finding,No_Finding 
+2538,No_Finding,No_Finding 
+2539,No_Finding,No_Finding 
+2540,No_Finding,No_Finding 
+2541,Cardiomegaly Fibrosis Infiltration,Cardiomegaly  Fibrosis  Infiltration 
+2542,No_Finding,No_Finding 
+2543,No_Finding,No_Finding 
+2544,Effusion Infiltration,Effusion  Infiltration 
+2545,Infiltration,Infiltration  No_Finding 
+2546,No_Finding,No_Finding 
+2547,No_Finding,No_Finding 
+2548,No_Finding,No_Finding 
+2549,No_Finding,No_Finding 
+2550,Infiltration,Infiltration  No_Finding 
+2551,No_Finding,No_Finding 
+2552,No_Finding,No_Finding 
+2553,Pneumothorax,No_Finding  Pneumothorax 
+2554,Emphysema,Emphysema 
+2555,No_Finding,No_Finding 
+2556,Pneumothorax,No_Finding  Pneumothorax 
+2557,No_Finding,No_Finding 
+2558,Atelectasis,Atelectasis 
+2559,No_Finding,No_Finding 
+2560,Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+2561,Infiltration,Infiltration 
+2562,No_Finding,No_Finding 
+2563,No_Finding,No_Finding 
+2564,No_Finding,Atelectasis  No_Finding 
+2565,Atelectasis Effusion Mass,Atelectasis  Effusion  Mass 
+2566,Infiltration,Atelectasis  Infiltration 
+2567,No_Finding,No_Finding 
+2568,Infiltration,Infiltration  No_Finding 
+2569,Infiltration,Infiltration  No_Finding 
+2570,No_Finding,No_Finding 
+2571,Effusion,Effusion  No_Finding 
+2572,No_Finding,No_Finding 
+2573,Atelectasis,Atelectasis 
+2574,No_Finding,No_Finding 
+2575,No_Finding,No_Finding 
+2576,Atelectasis,Atelectasis  No_Finding 
+2577,No_Finding,No_Finding 
+2578,No_Finding,Effusion  No_Finding 
+2579,No_Finding,No_Finding 
+2580,Fibrosis,Atelectasis  Fibrosis 
+2581,Edema,Edema  No_Finding 
+2582,No_Finding,No_Finding 
+2583,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+2584,No_Finding,No_Finding 
+2585,No_Finding,No_Finding 
+2586,Consolidation,Consolidation  No_Finding 
+2587,No_Finding,No_Finding 
+2588,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+2589,Infiltration,Infiltration 
+2590,No_Finding,No_Finding 
+2591,No_Finding,No_Finding 
+2592,Atelectasis Pleural_Thickening,Atelectasis  No_Finding  Pleural_Thickening 
+2593,No_Finding,No_Finding 
+2594,Effusion Mass Pleural_Thickening Pneumothorax,Effusion  Mass  No_Finding  Pleural_Thickening  Pneumothorax 
+2595,No_Finding,No_Finding 
+2596,Atelectasis Effusion,Atelectasis  Effusion 
+2597,Effusion Infiltration,Effusion  Infiltration  No_Finding 
+2598,No_Finding,No_Finding 
+2599,Infiltration,Infiltration  No_Finding 
+2600,No_Finding,No_Finding 
+2601,No_Finding,No_Finding 
+2602,Pleural_Thickening,Pleural_Thickening 
+2603,No_Finding,No_Finding 
+2604,No_Finding,No_Finding 
+2605,Infiltration,Infiltration 
+2606,No_Finding,No_Finding 
+2607,Emphysema,Emphysema  No_Finding 
+2608,Mass Nodule Pleural_Thickening,Atelectasis  Mass  Nodule  Pleural_Thickening 
+2609,No_Finding,No_Finding 
+2610,Cardiomegaly,Cardiomegaly  No_Finding 
+2611,No_Finding,No_Finding 
+2612,No_Finding,Atelectasis  No_Finding 
+2613,No_Finding,No_Finding 
+2614,No_Finding,No_Finding 
+2615,No_Finding,No_Finding 
+2616,Edema,Atelectasis  Edema 
+2617,No_Finding,No_Finding 
+2618,No_Finding,No_Finding 
+2619,Atelectasis,Atelectasis 
+2620,No_Finding,Infiltration  No_Finding 
+2621,No_Finding,Effusion  No_Finding 
+2622,No_Finding,No_Finding 
+2623,No_Finding,No_Finding 
+2624,No_Finding,No_Finding 
+2625,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2626,No_Finding,No_Finding 
+2627,No_Finding,No_Finding 
+2628,Infiltration Pleural_Thickening,Atelectasis  Infiltration  Pleural_Thickening 
+2629,No_Finding,No_Finding 
+2630,No_Finding,No_Finding 
+2631,Infiltration Mass Nodule Pleural_Thickening,Infiltration  Mass  No_Finding  Nodule  Pleural_Thickening 
+2632,No_Finding,No_Finding 
+2633,Infiltration,Infiltration 
+2634,No_Finding,No_Finding 
+2635,Effusion Pleural_Thickening,Effusion  No_Finding  Pleural_Thickening 
+2636,No_Finding,No_Finding 
+2637,No_Finding,No_Finding 
+2638,No_Finding,No_Finding 
+2639,Cardiomegaly Effusion Infiltration,Cardiomegaly  Effusion  Infiltration  No_Finding 
+2640,No_Finding,Atelectasis  No_Finding 
+2641,No_Finding,No_Finding 
+2642,Emphysema Pneumonia Pneumothorax,Emphysema  No_Finding  Pneumonia  Pneumothorax 
+2643,No_Finding,No_Finding 
+2644,Emphysema,Emphysema  No_Finding 
+2645,Edema,Edema  No_Finding 
+2646,No_Finding,No_Finding 
+2647,No_Finding,No_Finding 
+2648,Cardiomegaly,Cardiomegaly  No_Finding 
+2649,No_Finding,No_Finding 
+2650,Edema Infiltration,Edema  Infiltration  No_Finding 
+2651,Infiltration,Atelectasis  Infiltration 
+2652,Nodule,No_Finding  Nodule 
+2653,No_Finding,No_Finding 
+2654,No_Finding,No_Finding 
+2655,No_Finding,Atelectasis  No_Finding 
+2656,No_Finding,No_Finding 
+2657,No_Finding,No_Finding 
+2658,No_Finding,No_Finding 
+2659,Atelectasis,Atelectasis 
+2660,Infiltration,Infiltration  No_Finding 
+2661,No_Finding,No_Finding 
+2662,Edema,Edema  Infiltration 
+2663,No_Finding,No_Finding 
+2664,Atelectasis,Atelectasis  Effusion 
+2665,Infiltration,Infiltration  No_Finding 
+2666,No_Finding,No_Finding 
+2667,No_Finding,No_Finding 
+2668,Atelectasis,Atelectasis  No_Finding 
+2669,No_Finding,No_Finding 
+2670,Atelectasis,Atelectasis  No_Finding 
+2671,Infiltration,Infiltration  No_Finding 
+2672,No_Finding,Infiltration  No_Finding 
+2673,Effusion,Effusion 
+2674,No_Finding,No_Finding 
+2675,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration 
+2676,No_Finding,No_Finding 
+2677,No_Finding,No_Finding 
+2678,No_Finding,No_Finding 
+2679,No_Finding,No_Finding 
+2680,No_Finding,No_Finding 
+2681,No_Finding,No_Finding 
+2682,No_Finding,No_Finding 
+2683,Pneumothorax,No_Finding  Pneumothorax 
+2684,No_Finding,No_Finding 
+2685,No_Finding,No_Finding 
+2686,No_Finding,No_Finding 
+2687,No_Finding,No_Finding 
+2688,Infiltration,Infiltration  No_Finding 
+2689,Emphysema,Emphysema  No_Finding 
+2690,No_Finding,No_Finding 
+2691,No_Finding,No_Finding 
+2692,Mass,Mass  No_Finding 
+2693,No_Finding,Atelectasis  No_Finding 
+2694,No_Finding,No_Finding 
+2695,Mass Pleural_Thickening,Mass  No_Finding  Pleural_Thickening 
+2696,No_Finding,No_Finding 
+2697,Effusion,Effusion 
+2698,No_Finding,No_Finding 
+2699,No_Finding,No_Finding 
+2700,Nodule Pneumothorax,No_Finding  Nodule  Pneumothorax 
+2701,No_Finding,No_Finding 
+2702,No_Finding,No_Finding 
+2703,Nodule,No_Finding  Nodule 
+2704,Emphysema,Emphysema  No_Finding 
+2705,No_Finding,No_Finding 
+2706,Infiltration Nodule,Infiltration  No_Finding  Nodule 
+2707,Pneumothorax,No_Finding  Pneumothorax 
+2708,No_Finding,No_Finding 
+2709,No_Finding,No_Finding 
+2710,No_Finding,No_Finding 
+2711,Atelectasis,Atelectasis  No_Finding 
+2712,Cardiomegaly,Cardiomegaly  No_Finding 
+2713,No_Finding,No_Finding 
+2714,No_Finding,No_Finding 
+2715,No_Finding,No_Finding 
+2716,No_Finding,No_Finding 
+2717,Infiltration Nodule,Effusion  Infiltration  Nodule 
+2718,No_Finding,No_Finding 
+2719,Effusion Mass,Effusion  Mass  No_Finding 
+2720,Mass,Mass  No_Finding 
+2721,Infiltration,Infiltration  No_Finding 
+2722,No_Finding,No_Finding 
+2723,Emphysema,Atelectasis  Emphysema 
+2724,No_Finding,No_Finding 
+2725,Effusion,Effusion  No_Finding 
+2726,Cardiomegaly Effusion,Cardiomegaly  Effusion  No_Finding 
+2727,No_Finding,No_Finding 
+2728,Pneumothorax,No_Finding  Pneumothorax 
+2729,Hernia,Hernia  No_Finding 
+2730,No_Finding,Effusion  No_Finding 
+2731,No_Finding,No_Finding 
+2732,Atelectasis Effusion,Atelectasis  Effusion  No_Finding 
+2733,No_Finding,No_Finding 
+2734,No_Finding,No_Finding 
+2735,Infiltration,Infiltration 
+2736,No_Finding,No_Finding 
+2737,No_Finding,No_Finding 
+2738,Consolidation Effusion Infiltration Mass Nodule,Consolidation  Effusion  Infiltration  Mass  Nodule 
+2739,Nodule,No_Finding  Nodule 
+2740,No_Finding,No_Finding 
+2741,No_Finding,No_Finding 
+2742,No_Finding,Atelectasis  No_Finding 
+2743,No_Finding,No_Finding 
+2744,Atelectasis,Atelectasis 
+2745,No_Finding,Atelectasis  No_Finding 
+2746,Effusion,Effusion  No_Finding 
+2747,Infiltration,Infiltration  No_Finding 
+2748,Atelectasis Mass,Atelectasis  Mass 
+2749,No_Finding,No_Finding 
+2750,No_Finding,No_Finding 
+2751,Atelectasis,Atelectasis 
+2752,No_Finding,No_Finding 
+2753,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2754,No_Finding,No_Finding 
+2755,No_Finding,No_Finding 
+2756,Infiltration,Infiltration 
+2757,No_Finding,Atelectasis  No_Finding 
+2758,No_Finding,No_Finding 
+2759,No_Finding,No_Finding 
+2760,No_Finding,No_Finding 
+2761,No_Finding,Atelectasis  No_Finding 
+2762,No_Finding,No_Finding 
+2763,Nodule,No_Finding  Nodule 
+2764,No_Finding,No_Finding 
+2765,Consolidation,Atelectasis  Consolidation 
+2766,No_Finding,No_Finding 
+2767,No_Finding,No_Finding 
+2768,No_Finding,No_Finding 
+2769,No_Finding,No_Finding 
+2770,No_Finding,No_Finding 
+2771,Infiltration,Infiltration 
+2772,Infiltration Nodule Pleural_Thickening,Infiltration  No_Finding  Nodule  Pleural_Thickening 
+2773,No_Finding,No_Finding 
+2774,Effusion,Effusion  No_Finding 
+2775,Mass,Mass  No_Finding 
+2776,Fibrosis Mass,Atelectasis  Fibrosis  Mass 
+2777,No_Finding,No_Finding 
+2778,Effusion,Atelectasis  Effusion 
+2779,No_Finding,No_Finding 
+2780,No_Finding,No_Finding 
+2781,No_Finding,No_Finding 
+2782,Pneumothorax,Pneumothorax 
+2783,Effusion,Effusion  No_Finding 
+2784,Infiltration,Infiltration 
+2785,No_Finding,No_Finding 
+2786,No_Finding,No_Finding 
+2787,No_Finding,No_Finding 
+2788,Mass Nodule,Mass  No_Finding  Nodule 
+2789,Effusion,Atelectasis  Effusion 
+2790,No_Finding,No_Finding 
+2791,No_Finding,No_Finding 
+2792,Pleural_Thickening,No_Finding  Pleural_Thickening 
+2793,Atelectasis Nodule,Atelectasis  Nodule 
+2794,No_Finding,No_Finding 
+2795,Consolidation Effusion Infiltration Nodule,Consolidation  Effusion  Infiltration  No_Finding  Nodule 
+2796,Pneumothorax,No_Finding  Pneumothorax 
+2797,Cardiomegaly,Cardiomegaly  No_Finding 
+2798,Nodule,Nodule 
+2799,Infiltration,Infiltration  No_Finding 
+2800,Atelectasis Effusion Infiltration,Atelectasis  Effusion  Infiltration  No_Finding 
+2801,No_Finding,Infiltration  No_Finding 
+2802,Atelectasis Pleural_Thickening,Atelectasis  No_Finding  Pleural_Thickening 
